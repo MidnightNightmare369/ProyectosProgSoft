@@ -5,8 +5,10 @@ mover HEAD-> checkout
 mover MAIN-> reset --hard 
 Crear RAMA-> branch
 Moverse a una rama -> switch <nombre>
+Cambios temporales -> stash /recuperar -> stash pop
+eliminar -> stash drop / ver lista -> stash list 
 
-crear archivo -> touch borrar -> rm -diferencias ->diff
+crear archivo -> touch borrar -> rm -diferencias ->diff stas
 Alias: 
 crear git config --global alias.<nombre> "argumentos"
 existentes git config --global --get-regexp alias
