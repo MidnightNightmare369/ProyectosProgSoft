@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Alvaro\\Desktop\\ProyectosProg.Software\\P2PS2025\\test\\test.csproj",
+      "projectUniqueName": "C:\\Users\\Alvaro\\Desktop\\ProyectosProgSoft\\P2PS2025\\test\\test.csproj",
       "projectName": "test",
-      "projectPath": "C:\\Users\\Alvaro\\Desktop\\ProyectosProg.Software\\P2PS2025\\test\\test.csproj",
+      "projectPath": "C:\\Users\\Alvaro\\Desktop\\ProyectosProgSoft\\P2PS2025\\test\\test.csproj",
       "packagesPath": "C:\\Users\\Alvaro\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Alvaro\\Desktop\\ProyectosProg.Software\\P2PS2025\\test\\obj\\",
+      "outputPath": "C:\\Users\\Alvaro\\Desktop\\ProyectosProgSoft\\P2PS2025\\test\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Alvaro\\AppData\\Roaming\\NuGet\\NuGet.Config",
