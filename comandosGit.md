@@ -1,5 +1,6 @@
 Comandos de git: 
-
+Ramas: crear -> branch <nombreRama> 
+Eliminar -> branch -d <nombreRama>
 moverse por ramas:
 mover HEAD-> checkout 
 mover MAIN-> reset --hard 
