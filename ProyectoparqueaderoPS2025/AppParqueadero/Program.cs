@@ -71,7 +71,7 @@ public class Parqueaderos{
 public class Vehiculos{
     private int id;
     private string? placa;
-    private TipoVehiculos tipoVehiculo;
+    private int tipoVehiculo;
     public void Vehiculos(int id,string? placa_,double tipoVehiculo_){
         Id=id;
         Placa=placa_;
@@ -79,7 +79,7 @@ public class Vehiculos{
     }    
     public int Id {get => id; set=>id=value;}
     public string? Placa{get => placa; set => placa=value;}
-    public TipoVehiculos TipoVehiculo{get => tipoVehiculo;set => valor=tipoVehiculo;}
+    public int TipoVehiculo{get => tipoVehiculo;set => valor=tipoVehiculo;}
     
     //faltan listas
 }
