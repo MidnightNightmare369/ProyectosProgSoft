@@ -1,3 +1,46 @@
-**/.vscode
-**/.obj
-**/.bin
+# Ignorar archivos y carpetas de Visual Studio Code
+.vscode/
+
+# Ignorar archivos de compilación y ejecución
+bin/
+obj/
+
+# Ignorar archivos de usuario y configuración local
+*.user
+*.suo
+*.userprefs
+
+# Ignorar archivos de paquetes NuGet
+packages/
+*.nupkg
+*.nuspec
+
+# Ignorar archivos de salida de pruebas
+TestResults/
+
+# Ignorar archivos de logs y temporales
+*.log
+*.tmp
+*.temp
+
+# Ignorar archivos de configuración local
+appsettings.Development.json
+
+# Ignorar archivos de la carpeta de publicación
+publish/
+
+# Ignorar archivos de la carpeta de dependencias
+.vs/
+
+# Ignorar archivos de la base de datos local (si usas SQLite o similar)
+*.db
+*.sqlite
+
+# Ignorar archivos de la carpeta de herramientas
+tools/
+
+# Ignorar archivos de la carpeta de artefactos de MSBuild
+artifacts/
+
+# Ignorar archivos de la carpeta de caché de NuGet
+.nuget/

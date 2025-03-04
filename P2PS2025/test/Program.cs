@@ -75,12 +75,12 @@ lista_materiasestudiantes.Add(new MateriasEstudiantes()
 
 var estudiante_materia = lista_materiasestudiantes.FirstOrDefault(z => z._Materia!.Codigo == "KR4");
 
-Hijos hijo1 = new Hijos();
-Abuelos hijo2 = new Hijos();
-Abuelos hijo3 = (Abuelos)hijo1;
-Abuelos hijo4 = (Abuelos)(Padres)hijo1;
-Padres hijo5 = new Hijos();
-IHijos2 hijo6 = (IHijos2)new Hijos();
+//Hijos hijo1 = new Hijos();
+//Abuelos hijo2 = new Hijos();
+//Abuelos hijo3 = (Abuelos)hijo1;
+//Abuelos hijo4 = (Abuelos)(Padres)hijo1;
+//Padres hijo5 = new Hijos();
+//IHijos2 hijo6 = (IHijos2)new Hijos();
 
 
 Console.WriteLine(lista_estudiantes.Count);
