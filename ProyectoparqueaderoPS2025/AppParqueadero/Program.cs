@@ -1,7 +1,53 @@
 ﻿//V1.0
 
-//LLENAR CAMPOS
-Console.WriteLine("Todo ok");
+//Lista tipoVehiculos
+var listaTipoVh = new List<TipoVehiculos>();
+listaTipoVh.Add(new TipoVehiculos(1,"moto"));
+listaTipoVh.Add(new TipoVehiculos(2,"automovil"));
+
+//Lista tipoClientes
+var listaTipoCli = new List<TipoClientes>();
+listaTipoCli.Add(new TipoClientes(1,"regular"));
+listaTipoCli.Add(new TipoClientes(2,"VIP"));
+ 
+//Lista Vehiculos
+var listaVh = new List<Vehiculos>();
+listaVh.Add(new Vehiculos(1,"HSF369",1,listaTipoVh.FirstOrDefault(x => x.Id == 1)));
+listaVh.Add(new Vehiculos(2,"THL666",2,listaTipoVh.FirstOrDefault(x=>x.Id==2)));
+listaVh.Add(new Vehiculos(3,"LDL666",2,listaTipoVh.FirstOrDefault(x=>x.Id==2)));
+listaVh.Add(new Vehiculos(4,"PYK555",1,listaTipoVh.FirstOrDefault(x=>x.Id==1)));
+listaVh.Add(new Vehiculos(5,"NPY693",2,listaTipoVh.FirstOrDefault(x=>x.Id==2)));
+listaVh.Add(new Vehiculos(6,"ETN527",1,listaTipoVh.FirstOrDefault(x=>x.Id==1)));
+listaVh.Add(new Vehiculos(7,"CLT009",1,listaTipoVh.FirstOrDefault(x=>x.Id==1)));
+listaVh.Add(new Vehiculos(8,"FCK911",2,listaTipoVh.FirstOrDefault(x=>x.Id==2)));
+
+//Lista tipoPagos
+var listaTipoPagos = new List<TipoPagos>();
+listaTipoPagos.Add(new TipoPagos(1,"efectivo"));
+listaTipoPagos.Add(new TipoPagos(2,"tarjeta"))
+
+//Lista Parqueaderos
+var listaTipoParqueaderos = new List<Parqueaderos>();
+listaTipoParqueaderos.Add(new Parqueaderos(1,"Parqueaderoo"));
+
+//Lista Tarifas
+var listaTarifas = new List<Tarifas>();
+listaTarifas.Add(new Tarifas(1,"MotoR",9000)));
+listaTarifas.Add(new Tarifas(2,"MotoVIP",15000)));
+listaTarifas.Add(new Tarifas(3,"AutoR",12000)));
+listaTarifas.Add(new Tarifas(4,"AutoVIP",18000)));
+
+//Lista Clientes 
+var listaClientes = new List<Clientes>();
+listaClientes.add(new Clientes(1,"1000","Pedro Sanchez",1,1,1,listaTipoCli.FirstOrDefault(x=>x.Id==1),listaVh.FirstOrDefault(x=>x.Id==1)));
+listaClientes.add(new Clientes(2,"1333","Alex Crowley",2,2,2,listaTipoCli.FirstOrDefault(x=>x.Id==2),listaVh.FirstOrDefault(x=>x.Id==2)));
+listaClientes.add(new Clientes(3,"1333","Alex Crowley",3,2,2,listaTipoCli.FirstOrDefault(x=>x.Id==2),listaVh.FirstOrDefault(x=>x.Id==3)));
+//listaClientes.add(new Clientes(1,"1000","Pedro Sanchez",4,1,1,listaTipoCli.FirstOrDefault(x=>x.Id==1),listaVh.FirstOrDefault(x=>x.Id==1)));
+listaClientes.add(new Clientes(1,"1000","Pedro Sanchez",5,1,1,listaTipoCli.FirstOrDefault(x=>x.Id==1),listaVh.FirstOrDefault(x=>x.Id==1)));
+listaClientes.add(new Clientes(1,"1000","Pedro Sanchez",6,1,1,listaTipoCli.FirstOrDefault(x=>x.Id==1),listaVh.FirstOrDefault(x=>x.Id==1)));
+listaClientes.add(new Clientes(1,"1000","Pedro Sanchez",7,1,1,listaTipoCli.FirstOrDefault(x=>x.Id==1),listaVh.FirstOrDefault(x=>x.Id==1)));
+listaClientes.add(new Clientes(1,"1000","Pedro Sanchez",8,1,1,listaTipoCli.FirstOrDefault(x=>x.Id==1),listaVh.FirstOrDefault(x=>x.Id==1)));
+
 
 public class TipoVehiculos{
     private int id;
