@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("AppParqueadero")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+72334ce657e92a5a5c48c9041560f489f3c2a1f2")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c65d18491b2e1b94abd6c5157df852f6e7a2e1a3")]
 [assembly: System.Reflection.AssemblyProductAttribute("AppParqueadero")]
 [assembly: System.Reflection.AssemblyTitleAttribute("AppParqueadero")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

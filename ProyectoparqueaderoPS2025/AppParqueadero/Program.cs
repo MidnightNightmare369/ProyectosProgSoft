@@ -24,30 +24,42 @@ listaVh.Add(new Vehiculos(8,"FCK911",2,listaTipoVh.FirstOrDefault(x=>x.Id==2)));
 //Lista tipoPagos
 var listaTipoPagos = new List<TipoPagos>();
 listaTipoPagos.Add(new TipoPagos(1,"efectivo"));
-listaTipoPagos.Add(new TipoPagos(2,"tarjeta"))
+listaTipoPagos.Add(new TipoPagos(2,"tarjeta"));
 
 //Lista Parqueaderos
-var listaTipoParqueaderos = new List<Parqueaderos>();
-listaTipoParqueaderos.Add(new Parqueaderos(1,"Parqueaderoo"));
+var listaParqueaderos = new List<Parqueaderos>();
+listaParqueaderos.Add(new Parqueaderos(1,"Parqueaderoo"));
 
 //Lista Tarifas
 var listaTarifas = new List<Tarifas>();
-listaTarifas.Add(new Tarifas(1,"MotoR",9000)));
-listaTarifas.Add(new Tarifas(2,"MotoVIP",15000)));
-listaTarifas.Add(new Tarifas(3,"AutoR",12000)));
-listaTarifas.Add(new Tarifas(4,"AutoVIP",18000)));
+listaTarifas.Add(new Tarifas(1,"MotoR",9000));
+listaTarifas.Add(new Tarifas(2,"MotoVIP",15000));
+listaTarifas.Add(new Tarifas(3,"AutoR",12000));
+listaTarifas.Add(new Tarifas(4,"AutoVIP",18000));
 
 //Lista Clientes 
 var listaClientes = new List<Clientes>();
-listaClientes.add(new Clientes(1,"1000","Pedro Sanchez",1,1,1,listaTipoCli.FirstOrDefault(x=>x.Id==1),listaVh.FirstOrDefault(x=>x.Id==1)));
-listaClientes.add(new Clientes(2,"1333","Alex Crowley",2,2,2,listaTipoCli.FirstOrDefault(x=>x.Id==2),listaVh.FirstOrDefault(x=>x.Id==2)));
-listaClientes.add(new Clientes(3,"1333","Alex Crowley",3,2,2,listaTipoCli.FirstOrDefault(x=>x.Id==2),listaVh.FirstOrDefault(x=>x.Id==3)));
-//listaClientes.add(new Clientes(1,"1000","Pedro Sanchez",4,1,1,listaTipoCli.FirstOrDefault(x=>x.Id==1),listaVh.FirstOrDefault(x=>x.Id==1)));
-listaClientes.add(new Clientes(1,"1000","Pedro Sanchez",5,1,1,listaTipoCli.FirstOrDefault(x=>x.Id==1),listaVh.FirstOrDefault(x=>x.Id==1)));
-listaClientes.add(new Clientes(1,"1000","Pedro Sanchez",6,1,1,listaTipoCli.FirstOrDefault(x=>x.Id==1),listaVh.FirstOrDefault(x=>x.Id==1)));
-listaClientes.add(new Clientes(1,"1000","Pedro Sanchez",7,1,1,listaTipoCli.FirstOrDefault(x=>x.Id==1),listaVh.FirstOrDefault(x=>x.Id==1)));
-listaClientes.add(new Clientes(1,"1000","Pedro Sanchez",8,1,1,listaTipoCli.FirstOrDefault(x=>x.Id==1),listaVh.FirstOrDefault(x=>x.Id==1)));
+listaClientes.Add(new Clientes(1,"1000","Pedro Sanchez",1,1,1,listaTipoCli.FirstOrDefault(x=>x.Id==1),listaVh.FirstOrDefault(x=>x.Id==1)));
+listaClientes.Add(new Clientes(2,"1333","Alex Crowley",2,2,2,listaTipoCli.FirstOrDefault(x=>x.Id==2),listaVh.FirstOrDefault(x=>x.Id==2)));
+listaClientes.Add(new Clientes(3,"1333","Alex Crowley",3,2,2,listaTipoCli.FirstOrDefault(x=>x.Id==2),listaVh.FirstOrDefault(x=>x.Id==3)));
+listaClientes.Add(new Clientes(4,"1369","Juan Zapata",4,2,3,listaTipoCli.FirstOrDefault(x=>x.Id==2),listaVh.FirstOrDefault(x=>x.Id==4)));
+listaClientes.Add(new Clientes(5,"1666","Esteban Gomez",5,1,4,listaTipoCli.FirstOrDefault(x=>x.Id==1),listaVh.FirstOrDefault(x=>x.Id==5)));
+listaClientes.Add(new Clientes(6,"1234","Andres Garcia",6,1,5,listaTipoCli.FirstOrDefault(x=>x.Id==1),listaVh.FirstOrDefault(x=>x.Id==6)));
+listaClientes.Add(new Clientes(7,"1111","Pedro Ortiz",7,1,6,listaTipoCli.FirstOrDefault(x=>x.Id==1),listaVh.FirstOrDefault(x=>x.Id==7)));
+listaClientes.Add(new Clientes(8,"1245","Alvaro Loaiza",8,2,7,listaTipoCli.FirstOrDefault(x=>x.Id==2),listaVh.FirstOrDefault(x=>x.Id==8)));
 
+//Lista ParqueaderoCliente /Preguntar respecto al metodo para el campo total
+var listaParqClientes = new List<ParqueaderoCliente>();
+listaParqClientes.Add(new ParqueaderoCliente(1,2,"A1",18000.0,1,1,1,1,listaTarifas.FirstOrDefault(x=>x.Id==1),listaTipoPagos.FirstOrDefault(x=>x.Id==1),listaClientes.FirstOrDefault(x=>x.Id==1),listaParqueaderos.FirstOrDefault(x=>x.Id==1)));
+listaParqClientes.Add(new ParqueaderoCliente(2,24,"H5",435000.0,4,2,2,1,listaTarifas.FirstOrDefault(x=>x.Id==4),listaTipoPagos.FirstOrDefault(x=>x.Id==2),listaClientes.FirstOrDefault(x=>x.Id==2),listaParqueaderos.FirstOrDefault(x=>x.Id==1)));
+listaParqClientes.Add(new ParqueaderoCliente(3,5,"H6",90000.0,4,2,3,1,listaTarifas.FirstOrDefault(x=>x.Id==4),listaTipoPagos.FirstOrDefault(x=>x.Id==2),listaClientes.FirstOrDefault(x=>x.Id==3),listaParqueaderos.FirstOrDefault(x=>x.Id==1)));
+listaParqClientes.Add(new ParqueaderoCliente(4,12,"E1",180000.0,2,1,4,1,listaTarifas.FirstOrDefault(x=>x.Id==2),listaTipoPagos.FirstOrDefault(x=>x.Id==1),listaClientes.FirstOrDefault(x=>x.Id==4),listaParqueaderos.FirstOrDefault(x=>x.Id==1)));
+listaParqClientes.Add(new ParqueaderoCliente(5,2,"A2",24000.0,3,2,5,1,listaTarifas.FirstOrDefault(x=>x.Id==3),listaTipoPagos.FirstOrDefault(x=>x.Id==2),listaClientes.FirstOrDefault(x=>x.Id==5),listaParqueaderos.FirstOrDefault(x=>x.Id==1)));
+listaParqClientes.Add(new ParqueaderoCliente(6,10,"A6",90000.0,1,1,6,1,listaTarifas.FirstOrDefault(x=>x.Id==1),listaTipoPagos.FirstOrDefault(x=>x.Id==1),listaClientes.FirstOrDefault(x=>x.Id==6),listaParqueaderos.FirstOrDefault(x=>x.Id==1)));
+listaParqClientes.Add(new ParqueaderoCliente(7,5,"A5",45000.0,1,1,7,1,listaTarifas.FirstOrDefault(x=>x.Id==1),listaTipoPagos.FirstOrDefault(x=>x.Id==1),listaClientes.FirstOrDefault(x=>x.Id==7),listaParqueaderos.FirstOrDefault(x=>x.Id==1)));
+listaParqClientes.Add(new ParqueaderoCliente(8,10,"H3",180000.0,4,2,8,1,listaTarifas.FirstOrDefault(x=>x.Id==4),listaTipoPagos.FirstOrDefault(x=>x.Id==2),listaClientes.FirstOrDefault(x=>x.Id==8),listaParqueaderos.FirstOrDefault(x=>x.Id==1)));
+
+Console.WriteLine("All ok");
 
 public class TipoVehiculos{
     private int id;
