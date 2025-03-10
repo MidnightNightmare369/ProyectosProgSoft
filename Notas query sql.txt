@@ -1,0 +1,43 @@
+LECTURA >SELECT <parametro1,par2,...p3> FROM <tabla> WHERE <condicion> PODEMOS CONCATENAR WHERE'S CON AND,OR,NOT
+ SELECT idusuarios,nombre,direccion FROM hello_mysql.usuarios;
+DISTINCT-> para que el campo pedido no se repita y va asi:SELECT DISTINC ...
+ORDER BY-> para ordenar, va lo ultimo y teiene ASC O DESC default es ASC
+ SELECT * FROM hello_mysql.usuarios WHERE edad>18 ORDER BY edad DESC;
+LIKE-> se parece o contiene a,se lanza despues del WHERE nombre LIKE '', '%a%' %->algo
+LIMIT-> se limita cuantos registros trae, va a lo ultimo del todo
+ SELECT * FROM hello_mysql.usuarios WHERE NOT edad<20 AND direccion LIKE 'Calle%' ORDER BY edad DESC;
+IS NULL-> se usa junto el where y varia en IS NOT NULL Y IS NULL: %WHERE direccion IS NOT NULL
+MIN-MAX->muestra el dato minimo o maximo, se escribe despues del SELECT:
+ SELECT MIN(edad) FROM hello_mysql.usuarios;
+COUNT-> cuenta los usuarios que cuentan con datos distinto de null 
+ SELECT COUNT(direccion) FROM hello_mysql.usuarios;
+SUM-> suma los datos seleccionados: SELECT COUNT(direccion) FROM hello_mysql.usuarios;
+AVG-> media SELECT AVG(edad) FROM hello_mysql.usuarios;
+IN-> que un campo tome diferentes valores y concatenar las condiciones, no importa si es may o minus, la condicion  debe coincidir 100/100 
+BEETWEN-> se pone luego del WHERE, y es un intervalo
+
+ 
+ESCRITURA >INSERT INTO <tabla> VALUES <valorcolumna1,valcol2,vaco3,vc4,...>
+Nota: Para insertar datos numeros,"strings",'fechas':
+COMENTARIOS-> -- OR /* ... */
+ALIAS-> AS: SELECT nombre,edad,init_date AS 'Fecha inicio' FROM hello_mysql.usuarios WHERE edad BETWEEN 20 and 35;
+CONCAT->concatenar en una misma columna dos o mas cadenas:
+ SELECT CONCAT ('Id: ',idusuarios,' Edad: ',edad,' Nombre: ',nombre) AS 'Registros' FROM hello_mysql.usuarios;
+
+Actualizar >UPDATE <tabla> SET <atributo="nuevoValor"> WHERE <condicion>
+Borrar >DELETE FROM <tabla> WHERE <condicion>
+
+JOINS, tengamos 2 tablas A y B
+INNER JOIN >elementos que comparten A Y B
+RIGHT JOIN >elementos que comparten A Y B Y elementos de B
+LEFT  JOIN >elementos que comparten A Y B Y elementos de A
+FULL  JOIN >elementos de A y elementos de B
+//USO Explicito>
+SELECT * 
+FROM empleado INNER JOIN departamento 
+ON empleado.id_apartamento = departamento.id_apartamento
+//USO implicito>
+SELECT * 
+FROM emplead, departamento 
+WHERE empleado.id_apartamento = departamento.id_apartamento
+
