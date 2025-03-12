@@ -1,0 +1,28 @@
+usando adventureworks2019
+
+--CLASE 12-
+SELECT * FROM SalesLT.SalesOrderHeader;
+SELECT * FROM SalesLT.Customer;
+SELECT * FROM SalesLT.SalesOrderDetail ORDER BY SalesLT.SalesOrderDetail.OrderQty ASC;
+
+
+--INFORME DE VENTAS DE LOS CLIENTES CON VENTAS SUPERIORES A 5000
+--NESECITAMOS CLIENTES Y VENTAS 
+
+SELECT SC.FirstName+' '+SC.LastName AS NombreCompleto, SS.TotalDue
+FROM SalesLT.Customer SC
+INNER JOIN SalesLT.SalesOrderHeader SS
+ON SC.CustomerID = SS.CustomerID 
+WHERE SS.TotalDue >= 5000 ORDER BY SS.TotalDue DESC
+
+--teniendo en cuenta el informe anterior mostrar los productos que compro el cliente y agrupar las ventas por ciudad del cliente 
+
+SELECT SC.FirstName+' '+SC.LastName AS NombreCompleto, SS.TotalDue, SP.[Name] AS NombreProducto, SA.City AS Ciudad
+FROM SalesLT.Customer SC
+INNER JOIN SalesLT.SalesOrderHeader SS ON SC.CustomerID = SS.CustomerID 
+INNER JOIN SalesLT.[Address] SA ON SA.AddressID = SS.ShipToAddressID
+INNER JOIN SalesLT.SalesOrderDetail SOD ON SS.SalesOrderID = SOD.SalesOrderID
+INNER JOIN SalesLT.Product SP ON SP.ProductID = SOD.ProductID
+WHERE SS.TotalDue >= 5000 ORDER BY SS.TotalDue DESC
+
+  
