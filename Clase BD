@@ -23,6 +23,6 @@ INNER JOIN SalesLT.SalesOrderHeader SS ON SC.CustomerID = SS.CustomerID
 INNER JOIN SalesLT.[Address] SA ON SA.AddressID = SS.ShipToAddressID
 INNER JOIN SalesLT.SalesOrderDetail SOD ON SS.SalesOrderID = SOD.SalesOrderID
 INNER JOIN SalesLT.Product SP ON SP.ProductID = SOD.ProductID
-WHERE SS.TotalDue >= 5000 ORDER BY SS.TotalDue DESC
+WHERE SS.TotalDue >= 5000 ORDER BY SA.City DESC
 
   
