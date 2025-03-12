@@ -15,6 +15,18 @@ SUM-> suma los datos seleccionados: SELECT COUNT(direccion) FROM hello_mysql.usu
 AVG-> media SELECT AVG(edad) FROM hello_mysql.usuarios;
 IN-> que un campo tome diferentes valores y concatenar las condiciones, no importa si es may o minus, la condicion  debe coincidir 100/100 
 BEETWEN-> se pone luego del WHERE, y es un intervalo
+GROUP BY-> Agrupa filas que tienen los mismos valores, se pone despues del WHERE
+ SELECT COUNT(edad),edad edad FROM usuarios WHERE edad<35 GROUP BY edad ORDER BY COUNT(edad) ASC;
+HAVING-> Se usa para limitar el resultado de una columna consultada 
+ SELECT COUNT(edad) FROM usuarios HAVING COUNT(edad)>9
+CASE-> es como un tipo de if, crea una nueva columna
+  SELECT *, 
+ CASE 
+     WHEN age >20 THEN 'Es mayor de edad'
+     ELSE 'Es menor de edad'
+ END AS edadText
+ FROM usuarios;    
+IFNULL-> se le pasa un parametro para "pintar" donde se nullo
 
  
 ESCRITURA >INSERT INTO <tabla> VALUES <valorcolumna1,valcol2,vaco3,vc4,...>
