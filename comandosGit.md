@@ -1,11 +1,15 @@
 Comandos de git: 
+
 Ramas: crear -> branch <nombreRama> 
 Eliminar -> branch -d <nombreRama>
+Unir rama -> git mege <id>
+
 moverse por ramas:
 mover HEAD-> checkout 
 mover MAIN-> reset --hard 
 Crear RAMA-> branch
 Moverse a una rama -> switch <nombre>
+
 Cambios temporales -> stash /recuperar -> stash pop
 eliminar -> stash drop / ver lista -> stash list 
 
