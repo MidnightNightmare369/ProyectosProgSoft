@@ -1,55 +1,175 @@
-LECTURA >SELECT <parametro1,par2,...p3> FROM <tabla> WHERE <condicion> PODEMOS CONCATENAR WHERE'S CON AND,OR,NOT
+--------------------------------------------LECTURA------------------------------------------------------------
+
+>SELECT <parametro1,par2,...p3> FROM <tabla> WHERE <condicion> PODEMOS CONCATENAR WHERE'S CON AND,OR,NOT
  SELECT idusuarios,nombre,direccion FROM hello_mysql.usuarios;
-DISTINCT-> para que el campo pedido no se repita y va asi:SELECT DISTINC ...
-ORDER BY-> para ordenar, va lo ultimo y teiene ASC O DESC default es ASC
+
+<DISTINCT-> para que el campo pedido no se repita y va asi:SELECT DISTINC ...
+
+<ORDER BY-> para ordenar, va lo ultimo y teiene ASC O DESC default es ASC
  SELECT * FROM hello_mysql.usuarios WHERE edad>18 ORDER BY edad DESC;
-LIKE-> se parece o contiene a,se lanza despues del WHERE nombre LIKE '', '%a%' %->algo
-LIMIT-> se limita cuantos registros trae, va a lo ultimo del todo
+
+<LIKE-> se parece o contiene a,se lanza despues del WHERE nombre LIKE '', '%a%' %->algo
+
+<LIMIT-> se limita cuantos registros trae, va a lo ultimo del todo
  SELECT * FROM hello_mysql.usuarios WHERE NOT edad<20 AND direccion LIKE 'Calle%' ORDER BY edad DESC;
-IS NULL-> se usa junto el where y varia en IS NOT NULL Y IS NULL: %WHERE direccion IS NOT NULL
-MIN-MAX->muestra el dato minimo o maximo, se escribe despues del SELECT:
+
+<IS NULL-> se usa junto el where y varia en IS NOT NULL Y IS NULL: %WHERE direccion IS NOT NULL
+
+<MIN-MAX->muestra el dato minimo o maximo, se escribe despues del SELECT:
  SELECT MIN(edad) FROM hello_mysql.usuarios;
-COUNT-> cuenta los usuarios que cuentan con datos distinto de null 
+
+<COUNT-> cuenta los usuarios que cuentan con datos distinto de null 
  SELECT COUNT(direccion) FROM hello_mysql.usuarios;
-SUM-> suma los datos seleccionados: SELECT COUNT(direccion) FROM hello_mysql.usuarios;
-AVG-> media SELECT AVG(edad) FROM hello_mysql.usuarios;
-IN-> que un campo tome diferentes valores y concatenar las condiciones, no importa si es may o minus, la condicion  debe coincidir 100/100 
-BEETWEN-> se pone luego del WHERE, y es un intervalo
-GROUP BY-> Agrupa filas que tienen los mismos valores, se pone despues del WHERE
+
+<SUM-> suma los datos seleccionados: SELECT COUNT(direccion) FROM hello_mysql.usuarios;
+
+<AVG-> media SELECT AVG(edad) FROM hello_mysql.usuarios;
+
+<IN-> que un campo tome diferentes valores y concatenar las condiciones, no importa si es may o minus, la  condicion  debe coincidir 100/100 
+
+<BEETWEN-> se pone luego del WHERE, y es un intervalo
+
+<GROUP BY-> Agrupa filas que tienen los mismos valores, se pone despues del WHERE
  SELECT COUNT(edad),edad edad FROM usuarios WHERE edad<35 GROUP BY edad ORDER BY COUNT(edad) ASC;
-HAVING-> Se usa para limitar el resultado de una columna consultada 
+
+<HAVING-> Se usa para limitar el resultado de una columna consultada 
  SELECT COUNT(edad) FROM usuarios HAVING COUNT(edad)>9
-CASE-> es como un tipo de if, crea una nueva columna
+
+<CASE-> es como un tipo de if, crea una nueva columna
   SELECT *, 
  CASE 
      WHEN age >20 THEN 'Es mayor de edad'
      ELSE 'Es menor de edad'
  END AS edadText
  FROM usuarios;    
-IFNULL-> se le pasa un parametro para "pintar" donde se nullo
 
- 
-ESCRITURA >INSERT INTO <tabla> VALUES <valorcolumna1,valcol2,vaco3,vc4,...>
-Nota: Para insertar datos numeros,"strings",'fechas':
-COMENTARIOS-> -- OR /* ... */
-ALIAS-> AS: SELECT nombre,edad,init_date AS 'Fecha inicio' FROM hello_mysql.usuarios WHERE edad BETWEEN 20 and 35;
-CONCAT->concatenar en una misma columna dos o mas cadenas:
+<IFNULL-> se le pasa un parametro para "pintar" donde se nullo
+ SELECT nombre,edad,IFNULL (direccion,'no data') AS direccion FROM usuarios;
+
+<ALIAS-> AS: SELECT nombre,edad,init_date _AS 'Fecha inicio'_ FROM hello_mysql.usuarios WHERE xCosa;
+
+<CONCAT->concatenar en una misma columna dos o mas cadenas:
  SELECT CONCAT ('Id: ',idusuarios,' Edad: ',edad,' Nombre: ',nombre) AS 'Registros' FROM hello_mysql.usuarios;
 
-Actualizar >UPDATE <tabla> SET <atributo="nuevoValor"> WHERE <condicion>
-Borrar >DELETE FROM <tabla> WHERE <condicion>
+Nota: <COMENTARIOS-> -- OR /* ... */
+ 
+-----------------------------------------------ESCRITURA---------------------------------------------------
+<INSERT INTO-> INSERT INTO tablax (campos) VALUES (valores), los campos deben ser exactos 
+ INSERT INTO usuarios (idusuarios,edad,nombre,direccion,init_date) VALUES (null,17,'Mariano','Calle58','2020-11-25');
 
-JOINS, tengamos 2 tablas A y B
-INNER JOIN >elementos que comparten A Y B
-RIGHT JOIN >elementos que comparten A Y B Y elementos de B
-LEFT  JOIN >elementos que comparten A Y B Y elementos de A
-FULL  JOIN >elementos de A y elementos de B
-//USO Explicito>
-SELECT * 
-FROM empleado INNER JOIN departamento 
-ON empleado.id_apartamento = departamento.id_apartamento
-//USO implicito>
-SELECT * 
-FROM emplead, departamento 
-WHERE empleado.id_apartamento = departamento.id_apartamento
+<UPDATE-> UPDATE tablax SET campox=valorx,campo1x=valor1x WHERE condicion x: 
+ UPDATE usuarios SET edad=21 WHERE idusuarios = 11;
+ UPDATE usuarios SET edad=21, nombre='Manuel' WHERE idusuarios = 11;
+
+<DELETE-> DELETE FROM tablax WHERE condicionx
+ DELETE FROM usuarios WHERE idusuarios=12;
+
+-------------------------------------ADMINISTRACION DE BASE DE DATOS------------------------------
+
+<CREATE DATABASE test1> CREAR
+<DROP DATABASE test1> BORRAR
+
+-------------------------------------ADMINISTRACION DE TABLAS-------------------------------------
+notas: int,String->Varchar(long),fecha->date // actual->CURRENT_DATE, fechayhora->datetime //ac->...
+
+<CREATE TABLE test1 (columna1 TipodeDato Restriccion,columna2 ....);> 
+ CREATE TABLE test2(
+ id int NOT NULL UNIQUE PRIMARY KEY,
+ nombre varchar(50) NOT NULL,
+ edad int,
+ email varchar(50),
+ creado date
+ ); 
+
+<CONSTRAINTS-> NOTA: CONSTRAINT=Restriccion //  1-NOT NULL=NO PERMITE DEJAR DICHO VALOR NULO, 2-UNIQUE->INDICA QUE  DICHO PARAMETRO NO SE PUEDE REPETIR, 3-PRIMARY KEY, 4-CHECK(condicion), 5-DEFAULT (el valor si no se pone nada),
+ 6-AUTO_INCREMENT
+
+ CREATE TABLE test2(
+ id int NOT NULL UNIQUE PRIMARY KEY AUTO_INCREMENT,
+ nombre varchar(50) NOT NULL,
+ edad int,
+ email varchar(50),
+ creado date DEFAULT (CURRENT_DATE)
+ );
+
+<DROP TABLE tablax> Borrar tabla
+
+<ALTER TABLE tablax-> 1-ADD valorx tipo>añadir columna. 2-RENAME COLUMN nombre TO nombreNuevo 3-MODIFY COLUMN columna tipoNuevo>cambiar tipo de dato. 4-DROP COLUMN
+
+-----------------------------------------------RELACIONES---------------------------------------------------
+
+1:1 
+CREATE TABLE dni(
+dniId int AUTO_INCREMENT PRIMARY KEY,
+dniNumber int NOT NULL,
+idusuario int,
+UNIQUE(dniId),
+FOREIGN KEY (idusuario) REFERENCES usuarios(idusuarios)
+);
+
+1:M
+
+CREATE TABLE companies(
+companyId int AUTO_INCREMENT PRIMARY KEY,
+name varchar(100) NOT NULL
+);
+
+ALTER TABLE usuarios
+ADD CONSTRAINT fk_companies
+FOREIGN KEY (companyId) REFERENCES companies(companyId);
+
+N:M
+
+CREATE TABLE languages(
+languagesidint AUTO_INCREMENT PRIMARY KEY,
+name varchar(50) NOT NULL
+);
+
+CREATE TABLE usuariosLanguages(
+usersLanguagesId int AUTO_INCREMENT PRIMARY KEY,
+userid int,
+languageid int,
+FOREIGN KEY (userid) REFERENCES usuarios(idusuarios),
+FOREIGN KEY (languageid) REFERENCES languages(languagesid),
+UNIQUE (userid,languageid)
+);
+
+-----------------------------------------------JOINS---------------------------------------------------
+
+<INNER JOIN> Obtiene los datos comunes entre dos tablas, si ejecutamos sobre mas tablas podremos consultar datos de las otras tablas, no importa el "orden" de relacion 
+1:1
+ SELECT * FROM usuarios /OR/ SELECT nombre, edad, direccion, TD.dniNumber FROM usuarios
+ INNER JOIN dni TD --Unido a la tabla dni 
+ ON usuarios.idusuarios = TD.idusuario --donde el campo1(campo de comparacion) idusuarios de usuarios=idusuario de dni
+1:N
+ SELECT idusuarios, nombre, CP.name FROM usuarios 
+ INNER JOIN companies CP
+ ON usuarios.companyId = CP.companyId
+N:M
+ SELECT userid,TU.nombre,TL.name FROM usuarioslanguages TUL
+ INNER JOIN usuarios TU ON TUL.userid = TU.idusuarios
+ INNER JOIN languages TL ON TUL.languageid = TL.languagesId
+
+<LEFT JOIN> Si tenemos una tabla A y B el LEFT JOIN se trae con la tabla A incluyendo los datos comunes con B, y rellena con nulos los datos no coincidentes pertenecientes la tabla A 
+ SELECT name,TUL.languageid,TUL.userid,TU.nombre FROM languages TL
+ LEFT JOIN usuarioslanguages TUL ON TUL.languageid = TL.languagesId
+ LEFT JOIN usuarios TU ON TUL.userid = TU.idusuarios
+ ORDER BY TU.nombre DESC
+
+<RIGHT JOIN> Si tenemos una tabla A y B el RIGHT JOIN se trae con la tabla B incluyendo los datos comunes con A, y rellena con nulos los datos no coincidentes pertenecientes la tabla B 
+ SELECT * FROM usuarios TU
+ RIGHT JOIN dni TD
+ ON TU.idusuarios = TD.idusuario;
+
+ SELECT name,TUL.languageid,TUL.userid,TU.nombre FROM languages TL
+ RIGHT JOIN usuarioslanguages TUL ON TUL.languageid = TL.languagesId
+ RIGHT JOIN usuarios TU ON TUL.userid = TU.idusuarios;
+
+<FULL JOIN--UNION> Si tenemos una tabla A y B el FULL JOIN se trae todos los datos de A y B
+ SELECT * FROM usuarios TU
+ LEFT JOIN dni TD ON TU.idusuarios = TD.idusuario
+ UNION
+ SELECT * FROM usuarios TU
+ RIGHT JOIN dni TD ON TU.idusuarios = TD.idusuario
+
 
