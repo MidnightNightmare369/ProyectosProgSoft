@@ -1,0 +1,27 @@
+---------------------------Pasos para conectar codigo a sql (CODE FIRST)---------------------------
+
+1-Crear un namespace que contenga las clases y sus atributos
+2-Crear el script de sql y ejecutarlo en algun Server Managment
+3-Instalar las dependencias: 
+-dotnet add package Microsoft.EntityFrameworkCore.SqlServer --version 7.0.20
+-dotnet add package Microsoft.EntityFrameworkCore.Tools --version 7.0.20
+-dotnet add package Newtonsoft.Json --version 13.0.3    
+4-Configurar el archivo conexion
+
+-------------------------------------Conexion en Visual Studio 2022---------------------------------- 
+
+Nota: Para visualizar bien el proyecto abir el .sln
+
+1-Crear 4 carpetas "principales" -> {1.Presentaciones, 2.Sevicios, 3.Nucleo, 4.Pruebas unitarias}
+
+2-Empezamos creando una libreria de clases (lib_dominio) en la carpeta 3-Nucleo-> Creamos una carpeta llamada Entidades que contenga un archivo de C# con nuestras clases y sus atibutos.
+
+3-Creamos una libreria de clases (lib_repositorios) en la carpeta 2-Servicios-> creamos el Script.sql y lo corremos en un DBMS
+
+4-Creamos 2 carpetas {2.1-Implementaciones, 2.2-Interfaces} en la carpeta 2-Servicios->
+2.1 Creamos un archivo C# llamado Conexion que contendra el DBContext
+2.2 Creamos un archivo C# tipo interfaz llamado IConexion que contendra el DBContext
+Y como ultimo instalamos los paquetes nutget de Microsoft.EntityFramework en nuestra libreria (lib_repositorios) 
+
+5-En la carpeta presentaciones creamos un proyecto tipo Consola el cual sera el main y una carpeta llamada repositorios que contendra una clase llamada Repositorios.cs la cual contendra todos los metodos relacionados a la BD Sql. Despues para que todo funcione debemos "Agregar referencias del proyecto" e instalar el paquete nutget Microsoft.EntityFramework
+
