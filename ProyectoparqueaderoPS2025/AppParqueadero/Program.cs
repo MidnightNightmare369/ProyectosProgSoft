@@ -48,16 +48,16 @@ listaClientes.Add(new Clientes(6,"1234","Andres Garcia",6,1,5,listaTipoCli.First
 listaClientes.Add(new Clientes(7,"1111","Pedro Ortiz",7,1,6,listaTipoCli.FirstOrDefault(x=>x.Id==1),listaVh.FirstOrDefault(x=>x.Id==7)));
 listaClientes.Add(new Clientes(8,"1245","Alvaro Loaiza",8,2,7,listaTipoCli.FirstOrDefault(x=>x.Id==2),listaVh.FirstOrDefault(x=>x.Id==8)));
 
-//Lista ParqueaderoCliente /Preguntar respecto al metodo para el campo total
-var listaParqClientes = new List<ParqueaderoCliente>();
-listaParqClientes.Add(new ParqueaderoCliente(1,2,"A1",18000.0,1,1,1,1,listaTarifas.FirstOrDefault(x=>x.Id==1),listaTipoPagos.FirstOrDefault(x=>x.Id==1),listaClientes.FirstOrDefault(x=>x.Id==1),listaParqueaderos.FirstOrDefault(x=>x.Id==1)));
-listaParqClientes.Add(new ParqueaderoCliente(2,24,"H5",435000.0,4,2,2,1,listaTarifas.FirstOrDefault(x=>x.Id==4),listaTipoPagos.FirstOrDefault(x=>x.Id==2),listaClientes.FirstOrDefault(x=>x.Id==2),listaParqueaderos.FirstOrDefault(x=>x.Id==1)));
-listaParqClientes.Add(new ParqueaderoCliente(3,5,"H6",90000.0,4,2,3,1,listaTarifas.FirstOrDefault(x=>x.Id==4),listaTipoPagos.FirstOrDefault(x=>x.Id==2),listaClientes.FirstOrDefault(x=>x.Id==3),listaParqueaderos.FirstOrDefault(x=>x.Id==1)));
-listaParqClientes.Add(new ParqueaderoCliente(4,12,"E1",180000.0,2,1,4,1,listaTarifas.FirstOrDefault(x=>x.Id==2),listaTipoPagos.FirstOrDefault(x=>x.Id==1),listaClientes.FirstOrDefault(x=>x.Id==4),listaParqueaderos.FirstOrDefault(x=>x.Id==1)));
-listaParqClientes.Add(new ParqueaderoCliente(5,2,"A2",24000.0,3,2,5,1,listaTarifas.FirstOrDefault(x=>x.Id==3),listaTipoPagos.FirstOrDefault(x=>x.Id==2),listaClientes.FirstOrDefault(x=>x.Id==5),listaParqueaderos.FirstOrDefault(x=>x.Id==1)));
-listaParqClientes.Add(new ParqueaderoCliente(6,10,"A6",90000.0,1,1,6,1,listaTarifas.FirstOrDefault(x=>x.Id==1),listaTipoPagos.FirstOrDefault(x=>x.Id==1),listaClientes.FirstOrDefault(x=>x.Id==6),listaParqueaderos.FirstOrDefault(x=>x.Id==1)));
-listaParqClientes.Add(new ParqueaderoCliente(7,5,"A5",45000.0,1,1,7,1,listaTarifas.FirstOrDefault(x=>x.Id==1),listaTipoPagos.FirstOrDefault(x=>x.Id==1),listaClientes.FirstOrDefault(x=>x.Id==7),listaParqueaderos.FirstOrDefault(x=>x.Id==1)));
-listaParqClientes.Add(new ParqueaderoCliente(8,10,"H3",180000.0,4,2,8,1,listaTarifas.FirstOrDefault(x=>x.Id==4),listaTipoPagos.FirstOrDefault(x=>x.Id==2),listaClientes.FirstOrDefault(x=>x.Id==8),listaParqueaderos.FirstOrDefault(x=>x.Id==1)));
+//Lista ParqueaderosClientes /Preguntar respecto al metodo para el campo total
+var listaParqClientes = new List<ParqueaderosClientes>();
+listaParqClientes.Add(new ParqueaderosClientes(1,2,"A1",18000.0,1,1,1,1,listaTarifas.FirstOrDefault(x=>x.Id==1),listaTipoPagos.FirstOrDefault(x=>x.Id==1),listaClientes.FirstOrDefault(x=>x.Id==1),listaParqueaderos.FirstOrDefault(x=>x.Id==1)));
+listaParqClientes.Add(new ParqueaderosClientes(2,24,"H5",435000.0,4,2,2,1,listaTarifas.FirstOrDefault(x=>x.Id==4),listaTipoPagos.FirstOrDefault(x=>x.Id==2),listaClientes.FirstOrDefault(x=>x.Id==2),listaParqueaderos.FirstOrDefault(x=>x.Id==1)));
+listaParqClientes.Add(new ParqueaderosClientes(3,5,"H6",90000.0,4,2,3,1,listaTarifas.FirstOrDefault(x=>x.Id==4),listaTipoPagos.FirstOrDefault(x=>x.Id==2),listaClientes.FirstOrDefault(x=>x.Id==3),listaParqueaderos.FirstOrDefault(x=>x.Id==1)));
+listaParqClientes.Add(new ParqueaderosClientes(4,12,"E1",180000.0,2,1,4,1,listaTarifas.FirstOrDefault(x=>x.Id==2),listaTipoPagos.FirstOrDefault(x=>x.Id==1),listaClientes.FirstOrDefault(x=>x.Id==4),listaParqueaderos.FirstOrDefault(x=>x.Id==1)));
+listaParqClientes.Add(new ParqueaderosClientes(5,2,"A2",24000.0,3,2,5,1,listaTarifas.FirstOrDefault(x=>x.Id==3),listaTipoPagos.FirstOrDefault(x=>x.Id==2),listaClientes.FirstOrDefault(x=>x.Id==5),listaParqueaderos.FirstOrDefault(x=>x.Id==1)));
+listaParqClientes.Add(new ParqueaderosClientes(6,10,"A6",90000.0,1,1,6,1,listaTarifas.FirstOrDefault(x=>x.Id==1),listaTipoPagos.FirstOrDefault(x=>x.Id==1),listaClientes.FirstOrDefault(x=>x.Id==6),listaParqueaderos.FirstOrDefault(x=>x.Id==1)));
+listaParqClientes.Add(new ParqueaderosClientes(7,5,"A5",45000.0,1,1,7,1,listaTarifas.FirstOrDefault(x=>x.Id==1),listaTipoPagos.FirstOrDefault(x=>x.Id==1),listaClientes.FirstOrDefault(x=>x.Id==7),listaParqueaderos.FirstOrDefault(x=>x.Id==1)));
+listaParqClientes.Add(new ParqueaderosClientes(8,10,"H3",180000.0,4,2,8,1,listaTarifas.FirstOrDefault(x=>x.Id==4),listaTipoPagos.FirstOrDefault(x=>x.Id==2),listaClientes.FirstOrDefault(x=>x.Id==8),listaParqueaderos.FirstOrDefault(x=>x.Id==1)));
 
 Console.WriteLine("All ok");
 
@@ -97,7 +97,7 @@ public class TipoPagos{
     public int Id {get => id; set=>id=value;}
     public String? TipoPago{get => tipoPago; set=>tipoPago=value;}
 
-    public List<ParqueaderoCliente>? parqueaderoClientes {get;set;}
+    public List<ParqueaderosClientes>? parqueaderosClientes {get;set;}
 }
 
 public class Tarifas{
@@ -113,7 +113,7 @@ public class Tarifas{
     public String? Tipo{get => tipo; set => tipo=value;}
     public Double Valor{get => valor;set => valor=value;}
     
-    public List<ParqueaderoCliente>? parqueaderoClientes {get;set;}
+    public List<ParqueaderosClientes>? parqueaderosClientes {get;set;}
 }
 
 public class Parqueaderos{
@@ -126,7 +126,7 @@ public class Parqueaderos{
     public int Id {get => id; set=>id=value;}
     public String? Nombre{get => nombre; set => nombre=value;}
     
-    public List<ParqueaderoCliente>? parqueaderoClientes {get;set;}
+    public List<ParqueaderosClientes>? parqueaderosClientes {get;set;}
 }
 
 public class Vehiculos{
@@ -177,10 +177,10 @@ public class Clientes{
         this._vehiculo=_vehiculo;
     }
 
-    public List<ParqueaderoCliente>? parqueaderoClientes {get;set;}
+    public List<ParqueaderosClientes>? parqueaderosClientes {get;set;}
 }
 
-public class ParqueaderoCliente{
+public class ParqueaderosClientes{
     private int id;
     private double tiempo;
     private string? posicion;
@@ -204,7 +204,7 @@ public class ParqueaderoCliente{
     public int Cliente { get => cliente; set => cliente = value; }
     public int Parqueadero { get => parqueadero; set => parqueadero = value; }
     
-    public ParqueaderoCliente(int id, double tiempo, string? posicion, double total, int tarifa, int tipoPago, int cliente, int parqueadero,Tarifas? tarifaObj, TipoPagos? tipoPagoObj, Clientes? clienteObj, Parqueaderos? parqueaderoObj)
+    public ParqueaderosClientes(int id, double tiempo, string? posicion, double total, int tarifa, int tipoPago, int cliente, int parqueadero,Tarifas? tarifaObj, TipoPagos? tipoPagoObj, Clientes? clienteObj, Parqueaderos? parqueaderoObj)
     {
         this.Id = id;
         this.Tiempo = tiempo;
@@ -219,9 +219,6 @@ public class ParqueaderoCliente{
         this._cliente = clienteObj;
         this._parqueadero = parqueaderoObj;
     }
-
-
-
 }
 
 
