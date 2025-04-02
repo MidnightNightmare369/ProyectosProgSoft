@@ -31,7 +31,7 @@ CREATE TABLE Vehiculos (
 
 CREATE TABLE Clientes (
     Id INT PRIMARY KEY IDENTITY(1,1),
-    Cedula NVARCHAR(20) NOT NULL, -- Se asume que la cedula se puede repetir
+    Cedula NVARCHAR(20) NOT NULL, -- Se asume que la cedula se puede repetir por eso no la deje UNIQUE
     Nombre NVARCHAR(100) NOT NULL,
     Vehiculo INT NOT NULL,
     TipoCliente INT NOT NULL,

@@ -13,7 +13,7 @@ namespace Cns_presentacion.Repositorios
             Console.WriteLine("MOSTRAR DATOS");
 
             var conexion = new Conexion();
-            conexion.StringConnection = this.string_conexion;
+            conexion.StringConexion = this.string_conexion;
 
             /*var lista = conexion.ParqueaderosClientes!.ToList();
 

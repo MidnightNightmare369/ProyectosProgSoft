@@ -6,11 +6,11 @@ using libr_dominio.Entidades;
 namespace libr_repositorios.Implementaciones
 {    public partial class Conexion : DbContext, IConexion
     {
-        public string? StringConnection { get; set; }
+        public string? StringConexion { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer(this.StringConnection!, p => { });
+            optionsBuilder.UseSqlServer(this.StringConexion!, p => { });
             optionsBuilder.UseQueryTrackingBehavior(QueryTrackingBehavior.NoTracking);
         }
 
@@ -22,5 +22,6 @@ namespace libr_repositorios.Implementaciones
         public DbSet<Vehiculos>? Vehiculos { get; set; }
         public DbSet<ParqueaderosClientes>? ParqueaderosClientes { get; set; }
         public DbSet<Clientes>? Clientes { get; set; }
+
     }
 }
