@@ -15,7 +15,7 @@ namespace Cns_presentacion.Repositorios
             var conexion = new Conexion();
             conexion.StringConexion = this.string_conexion;
 
-            /*var lista = conexion.ParqueaderosClientes!.ToList();
+            var lista = conexion.ParqueaderosClientes!.ToList();
 
             foreach (var elemento in lista)
             {
@@ -26,55 +26,44 @@ namespace Cns_presentacion.Repositorios
                     elemento.Tarifa.ToString() + "|" +
                     elemento.TipoPago.ToString() + "|" +
                     elemento.Cliente.ToString() + "|" +
-                    elemento.Parqueadero.ToString());
+                    elemento.Parqueadero.ToString() + "|" 
+                    );
             }
-            */
-            var lista = conexion.Vehiculos!.ToList();
-
-            foreach (var elemento in lista)
-            {
-                Console.WriteLine(elemento.Id.ToString() + "|" +
-                    elemento.Placa + "|" +
-                    elemento.TipoVehiculo.ToString() + "|" );
-            }
+            
 
             Console.WriteLine(Environment.NewLine);
         }
 
-        /*public void Insert()
+        public void Insert()
         {
             var conexion = new Conexion();
-            conexion.StringConnection = this.string_conexion;
+            conexion.StringConexion = this.string_conexion;
 
-            var entidad = new Notas();
-            entidad.Estudiante = "Pruebas";
-            entidad.Materia = "Pruebas";
-            entidad.Nota1 = 2.4m;
-            entidad.Nota2 = 4.5m;
-            entidad.Nota3 = 3.8m;
-            entidad.Nota4 = 1.7m;
-            entidad.Nota5 = 3.7m;
-            entidad.NotaFinal = 0.0m;
-            entidad.Fecha = DateTime.Now;
+            var entidad = new ParqueaderosClientes();
+            entidad.Tiempo = 2.5m;
+            entidad.Posicion = "A1PRUEBA";
+            entidad.Total = 7500.0m;
+            entidad.Tarifa = 1;     
+            entidad.TipoPago = 1;
+            entidad.Cliente = 1;  
+            entidad.Parqueadero = 1; 
 
-            conexion.Notas!.Add(entidad);
+            conexion.ParqueaderosClientes!.Add(entidad);
             conexion.SaveChanges();
         }
 
         public void Update()
         {
             var conexion = new Conexion();
-            conexion.StringConnection = this.string_conexion;
+            conexion.StringConexion = this.string_conexion;
 
-            var entidad = conexion.Notas!
-                .FirstOrDefault(x => x.Estudiante == "Pruebas");
+            var entidad = conexion.ParqueaderosClientes!.FirstOrDefault(x => x.Posicion == "A1PRUEBA");
             if (entidad == null)
                 return;
 
-            entidad.NotaFinal =
-                (entidad.Nota1 + entidad.Nota2 + entidad.Nota3 + entidad.Nota4 + entidad.Nota5) / 5;
+            entidad.Total = entidad.Tiempo * entidad.Tarifa;
 
-            var entry = conexion.Entry<Notas>(entidad);
+            var entry = conexion.Entry<ParqueaderosClientes>(entidad);
             entry.State = EntityState.Modified;
             conexion.SaveChanges();
         }
@@ -82,17 +71,16 @@ namespace Cns_presentacion.Repositorios
         public void Delete()
         {
             var conexion = new Conexion();
-            conexion.StringConnection = this.string_conexion;
+            conexion.StringConexion = this.string_conexion;
 
-            var entidad = conexion.Notas!
-                .FirstOrDefault(x => x.Estudiante == "Pruebas");
+            var entidad = conexion.ParqueaderosClientes!.FirstOrDefault(x => x.Posicion == "A1PRUEBA");
 
             if (entidad == null)
                 return;
 
-            conexion.Notas!.Remove(entidad);
+            conexion.ParqueaderosClientes!.Remove(entidad);
             conexion.SaveChanges();
-        }*/
+        }
 
     }
 }

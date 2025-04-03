@@ -23,6 +23,12 @@ CREATE TABLE Parqueaderos (
     Nombre NVARCHAR(100) NOT NULL UNIQUE
 );
 
+CREATE TABLE Tarifas (
+    Id INT PRIMARY KEY IDENTITY(1,1),
+    Tipo NVARCHAR(50) NOT NULL,
+    Valor DECIMAL(18,2) NOT NULL
+);
+
 CREATE TABLE Vehiculos (
     Id INT PRIMARY KEY IDENTITY(1,1),
     Placa NVARCHAR(20) NOT NULL UNIQUE,
@@ -52,12 +58,6 @@ CREATE TABLE ParqueaderosClientes (
     FOREIGN KEY (TipoPago) REFERENCES TipoPagos(Id),
     FOREIGN KEY (Cliente) REFERENCES Clientes(Id),
     FOREIGN KEY (Parqueadero) REFERENCES Parqueaderos(Id)
-);
-
-CREATE TABLE Tarifas (
-    Id INT PRIMARY KEY IDENTITY(1,1),
-    Tipo NVARCHAR(50) NOT NULL,
-    Valor DECIMAL(18,2) NOT NULL
 );
 
 -- Insertar datos en TipoVehiculos
