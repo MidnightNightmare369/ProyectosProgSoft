@@ -1,0 +1,11 @@
+C:\Users\Alvaro\source\repos\Proyecto Parqueadero\bin\Debug\net8.0\Proyecto Parqueadero.deps.json
+C:\Users\Alvaro\source\repos\Proyecto Parqueadero\bin\Debug\net8.0\Proyecto Parqueadero.dll
+C:\Users\Alvaro\source\repos\Proyecto Parqueadero\bin\Debug\net8.0\Proyecto Parqueadero.pdb
+C:\Users\Alvaro\source\repos\Proyecto Parqueadero\obj\Debug\net8.0\Proyecto Parqueadero.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Alvaro\source\repos\Proyecto Parqueadero\obj\Debug\net8.0\Proyecto Parqueadero.AssemblyInfoInputs.cache
+C:\Users\Alvaro\source\repos\Proyecto Parqueadero\obj\Debug\net8.0\Proyecto Parqueadero.AssemblyInfo.cs
+C:\Users\Alvaro\source\repos\Proyecto Parqueadero\obj\Debug\net8.0\Proyecto Parqueadero.csproj.CoreCompileInputs.cache
+C:\Users\Alvaro\source\repos\Proyecto Parqueadero\obj\Debug\net8.0\Proyecto Parqueadero.dll
+C:\Users\Alvaro\source\repos\Proyecto Parqueadero\obj\Debug\net8.0\refint\Proyecto Parqueadero.dll
+C:\Users\Alvaro\source\repos\Proyecto Parqueadero\obj\Debug\net8.0\Proyecto Parqueadero.pdb
+C:\Users\Alvaro\source\repos\Proyecto Parqueadero\obj\Debug\net8.0\ref\Proyecto Parqueadero.dll

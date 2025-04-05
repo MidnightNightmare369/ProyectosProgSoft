@@ -41,13 +41,14 @@ CREATE TABLE Clientes (
     Nombre NVARCHAR(100) NOT NULL,
     Vehiculo INT NOT NULL,
     TipoCliente INT NOT NULL,
+    Codigo INT NOT NULL,
     FOREIGN KEY (Vehiculo) REFERENCES Vehiculos(Id),
     FOREIGN KEY (TipoCliente) REFERENCES TipoClientes(Id)
 );
 
 CREATE TABLE ParqueaderosClientes (
     Id INT PRIMARY KEY IDENTITY(1,1),
-    Tiempo FLOAT NOT NULL,
+    Tiempo DECIMAL NOT NULL,
     Posicion NVARCHAR(10) NOT NULL,
     Total DECIMAL(18,2) NOT NULL,
     Tarifa INT NOT NULL,
@@ -75,6 +76,12 @@ INSERT INTO TipoPagos (TipoPago) VALUES ('tarjeta');
 -- Insertar datos en Parqueaderos
 INSERT INTO Parqueaderos (Nombre) VALUES ('Parqueaderoo');
 
+-- Insertar datos en Tarifas
+INSERT INTO Tarifas (Tipo, Valor) VALUES ('MotoR', 9000);
+INSERT INTO Tarifas (Tipo, Valor) VALUES ('MotoVIP', 15000);
+INSERT INTO Tarifas (Tipo, Valor) VALUES ('AutoR', 12000);
+INSERT INTO Tarifas (Tipo, Valor) VALUES ('AutoVIP', 18000);
+
 -- Insertar datos en Vehiculos
 INSERT INTO Vehiculos (Placa, TipoVehiculo) VALUES ('HSF369', 1);
 INSERT INTO Vehiculos (Placa, TipoVehiculo) VALUES ('THL666', 2);
@@ -86,20 +93,14 @@ INSERT INTO Vehiculos (Placa, TipoVehiculo) VALUES ('CLT009', 1);
 INSERT INTO Vehiculos (Placa, TipoVehiculo) VALUES ('FCK911', 2);
 
 -- Insertar datos en Clientes
-INSERT INTO Clientes (Cedula, Nombre, Vehiculo, TipoCliente) VALUES ('1000', 'Pedro Sanchez', 1, 1);
-INSERT INTO Clientes (Cedula, Nombre, Vehiculo, TipoCliente) VALUES ('1333', 'Alex Crowley', 2, 2);
-INSERT INTO Clientes (Cedula, Nombre, Vehiculo, TipoCliente) VALUES ('1333', 'Alex Crowley', 3, 2);
-INSERT INTO Clientes (Cedula, Nombre, Vehiculo, TipoCliente) VALUES ('1369', 'Juan Zapata', 4, 2);
-INSERT INTO Clientes (Cedula, Nombre, Vehiculo, TipoCliente) VALUES ('1666', 'Esteban Gomez', 5, 1);
-INSERT INTO Clientes (Cedula, Nombre, Vehiculo, TipoCliente) VALUES ('1234', 'Andres Garcia', 6, 1);
-INSERT INTO Clientes (Cedula, Nombre, Vehiculo, TipoCliente) VALUES ('1111', 'Pedro Ortiz', 7, 1);
-INSERT INTO Clientes (Cedula, Nombre, Vehiculo, TipoCliente) VALUES ('1245', 'Alvaro Loaiza', 8, 2);
-
--- Insertar datos en Tarifas
-INSERT INTO Tarifas (Tipo, Valor) VALUES ('MotoR', 9000);
-INSERT INTO Tarifas (Tipo, Valor) VALUES ('MotoVIP', 15000);
-INSERT INTO Tarifas (Tipo, Valor) VALUES ('AutoR', 12000);
-INSERT INTO Tarifas (Tipo, Valor) VALUES ('AutoVIP', 18000);
+INSERT INTO Clientes (Cedula, Nombre, Vehiculo, TipoCliente, Codigo) VALUES ('1000', 'Pedro Sanchez', 1, 1, 1);
+INSERT INTO Clientes (Cedula, Nombre, Vehiculo, TipoCliente, Codigo) VALUES ('1333', 'Alex Crowley', 2, 2, 2);
+INSERT INTO Clientes (Cedula, Nombre, Vehiculo, TipoCliente, Codigo) VALUES ('1333', 'Alex Crowley', 3, 2, 2);
+INSERT INTO Clientes (Cedula, Nombre, Vehiculo, TipoCliente, Codigo) VALUES ('1369', 'Juan Zapata', 4, 2, 3);
+INSERT INTO Clientes (Cedula, Nombre, Vehiculo, TipoCliente, Codigo) VALUES ('1666', 'Esteban Gomez', 5, 1, 4);
+INSERT INTO Clientes (Cedula, Nombre, Vehiculo, TipoCliente, Codigo) VALUES ('1234', 'Andres Garcia', 6, 1, 5);
+INSERT INTO Clientes (Cedula, Nombre, Vehiculo, TipoCliente, Codigo) VALUES ('1111', 'Pedro Ortiz', 7, 1, 6);
+INSERT INTO Clientes (Cedula, Nombre, Vehiculo, TipoCliente, Codigo) VALUES ('1245', 'Alvaro Loaiza', 8, 2, 7);
 
 -- Insertar datos en ParqueaderosClientes
 INSERT INTO ParqueaderosClientes (Tiempo, Posicion, Total, Tarifa, TipoPago, Cliente, Parqueadero) 

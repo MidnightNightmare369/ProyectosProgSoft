@@ -20,8 +20,8 @@ namespace libr_repositorios.Implementaciones
         public DbSet<TipoPagos>? TipoPagos { get; set; }
         public DbSet<TipoVehiculos>? TipoVehiculos { get; set; }
         public DbSet<Vehiculos>? Vehiculos { get; set; }
-        public DbSet<ParqueaderosClientes>? ParqueaderosClientes { get; set; }
         public DbSet<Clientes>? Clientes { get; set; }
+        public DbSet<ParqueaderosClientes>? ParqueaderosClientes { get; set; }
 
     }
 }
