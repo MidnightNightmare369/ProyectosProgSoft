@@ -17,22 +17,8 @@ namespace utt_presentacion.Repositorios
         {
             iConexion = new Conexion();
             iConexion.StringConexion = Configuracion.ObtenerValor("StringConexion");
-            CrearDependencias();
         }
-
-        private void CrearDependencias()
-        {
-            var cliente = EntidadesNucleo.Clientes()!;
-            iConexion!.Clientes!.Add(cliente);
-
-            var parqueadero = EntidadesNucleo.Parqueaderos()!;
-            iConexion!.Parqueaderos!.Add(parqueadero);
-
-            var tarifa = EntidadesNucleo.Tarifas()!;
-            iConexion!.Tarifas!.Add(tarifa);
-
-            iConexion.SaveChanges();
-        }
+       
 
         [TestMethod]
         public void Ejecutar()
@@ -53,9 +39,9 @@ namespace utt_presentacion.Repositorios
         {
             entidad = new ParqueaderosClientes
             {
-                Tiempo = 2.5,
+                Tiempo = 2,
                 Posicion = "A1-TEST-" + DateTime.Now.ToString("yyyyMMddHHmmss"),
-                Total = 7500.0,
+                Total = 9000,
                 Tarifa = 1,
                 TipoPago = 1,
                 Cliente = 1,
@@ -70,7 +56,7 @@ namespace utt_presentacion.Repositorios
         public bool Modificar()
         {
             entidad!.Posicion = "MOD-" + DateTime.Now.ToString("yyyyMMddHHmmss");
-            entidad.Tiempo = 3.0;
+            entidad.Tiempo = 22;
 
             var entry = iConexion!.Entry<ParqueaderosClientes>(entidad);
             entry.State = EntityState.Modified;

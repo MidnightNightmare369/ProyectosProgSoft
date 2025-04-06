@@ -7,7 +7,5 @@ namespace libr_dominio.Entidades
         public int Id { get; set; }
         public string? TipoCliente { get; set; }
 
-        [ForeignKey("Clientes")] public List<Clientes>? _Clientes { get; set; }
     }
-
 }

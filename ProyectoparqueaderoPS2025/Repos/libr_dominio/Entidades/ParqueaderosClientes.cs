@@ -5,9 +5,9 @@ namespace libr_dominio.Entidades
     public class ParqueaderosClientes
     {
         public int Id { get; set; }
-        public Decimal Tiempo { get; set; }
+        public decimal Tiempo { get; set; }
         public string? Posicion { get; set; }
-        public Decimal Total { get; set; }
+        public decimal Total { get; set; }
         public int Tarifa { get; set; }
         public int TipoPago { get; set; }
         public int Cliente { get; set; }

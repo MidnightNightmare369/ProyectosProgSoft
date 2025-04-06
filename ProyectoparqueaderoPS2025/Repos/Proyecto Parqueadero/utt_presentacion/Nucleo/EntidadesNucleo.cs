@@ -29,7 +29,7 @@ namespace utt_presentacion.Nucleo
         public static Vehiculos? Vehiculos()
         {
             var entidad = new Vehiculos();
-            entidad.Placa = "TEST-" + DateTime.Now.ToString("yyyyMMddHHmmss"),
+            entidad.Placa = "TEST-" + DateTime.Now.ToString("yyyyMMddHHmmss");
             entidad.TipoVehiculo = 1;
             return entidad;
         }
@@ -49,7 +49,7 @@ namespace utt_presentacion.Nucleo
         {
             var entidad = new Tarifas();
             entidad.Tipo = "TEST-" + "MotoR";
-            entidad.Valor = 9000.0;
+            entidad.Valor = 9000;
             return entidad;
         }
 
@@ -63,9 +63,9 @@ namespace utt_presentacion.Nucleo
         public static ParqueaderosClientes? ParqueaderosClientes()
         {
             var entidad = new ParqueaderosClientes();
-            entidad.Tiempo = 2.5; 
+            entidad.Tiempo = 2; 
             entidad.Posicion = "A1-TEST-" + DateTime.Now.ToString("yyyyMMddHHmmss");
-            entidad.Total = 7500.0;
+            entidad.Total = 7500;
             entidad.Tarifa = 1;
             entidad.TipoPago = 1;
             entidad.Cliente = 1;

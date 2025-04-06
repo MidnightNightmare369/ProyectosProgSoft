@@ -6,9 +6,7 @@ namespace libr_dominio.Entidades
     {
         public int Id { get; set; }
         public string? Tipo { get; set; }
-        public Decimal Valor { get; set; }
+        public decimal Valor { get; set; }
 
-        [ForeignKey("ParqueaderosClientes")] public List<ParqueaderosClientes>? _ParqueaderosClientes { get; set; }
     }
-
 }

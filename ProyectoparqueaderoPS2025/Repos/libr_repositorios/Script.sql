@@ -39,26 +39,20 @@ CREATE TABLE Clientes (
     Id INT PRIMARY KEY IDENTITY(1,1),
     Cedula NVARCHAR(20) NOT NULL, -- Se asume que la cedula se puede repetir por eso no la deje UNIQUE
     Nombre NVARCHAR(100) NOT NULL,
-    Vehiculo INT NOT NULL,
-    TipoCliente INT NOT NULL,
+    Vehiculo INT NOT NULL REFERENCES Vehiculos (Id),
+    TipoCliente INT NOT NULL REFERENCES TipoCliente (Id),
     Codigo INT NOT NULL,
-    FOREIGN KEY (Vehiculo) REFERENCES Vehiculos(Id),
-    FOREIGN KEY (TipoCliente) REFERENCES TipoClientes(Id)
 );
 
 CREATE TABLE ParqueaderosClientes (
     Id INT PRIMARY KEY IDENTITY(1,1),
     Tiempo DECIMAL NOT NULL,
-    Posicion NVARCHAR(10) NOT NULL,
+    Posicion NVARCHAR(30) NOT NULL,
     Total DECIMAL(18,2) NOT NULL,
-    Tarifa INT NOT NULL,
-    TipoPago INT NOT NULL,
-    Cliente INT NOT NULL,
-    Parqueadero INT NOT NULL,
-    FOREIGN KEY (Tarifa) REFERENCES Tarifas(Id),
-    FOREIGN KEY (TipoPago) REFERENCES TipoPagos(Id),
-    FOREIGN KEY (Cliente) REFERENCES Clientes(Id),
-    FOREIGN KEY (Parqueadero) REFERENCES Parqueaderos(Id)
+    Tarifa INT NOT NULL REFERENCES Tarifas(Id),
+    TipoPago INT NOT NULL REFERENCES TipoPagos(Id),
+    Cliente INT NOT NULL REFERENCES Clientes(Id),
+    Parqueadero INT NOT NULL REFERENCES Parqueaderos(Id),
 );
 
 -- Insertar datos en TipoVehiculos

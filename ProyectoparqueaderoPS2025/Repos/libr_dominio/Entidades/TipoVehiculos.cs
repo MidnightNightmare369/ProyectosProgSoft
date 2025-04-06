@@ -6,7 +6,5 @@ namespace libr_dominio.Entidades
         public int Id { get; set; }
         public string? TipoVehiculo { get; set; }
 
-        [ForeignKey("Vehiculos")] public List<Vehiculos>? _Vehiculos { get; set; }
     }
-
 }

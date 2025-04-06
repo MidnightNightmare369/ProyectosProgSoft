@@ -44,7 +44,7 @@ namespace utt_presentacion.Repositorios
 
         public bool Modificar()
         {
-            entidad!.Valor = 5000.0; 
+            entidad!.Valor = 5000; 
             entidad.Tipo = "MOD-" + DateTime.Now.ToString("yyyyMMddHHmmss");
 
             var entry = iConexion!.Entry<Tarifas>(entidad);
