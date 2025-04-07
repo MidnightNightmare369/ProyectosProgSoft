@@ -21,6 +21,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\..\libr_aplicaciones\libr_aplicaciones.csproj" />
     <ProjectReference Include="..\..\libr_dominio\libr_dominio.csproj" />
     <ProjectReference Include="..\..\libr_repositorios\libr_repositorios.csproj" />
   </ItemGroup>

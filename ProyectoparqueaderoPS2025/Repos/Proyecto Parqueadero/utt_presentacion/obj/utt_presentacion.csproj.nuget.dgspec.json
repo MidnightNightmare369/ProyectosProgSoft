@@ -4,6 +4,74 @@
     "C:\\Users\\Alvaro\\Desktop\\Repos\\Proyecto Parqueadero\\utt_presentacion\\utt_presentacion.csproj": {}
   },
   "projects": {
+    "C:\\Users\\Alvaro\\Desktop\\Repos\\libr_aplicaciones\\libr_aplicaciones.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Alvaro\\Desktop\\Repos\\libr_aplicaciones\\libr_aplicaciones.csproj",
+        "projectName": "libr_aplicaciones",
+        "projectPath": "C:\\Users\\Alvaro\\Desktop\\Repos\\libr_aplicaciones\\libr_aplicaciones.csproj",
+        "packagesPath": "C:\\Users\\Alvaro\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Alvaro\\Desktop\\Repos\\libr_aplicaciones\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Alvaro\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "C:\\Users\\Alvaro\\Desktop\\Repos\\libr_dominio\\libr_dominio.csproj": {
+                "projectPath": "C:\\Users\\Alvaro\\Desktop\\Repos\\libr_dominio\\libr_dominio.csproj"
+              },
+              "C:\\Users\\Alvaro\\Desktop\\Repos\\libr_repositorios\\libr_repositorios.csproj": {
+                "projectPath": "C:\\Users\\Alvaro\\Desktop\\Repos\\libr_repositorios\\libr_repositorios.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
     "C:\\Users\\Alvaro\\Desktop\\Repos\\libr_dominio\\libr_dominio.csproj": {
       "version": "1.0.0",
       "restore": {
@@ -175,6 +243,9 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
+              "C:\\Users\\Alvaro\\Desktop\\Repos\\libr_aplicaciones\\libr_aplicaciones.csproj": {
+                "projectPath": "C:\\Users\\Alvaro\\Desktop\\Repos\\libr_aplicaciones\\libr_aplicaciones.csproj"
+              },
               "C:\\Users\\Alvaro\\Desktop\\Repos\\libr_dominio\\libr_dominio.csproj": {
                 "projectPath": "C:\\Users\\Alvaro\\Desktop\\Repos\\libr_dominio\\libr_dominio.csproj"
               },

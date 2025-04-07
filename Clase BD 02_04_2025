@@ -1,4 +1,22 @@
 --creacion y uso de funciones escalares 
+-------------Estructura----------------
+
+CREATE FUNCTION NombreDeLaFuncion(@codEst int) RETURNS INT
+AS 
+
+BEGIN 
+--CODIGO DE LA FUNCION
+ DECLARE @Promedio int
+ 
+ SELECT @Promedio = (nota1+nota2+nota3)/3 FROM Notas WHERE CodigoEst=@codEst
+
+ RETURN @Promedio
+
+END
+
+AL MOMENTO DE LLAMAR UNA FUNCION LO HACEMOS DESDE LA BASE DE DATOS EXMP: dbo.PromedioEstudiante(parametro enviado)
+
+
 --DESARROLLAR UNA FUNCION QUE PERMITA CREAR LOS NOMBRES DE LOS DIAS DE LAS SEMANA 
 CREATE FUNCTION FUNCION_NOMBRE_DIAS
 (@NUMERO_DIA int)

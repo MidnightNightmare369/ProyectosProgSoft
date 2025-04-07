@@ -175,3 +175,5 @@ C:\Users\Alvaro\Desktop\Repos\Proyecto Parqueadero\utt_presentacion\obj\Debug\ne
 C:\Users\Alvaro\Desktop\Repos\Proyecto Parqueadero\utt_presentacion\obj\Debug\net8.0\utt_presentacion.pdb
 C:\Users\Alvaro\Desktop\Repos\Proyecto Parqueadero\utt_presentacion\obj\Debug\net8.0\utt_presentacion.genruntimeconfig.cache
 C:\Users\Alvaro\Desktop\Repos\Proyecto Parqueadero\utt_presentacion\obj\Debug\net8.0\ref\utt_presentacion.dll
+C:\Users\Alvaro\Desktop\Repos\Proyecto Parqueadero\utt_presentacion\bin\Debug\net8.0\libr_aplicaciones.dll
+C:\Users\Alvaro\Desktop\Repos\Proyecto Parqueadero\utt_presentacion\bin\Debug\net8.0\libr_aplicaciones.pdb
