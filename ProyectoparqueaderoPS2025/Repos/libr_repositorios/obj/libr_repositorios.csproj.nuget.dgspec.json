@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Alvaro\\Desktop\\Repos\\libr_repositorios\\libr_repositorios.csproj": {}
+    "C:\\Users\\Alvaro\\Desktop\\ProyectosProgSoft\\ProyectoparqueaderoPS2025\\Repos\\libr_repositorios\\libr_repositorios.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Alvaro\\Desktop\\Repos\\libr_dominio\\libr_dominio.csproj": {
+    "C:\\Users\\Alvaro\\Desktop\\ProyectosProgSoft\\ProyectoparqueaderoPS2025\\Repos\\libr_dominio\\libr_dominio.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Alvaro\\Desktop\\Repos\\libr_dominio\\libr_dominio.csproj",
+        "projectUniqueName": "C:\\Users\\Alvaro\\Desktop\\ProyectosProgSoft\\ProyectoparqueaderoPS2025\\Repos\\libr_dominio\\libr_dominio.csproj",
         "projectName": "libr_dominio",
-        "projectPath": "C:\\Users\\Alvaro\\Desktop\\Repos\\libr_dominio\\libr_dominio.csproj",
+        "projectPath": "C:\\Users\\Alvaro\\Desktop\\ProyectosProgSoft\\ProyectoparqueaderoPS2025\\Repos\\libr_dominio\\libr_dominio.csproj",
         "packagesPath": "C:\\Users\\Alvaro\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Alvaro\\Desktop\\Repos\\libr_dominio\\obj\\",
+        "outputPath": "C:\\Users\\Alvaro\\Desktop\\ProyectosProgSoft\\ProyectoparqueaderoPS2025\\Repos\\libr_dominio\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Alvaro\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -75,14 +75,14 @@
         }
       }
     },
-    "C:\\Users\\Alvaro\\Desktop\\Repos\\libr_repositorios\\libr_repositorios.csproj": {
+    "C:\\Users\\Alvaro\\Desktop\\ProyectosProgSoft\\ProyectoparqueaderoPS2025\\Repos\\libr_repositorios\\libr_repositorios.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Alvaro\\Desktop\\Repos\\libr_repositorios\\libr_repositorios.csproj",
+        "projectUniqueName": "C:\\Users\\Alvaro\\Desktop\\ProyectosProgSoft\\ProyectoparqueaderoPS2025\\Repos\\libr_repositorios\\libr_repositorios.csproj",
         "projectName": "libr_repositorios",
-        "projectPath": "C:\\Users\\Alvaro\\Desktop\\Repos\\libr_repositorios\\libr_repositorios.csproj",
+        "projectPath": "C:\\Users\\Alvaro\\Desktop\\ProyectosProgSoft\\ProyectoparqueaderoPS2025\\Repos\\libr_repositorios\\libr_repositorios.csproj",
         "packagesPath": "C:\\Users\\Alvaro\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Alvaro\\Desktop\\Repos\\libr_repositorios\\obj\\",
+        "outputPath": "C:\\Users\\Alvaro\\Desktop\\ProyectosProgSoft\\ProyectoparqueaderoPS2025\\Repos\\libr_repositorios\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Alvaro\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -100,8 +100,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\Alvaro\\Desktop\\Repos\\libr_dominio\\libr_dominio.csproj": {
-                "projectPath": "C:\\Users\\Alvaro\\Desktop\\Repos\\libr_dominio\\libr_dominio.csproj"
+              "C:\\Users\\Alvaro\\Desktop\\ProyectosProgSoft\\ProyectoparqueaderoPS2025\\Repos\\libr_dominio\\libr_dominio.csproj": {
+                "projectPath": "C:\\Users\\Alvaro\\Desktop\\ProyectosProgSoft\\ProyectoparqueaderoPS2025\\Repos\\libr_dominio\\libr_dominio.csproj"
               }
             }
           }

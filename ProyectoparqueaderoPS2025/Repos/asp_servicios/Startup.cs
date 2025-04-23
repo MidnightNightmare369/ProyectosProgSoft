@@ -36,6 +36,13 @@ namespace asp_servicios
 
             // Aplicaciones
             services.AddScoped<IParqueaderosClientesApp, ParqueaderosClientesApp>();
+            services.AddScoped<IClientesApp, ClientesApp>();
+            services.AddScoped<IParqueaderosApp, ParqueaderosApp>();
+            services.AddScoped<ITarifasApp, TarifasApp>();
+            services.AddScoped<ITipoClientesApp, TipoClientesApp>();
+            services.AddScoped<ITipoPagosApp, TipoPagosApp>();
+            services.AddScoped<ITipoPagosApp, TipoPagosApp>();
+            services.AddScoped<IVehiculosApp, VehiculosApp>();
 
             // Controladores
             services.AddScoped<TokenController, TokenController>();
@@ -50,11 +57,13 @@ namespace asp_servicios
                 //app.UseSwagger();
                 //app.UseSwaggerUI();
             }
+            if (!app.Environment.IsDevelopment())
+            {
+                app.UseExceptionHandler("/Error");
+            }
             app.UseHttpsRedirection();
             app.UseAuthorization();
             app.MapControllers();
-            app.Run();
-            app.UseRouting();
             app.UseCors();
         }
     }

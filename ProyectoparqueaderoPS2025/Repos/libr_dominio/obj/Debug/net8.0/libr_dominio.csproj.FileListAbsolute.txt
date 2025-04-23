@@ -17,7 +17,6 @@ C:\Users\Alvaro\Desktop\ProyectosProgSoft\ProyectoparqueaderoPS2025\Repos\libr_d
 C:\Users\Alvaro\Desktop\ProyectosProgSoft\ProyectoparqueaderoPS2025\Repos\libr_dominio\obj\Debug\net8.0\libr_dominio.AssemblyInfoInputs.cache
 C:\Users\Alvaro\Desktop\ProyectosProgSoft\ProyectoparqueaderoPS2025\Repos\libr_dominio\obj\Debug\net8.0\libr_dominio.AssemblyInfo.cs
 C:\Users\Alvaro\Desktop\ProyectosProgSoft\ProyectoparqueaderoPS2025\Repos\libr_dominio\obj\Debug\net8.0\libr_dominio.csproj.CoreCompileInputs.cache
-C:\Users\Alvaro\Desktop\ProyectosProgSoft\ProyectoparqueaderoPS2025\Repos\libr_dominio\obj\Debug\net8.0\libr_dominio.sourcelink.json
 C:\Users\Alvaro\Desktop\ProyectosProgSoft\ProyectoparqueaderoPS2025\Repos\libr_dominio\obj\Debug\net8.0\libr_dominio.dll
 C:\Users\Alvaro\Desktop\ProyectosProgSoft\ProyectoparqueaderoPS2025\Repos\libr_dominio\obj\Debug\net8.0\refint\libr_dominio.dll
 C:\Users\Alvaro\Desktop\ProyectosProgSoft\ProyectoparqueaderoPS2025\Repos\libr_dominio\obj\Debug\net8.0\libr_dominio.pdb
