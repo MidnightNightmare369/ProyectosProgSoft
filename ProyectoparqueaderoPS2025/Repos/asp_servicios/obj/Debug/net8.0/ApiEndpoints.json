@@ -18,9 +18,9 @@
     ]
   },
   {
-    "ContainingType": "asp_servicios.Controllers.NotasController",
+    "ContainingType": "asp_servicios.Controllers.ClientesController",
     "Method": "Borrar",
-    "RelativePath": "Notas/Borrar",
+    "RelativePath": "Clientes/Borrar",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
@@ -38,9 +38,9 @@
     ]
   },
   {
-    "ContainingType": "asp_servicios.Controllers.NotasController",
+    "ContainingType": "asp_servicios.Controllers.ClientesController",
     "Method": "Guardar",
-    "RelativePath": "Notas/Guardar",
+    "RelativePath": "Clientes/Guardar",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
@@ -58,9 +58,9 @@
     ]
   },
   {
-    "ContainingType": "asp_servicios.Controllers.NotasController",
+    "ContainingType": "asp_servicios.Controllers.ClientesController",
     "Method": "Listar",
-    "RelativePath": "Notas/Listar",
+    "RelativePath": "Clientes/Listar",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
@@ -78,9 +78,9 @@
     ]
   },
   {
-    "ContainingType": "asp_servicios.Controllers.NotasController",
+    "ContainingType": "asp_servicios.Controllers.ClientesController",
     "Method": "Modificar",
-    "RelativePath": "Notas/Modificar",
+    "RelativePath": "Clientes/Modificar",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
@@ -98,9 +98,9 @@
     ]
   },
   {
-    "ContainingType": "asp_servicios.Controllers.NotasController",
+    "ContainingType": "asp_servicios.Controllers.ClientesController",
     "Method": "PorEstudiante",
-    "RelativePath": "Notas/PorEstudiante",
+    "RelativePath": "Clientes/PorEstudiante",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,

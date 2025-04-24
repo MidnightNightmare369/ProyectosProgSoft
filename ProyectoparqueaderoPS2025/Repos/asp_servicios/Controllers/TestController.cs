@@ -8,12 +8,12 @@ namespace asp_servicios.Controllers
 {
     [ApiController]
     [Route("[controller]/[action]")]
-    public class NotasController : ControllerBase
+    public class ClientesController : ControllerBase
     {
         private IParqueaderosClientesApp? iAplicacion = null;
         private TokenController? tokenController = null;
 
-        public NotasController(IParqueaderosClientesApp? iAplicacion, TokenController tokenController)
+        public ClientesController(IParqueaderosClientesApp? iAplicacion, TokenController tokenController)
         {
             this.iAplicacion = iAplicacion;
             this.tokenController = tokenController;
@@ -39,7 +39,7 @@ namespace asp_servicios.Controllers
                     return JsonConversor.ConvertirAString(respuesta);
                 }
 
-                this.iAplicacion!.Configurar(Configuracion.ObtenerValor("StringCone-xion"));
+                this.iAplicacion!.Configurar(Configuracion.ObtenerValor("StringConexion"));
                 respuesta["Entidades"] = this.iAplicacion!.Listar();
 
                 respuesta["Respuesta"] = "OK";
