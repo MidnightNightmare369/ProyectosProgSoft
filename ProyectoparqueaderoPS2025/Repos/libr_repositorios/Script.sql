@@ -44,6 +44,33 @@ CREATE TABLE Clientes (
     Codigo INT NOT NULL,
 );
 
+CREATE TABLE Turnos (
+    Id INT PRIMARY KEY IDENTITY(1,1),
+    Rango NVARCHAR(50) NOT NULL, 
+    Turno NVARCHAR(50) NOT NULL 
+);
+
+CREATE TABLE Contratos (
+    Id INT PRIMARY KEY IDENTITY(1,1),
+    Referencia NVARCHAR(50) NOT NULL,
+    FechaInicio NVARCHAR(50) NOT NULL,
+    FechaTerminacion NVARCHAR(50) NOT NULL 
+);
+
+CREATE TABLE Cargos (
+    Id INT PRIMARY KEY IDENTITY(1,1),
+    Cargo NVARCHAR(50) NOT NULL 
+);
+
+CREATE TABLE Empleados (
+    Id INT PRIMARY KEY IDENTITY(1,1),
+    Cedula NVARCHAR(20) NOT NULL,  
+    Nombre NVARCHAR(100) NOT NULL,
+    Cargo INT NOT NULL REFERENCES Cargos (Id),
+    Turno INT NOT NULL REFERENCES Turnos (Id),
+    Contrato INT NOT NULL REFERENCES Contratos (Id),
+);
+
 CREATE TABLE ParqueaderosClientes (
     Id INT PRIMARY KEY IDENTITY(1,1),
     Tiempo DECIMAL NOT NULL,
@@ -53,6 +80,7 @@ CREATE TABLE ParqueaderosClientes (
     TipoPago INT NOT NULL REFERENCES TipoPagos(Id),
     Cliente INT NOT NULL REFERENCES Clientes(Id),
     Parqueadero INT NOT NULL REFERENCES Parqueaderos(Id),
+    Empleado INT NOT NULL REFERENCES Empleados(Id),
 );
 
 -- Insertar datos en TipoVehiculos
@@ -96,21 +124,48 @@ INSERT INTO Clientes (Cedula, Nombre, Vehiculo, TipoCliente, Codigo) VALUES ('12
 INSERT INTO Clientes (Cedula, Nombre, Vehiculo, TipoCliente, Codigo) VALUES ('1111', 'Pedro Ortiz', 7, 1, 6);
 INSERT INTO Clientes (Cedula, Nombre, Vehiculo, TipoCliente, Codigo) VALUES ('1245', 'Alvaro Loaiza', 8, 2, 7);
 
+-- Insertar datos en TURNOS
+INSERT INTO Turnos (Rango, Turno) VALUES
+  ('6-2',  'Mañana'),
+  ('2-10', 'Tarde'),
+  ('10-6', 'Noche');
+
+-- Insertar datos en CONTRATOS
+INSERT INTO Contratos (Referencia, FechaInicio, FechaTerminacion) VALUES
+  ('CJ001', '03/06/2019', '03/06/2025'),
+  ('CJ002', '03/03/2023', '03/03/2026'),
+  ('CJ003', '03/09/2016', '03/09/2026'),
+  ('ROOT001', '03/06/2009', '03/06/2025'),
+  ('ROOT002', '03/06/2016', '03/06/2025');
+
+-- Insertar datos en CARGOS
+INSERT INTO Cargos (Cargo) VALUES
+  ('Administrador'),
+  ('Cajero');
+
+-- Insertar datos en EMPLEADOS
+INSERT INTO Empleados (Cedula, Nombre, Cargo, Turno, Contrato) VALUES
+  ('3693', 'Federico Sanchez',    2, 1, 1),
+  ('9999', 'Sebastian Gomez',     2, 2, 2),
+  ('1266', 'Fernando Alonzo',     2, 3, 3),
+  ('6663', 'Yevgeny Prigozhin',   1, 1, 4),
+  ('9639', 'Vladimir Kravchenko', 1, 2, 5);
+
 -- Insertar datos en ParqueaderosClientes
-INSERT INTO ParqueaderosClientes (Tiempo, Posicion, Total, Tarifa, TipoPago, Cliente, Parqueadero) 
-VALUES (2, 'A1', 18000.0, 1, 1, 1, 1);
-INSERT INTO ParqueaderosClientes (Tiempo, Posicion, Total, Tarifa, TipoPago, Cliente, Parqueadero) 
-VALUES (24, 'H5', 435000.0, 4, 2, 2, 1);
-INSERT INTO ParqueaderosClientes (Tiempo, Posicion, Total, Tarifa, TipoPago, Cliente, Parqueadero) 
-VALUES (5, 'H6', 90000.0, 4, 2, 3, 1);
-INSERT INTO ParqueaderosClientes (Tiempo, Posicion, Total, Tarifa, TipoPago, Cliente, Parqueadero) 
-VALUES (12, 'E1', 180000.0, 2, 1, 4, 1);
-INSERT INTO ParqueaderosClientes (Tiempo, Posicion, Total, Tarifa, TipoPago, Cliente, Parqueadero) 
-VALUES (2, 'A2', 24000.0, 3, 2, 5, 1);
-INSERT INTO ParqueaderosClientes (Tiempo, Posicion, Total, Tarifa, TipoPago, Cliente, Parqueadero) 
-VALUES (10, 'A6', 90000.0, 1, 1, 6, 1);
-INSERT INTO ParqueaderosClientes (Tiempo, Posicion, Total, Tarifa, TipoPago, Cliente, Parqueadero) 
-VALUES (5, 'A5', 45000.0, 1, 1, 7, 1);
-INSERT INTO ParqueaderosClientes (Tiempo, Posicion, Total, Tarifa, TipoPago, Cliente, Parqueadero) 
-VALUES (10, 'H3', 180000.0, 4, 2, 8, 1);
+INSERT INTO ParqueaderosClientes (Tiempo, Posicion, Total, Tarifa, TipoPago, Cliente, Parqueadero, Empleado) 
+VALUES (2, 'A1', 18000.0, 1, 1, 1, 1,1);
+INSERT INTO ParqueaderosClientes (Tiempo, Posicion, Total, Tarifa, TipoPago, Cliente, Parqueadero, Empleado) 
+VALUES (24, 'H5', 435000.0, 4, 2, 2, 1,3);
+INSERT INTO ParqueaderosClientes (Tiempo, Posicion, Total, Tarifa, TipoPago, Cliente, Parqueadero, Empleado) 
+VALUES (5, 'H6', 90000.0, 4, 2, 3, 1,3);
+INSERT INTO ParqueaderosClientes (Tiempo, Posicion, Total, Tarifa, TipoPago, Cliente, Parqueadero, Empleado) 
+VALUES (12, 'E1', 180000.0, 2, 1, 4, 1,3);
+INSERT INTO ParqueaderosClientes (Tiempo, Posicion, Total, Tarifa, TipoPago, Cliente, Parqueadero, Empleado) 
+VALUES (2, 'A2', 24000.0, 3, 2, 5, 1,1);
+INSERT INTO ParqueaderosClientes (Tiempo, Posicion, Total, Tarifa, TipoPago, Cliente, Parqueadero, Empleado) 
+VALUES (10, 'A6', 90000.0, 1, 1, 6, 1,1);
+INSERT INTO ParqueaderosClientes (Tiempo, Posicion, Total, Tarifa, TipoPago, Cliente, Parqueadero, Empleado) 
+VALUES (5, 'A5', 45000.0, 1, 1, 7, 1,2);
+INSERT INTO ParqueaderosClientes (Tiempo, Posicion, Total, Tarifa, TipoPago, Cliente, Parqueadero, Empleado) 
+VALUES (10, 'H3', 180000.0, 4, 2, 8, 1,2);
 

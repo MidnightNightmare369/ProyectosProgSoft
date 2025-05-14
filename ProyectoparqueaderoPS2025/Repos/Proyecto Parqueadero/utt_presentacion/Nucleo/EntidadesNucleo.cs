@@ -60,6 +60,44 @@ namespace utt_presentacion.Nucleo
             return entidad;
         }
 
+        public static Turnos? Turnos()
+        {
+            var now = DateTime.Now.ToString("yyyyMMddHHmmss");
+            var entidad = new Turnos();
+            entidad.Turno = $"Turno-TEST-{now}";
+            entidad.Rango = $"Rango-TEST-{now}";
+            return entidad;
+        }
+
+        public static Contratos? Contratos()
+        {
+            var now = DateTime.Now.ToString("yyyyMMddHHmmss");
+            var entidad = new Contratos();
+            entidad.Referencia = $"REF-TEST-{now}";
+            entidad.FechaInicio = DateTime.Now.ToString("yyyy-MM-dd");
+            entidad.FechaTerminacion = DateTime.Now.AddYears(1).ToString("yyyy-MM-dd");
+            return entidad;
+        }
+
+        public static Cargos? Cargos()
+        {
+            var now = DateTime.Now.ToString("yyyyMMddHHmmss");
+            var entidad = new Cargos();
+            entidad.Cargo = $"Cargo-TEST-{now}";
+            return entidad;
+        }
+        public static Empleados? Empleados()
+        {
+            var now = DateTime.Now.ToString("yyyyMMddHHmmss");
+            var entidad = new Empleados();
+            entidad.Cedula = $"CED-TEST-{now}";
+            entidad.Nombre = $"Nombre-TEST-{now}";
+            entidad.Cargo = 1; 
+            entidad.Turno = 1; 
+            entidad.Contrato = 1; 
+            return entidad;
+        }
+
         public static ParqueaderosClientes? ParqueaderosClientes()
         {
             var entidad = new ParqueaderosClientes();

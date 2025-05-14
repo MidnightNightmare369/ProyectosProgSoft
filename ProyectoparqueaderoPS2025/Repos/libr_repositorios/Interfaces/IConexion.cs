@@ -13,7 +13,11 @@ namespace libr_repositorios.Interfaces
         DbSet<TipoClientes>? TipoClientes { get; set; }
         DbSet<TipoPagos>? TipoPagos { get; set; }
         DbSet<TipoVehiculos>? TipoVehiculos { get; set; }
-        DbSet<Vehiculos>? Vehiculos { get; set; }
+        DbSet<Vehiculos>? Vehiculos { get; set; }//Nuevas clases --
+        DbSet<Cargos>? Cargos { get; set; }
+        DbSet<Turnos>? Turnos { get; set; }
+        DbSet<Contratos>? Contratos { get; set; }
+        DbSet<Empleados>? Empleados { get; set; }//--
         DbSet<ParqueaderosClientes>? ParqueaderosClientes { get; set; }
         DbSet<Clientes>? Clientes { get; set; }
 
