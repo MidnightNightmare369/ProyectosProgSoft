@@ -1,19 +1,20 @@
-﻿using libr_aplicaciones.Interfaces;
+using asp_servicios.Nucleo;
+using libr_aplicaciones.Interfaces;
 using libr_dominio.Entidades;
 using libr_dominio.Nucleo;
 using Microsoft.AspNetCore.Mvc;
-using asp_servicios.Nucleo;
 
 namespace asp_servicios.Controllers
 {
     [ApiController]
     [Route("[controller]/[action]")]
-    public class ParqueaderosClientesController : ControllerBase
+    public class VehiculosController : ControllerBase
     {
-        private IParqueaderosClientesApp? iAplicacion = null;
+        private IVehiculosApp? iAplicacion = null;
         private TokenController? tokenController = null;
 
-        public ParqueaderosClientesController(IParqueaderosClientesApp? iAplicacion, TokenController tokenController)
+        public VehiculosController(IVehiculosApp? iAplicacion,
+            TokenController tokenController)
         {
             this.iAplicacion = iAplicacion;
             this.tokenController = tokenController;
@@ -22,7 +23,8 @@ namespace asp_servicios.Controllers
         private Dictionary<string, object> ObtenerDatos()
         {
             var datos = new StreamReader(Request.Body).ReadToEnd().ToString();
-            if (string.IsNullOrEmpty(datos)) datos = "{}";
+            if (string.IsNullOrEmpty(datos))
+                datos = "{}";
             return JsonConversor.ConvertirAObjeto(datos);
         }
 
@@ -39,7 +41,7 @@ namespace asp_servicios.Controllers
                     return JsonConversor.ConvertirAString(respuesta);
                 }
 
-                this.iAplicacion!.Configurar(Configuracion.ObtenerValor("StringConexion"));
+                this.iAplicacion!.Configurar(Configuracion.ObtenerValor("StringConexion")!);
                 respuesta["Entidades"] = this.iAplicacion!.Listar();
 
                 respuesta["Respuesta"] = "OK";
@@ -54,7 +56,7 @@ namespace asp_servicios.Controllers
         }
 
         [HttpPost]
-        public string PorPosicion()
+        public string PorPlaca()
         {
             var respuesta = new Dictionary<string, object>();
             try
@@ -66,11 +68,11 @@ namespace asp_servicios.Controllers
                     return JsonConversor.ConvertirAString(respuesta);
                 }
 
-                var entidad = JsonConversor.ConvertirAObjeto<ParqueaderosClientes>(
+                var entidad = JsonConversor.ConvertirAObjeto<Vehiculos>(
                     JsonConversor.ConvertirAString(datos["Entidad"]));
 
-                this.iAplicacion!.Configurar(Configuracion.ObtenerValor("StringCone-xion"));
-                respuesta["Entidades"] = this.iAplicacion!.PorPosicion(entidad);
+                this.iAplicacion!.Configurar(Configuracion.ObtenerValor("StringConexion")!);
+                respuesta["Entidades"] = this.iAplicacion!.PorPlaca(entidad);
 
                 respuesta["Respuesta"] = "OK";
                 respuesta["Fecha"] = DateTime.Now.ToString();
@@ -96,10 +98,10 @@ namespace asp_servicios.Controllers
                     return JsonConversor.ConvertirAString(respuesta);
                 }
 
-                var entidad = JsonConversor.ConvertirAObjeto<ParqueaderosClientes>(
+                var entidad = JsonConversor.ConvertirAObjeto<Vehiculos>(
                     JsonConversor.ConvertirAString(datos["Entidad"]));
 
-                this.iAplicacion!.Configurar(Configuracion.ObtenerValor("StringCone-xion"));
+                this.iAplicacion!.Configurar(Configuracion.ObtenerValor("StringConexion")!);
                 entidad = this.iAplicacion!.Guardar(entidad);
 
                 respuesta["Entidad"] = entidad!;
@@ -127,10 +129,10 @@ namespace asp_servicios.Controllers
                     return JsonConversor.ConvertirAString(respuesta);
                 }
 
-                var entidad = JsonConversor.ConvertirAObjeto<ParqueaderosClientes>(
+                var entidad = JsonConversor.ConvertirAObjeto<Vehiculos>(
                     JsonConversor.ConvertirAString(datos["Entidad"]));
 
-                this.iAplicacion!.Configurar(Configuracion.ObtenerValor("StringCone-xion"));
+                this.iAplicacion!.Configurar(Configuracion.ObtenerValor("StringConexion")!);
                 entidad = this.iAplicacion!.Modificar(entidad);
 
                 respuesta["Entidad"] = entidad!;
@@ -158,10 +160,10 @@ namespace asp_servicios.Controllers
                     return JsonConversor.ConvertirAString(respuesta);
                 }
 
-                var entidad = JsonConversor.ConvertirAObjeto<ParqueaderosClientes>(
+                var entidad = JsonConversor.ConvertirAObjeto<Vehiculos>(
                     JsonConversor.ConvertirAString(datos["Entidad"]));
 
-                this.iAplicacion!.Configurar(Configuracion.ObtenerValor("StringCone-xion"));
+                this.iAplicacion!.Configurar(Configuracion.ObtenerValor("StringConexion")!);
                 entidad = this.iAplicacion!.Borrar(entidad);
 
                 respuesta["Entidad"] = entidad!;

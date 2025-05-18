@@ -45,12 +45,24 @@ namespace asp_servicios
             services.AddScoped<ITarifasApp, TarifasApp>();
             services.AddScoped<ITipoClientesApp, TipoClientesApp>();
             services.AddScoped<ITipoPagosApp, TipoPagosApp>();
-            services.AddScoped<ITipoPagosApp, TipoPagosApp>();
+            services.AddScoped<ITipoVehiculosApp, TipoVehiculosApp>();
             services.AddScoped<IVehiculosApp, VehiculosApp>();
 
             // Controladores
             services.AddScoped<TokenController, TokenController>();
-            //Intentar añador controlador TestController: services.AddScoped<TestController, TestController>();
+            services.AddScoped<CargosController, CargosController>();
+            services.AddScoped<ContratosController, ContratosController>();
+            services.AddScoped<EmpleadosController, EmpleadosController>();
+            services.AddScoped<ParqueaderosClientesController, ParqueaderosClientesController>();
+            services.AddScoped<ParqueaderosController, ParqueaderosController>();
+            services.AddScoped<TarifasController, TarifasController>();
+            services.AddScoped<TipoClientesController, TipoClientesController>();
+            services.AddScoped<TipoPagosController, TipoPagosController>();
+            services.AddScoped<TipoVehiculosController, TipoVehiculosController>();
+            services.AddScoped<TurnosController, TurnosController>();
+            services.AddScoped<VehiculosController, VehiculosController>();
+            services.AddScoped<ClientesController, ClientesController>();
+            //Intentar aï¿½ador controlador TestController: services.AddScoped<TestController, TestController>();
 
             services.AddCors(o => o.AddDefaultPolicy(b => b.AllowAnyOrigin()));
         }

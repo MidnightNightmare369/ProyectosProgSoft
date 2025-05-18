@@ -638,24 +638,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\User\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\Alvaro\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\User\\Desktop\\ProyectosProgSoft\\ProyectoparqueaderoPS2025\\Repos\\libr_dominio\\libr_dominio.csproj",
+      "projectUniqueName": "C:\\Users\\Alvaro\\Desktop\\ProyectosProgSoft\\ProyectoparqueaderoPS2025\\Repos\\libr_dominio\\libr_dominio.csproj",
       "projectName": "libr_dominio",
-      "projectPath": "C:\\Users\\User\\Desktop\\ProyectosProgSoft\\ProyectoparqueaderoPS2025\\Repos\\libr_dominio\\libr_dominio.csproj",
-      "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\User\\Desktop\\ProyectosProgSoft\\ProyectoparqueaderoPS2025\\Repos\\libr_dominio\\obj\\",
+      "projectPath": "C:\\Users\\Alvaro\\Desktop\\ProyectosProgSoft\\ProyectoparqueaderoPS2025\\Repos\\libr_dominio\\libr_dominio.csproj",
+      "packagesPath": "C:\\Users\\Alvaro\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Alvaro\\Desktop\\ProyectosProgSoft\\ProyectoparqueaderoPS2025\\Repos\\libr_dominio\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-      ],
       "configFilePaths": [
-        "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Users\\Alvaro\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -712,16 +707,8 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.409/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
       }
     }
-  },
-  "logs": [
-    {
-      "code": "NU1900",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Error al obtener los datos de vulnerabilidad del paquete: No se puede cargar el índice de servicio del origen https://api.nuget.org/v3/index.json."
-    }
-  ]
+  }
 }

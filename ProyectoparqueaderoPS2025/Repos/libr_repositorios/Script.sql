@@ -40,7 +40,7 @@ CREATE TABLE Clientes (
     Cedula NVARCHAR(20) NOT NULL, -- Se asume que la cedula se puede repetir por eso no la deje UNIQUE
     Nombre NVARCHAR(100) NOT NULL,
     Vehiculo INT NOT NULL REFERENCES Vehiculos (Id),
-    TipoCliente INT NOT NULL REFERENCES TipoCliente (Id),
+    TipoCliente INT NOT NULL REFERENCES TipoClientes (Id),
     Codigo INT NOT NULL,
 );
 

@@ -1,45 +1,15 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\User\\Desktop\\ProyectosProgSoft\\ProyectoparqueaderoPS2025\\Repos\\Proyecto Parqueadero\\",
+  "WorkspaceRootPath": "C:\\Users\\Alvaro\\Desktop\\ProyectosProgSoft\\ProyectoparqueaderoPS2025\\Repos\\Proyecto Parqueadero\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{8A3E4A13-5012-4F8F-9F1B-DD93B567B6CC}|..\\libr_aplicaciones\\libr_aplicaciones.csproj|c:\\users\\user\\desktop\\proyectosprogsoft\\proyectoparqueaderops2025\\repos\\libr_aplicaciones\\implementaciones\\tarifasapp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{FD0BC892-77C0-438E-9276-E35ED8B7BA7A}|..\\asp_servicios\\asp_servicios.csproj|c:\\users\\alvaro\\desktop\\proyectosprogsoft\\proyectoparqueaderops2025\\repos\\asp_servicios\\controllers\\clientescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8A3E4A13-5012-4F8F-9F1B-DD93B567B6CC}|..\\libr_aplicaciones\\libr_aplicaciones.csproj|c:\\users\\user\\desktop\\proyectosprogsoft\\proyectoparqueaderops2025\\repos\\libr_aplicaciones\\implementaciones\\parqueaderosclientesapp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{FD0BC892-77C0-438E-9276-E35ED8B7BA7A}|..\\asp_servicios\\asp_servicios.csproj|c:\\users\\alvaro\\desktop\\proyectosprogsoft\\proyectoparqueaderops2025\\repos\\asp_servicios\\controllers\\tokencontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FD0BC892-77C0-438E-9276-E35ED8B7BA7A}|..\\asp_servicios\\asp_servicios.csproj|c:\\users\\user\\desktop\\proyectosprogsoft\\proyectoparqueaderops2025\\repos\\asp_servicios\\startup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FD0BC892-77C0-438E-9276-E35ED8B7BA7A}|..\\asp_servicios\\asp_servicios.csproj|c:\\users\\user\\desktop\\proyectosprogsoft\\proyectoparqueaderops2025\\repos\\asp_servicios\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FD0BC892-77C0-438E-9276-E35ED8B7BA7A}|..\\asp_servicios\\asp_servicios.csproj|c:\\users\\user\\desktop\\proyectosprogsoft\\proyectoparqueaderops2025\\repos\\asp_servicios\\nucleo\\configuracion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8A3E4A13-5012-4F8F-9F1B-DD93B567B6CC}|..\\libr_aplicaciones\\libr_aplicaciones.csproj|c:\\users\\user\\desktop\\proyectosprogsoft\\proyectoparqueaderops2025\\repos\\libr_aplicaciones\\implementaciones\\empleadosapp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8A3E4A13-5012-4F8F-9F1B-DD93B567B6CC}|..\\libr_aplicaciones\\libr_aplicaciones.csproj|c:\\users\\user\\desktop\\proyectosprogsoft\\proyectoparqueaderops2025\\repos\\libr_aplicaciones\\implementaciones\\turnosapp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8A3E4A13-5012-4F8F-9F1B-DD93B567B6CC}|..\\libr_aplicaciones\\libr_aplicaciones.csproj|c:\\users\\user\\desktop\\proyectosprogsoft\\proyectoparqueaderops2025\\repos\\libr_aplicaciones\\interfaces\\iturnosapp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8A3E4A13-5012-4F8F-9F1B-DD93B567B6CC}|..\\libr_aplicaciones\\libr_aplicaciones.csproj|c:\\users\\user\\desktop\\proyectosprogsoft\\proyectoparqueaderops2025\\repos\\libr_aplicaciones\\implementaciones\\contratosapp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8A3E4A13-5012-4F8F-9F1B-DD93B567B6CC}|..\\libr_aplicaciones\\libr_aplicaciones.csproj|c:\\users\\user\\desktop\\proyectosprogsoft\\proyectoparqueaderops2025\\repos\\libr_aplicaciones\\interfaces\\icontratosapp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8A3E4A13-5012-4F8F-9F1B-DD93B567B6CC}|..\\libr_aplicaciones\\libr_aplicaciones.csproj|c:\\users\\user\\desktop\\proyectosprogsoft\\proyectoparqueaderops2025\\repos\\libr_aplicaciones\\implementaciones\\cargosapp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8A3E4A13-5012-4F8F-9F1B-DD93B567B6CC}|..\\libr_aplicaciones\\libr_aplicaciones.csproj|c:\\users\\user\\desktop\\proyectosprogsoft\\proyectoparqueaderops2025\\repos\\libr_aplicaciones\\interfaces\\icargosapp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8A3E4A13-5012-4F8F-9F1B-DD93B567B6CC}|..\\libr_aplicaciones\\libr_aplicaciones.csproj|c:\\users\\user\\desktop\\proyectosprogsoft\\proyectoparqueaderops2025\\repos\\libr_aplicaciones\\interfaces\\iempleadosapp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{FD0BC892-77C0-438E-9276-E35ED8B7BA7A}|..\\asp_servicios\\asp_servicios.csproj|c:\\users\\alvaro\\desktop\\proyectosprogsoft\\proyectoparqueaderops2025\\repos\\asp_servicios\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -49,184 +19,45 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 9,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "IContratosApp.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\ProyectosProgSoft\\ProyectoparqueaderoPS2025\\Repos\\libr_aplicaciones\\Interfaces\\IContratosApp.cs",
-              "RelativeDocumentMoniker": "..\\libr_aplicaciones\\Interfaces\\IContratosApp.cs",
-              "ToolTip": "C:\\Users\\User\\Desktop\\ProyectosProgSoft\\ProyectoparqueaderoPS2025\\Repos\\libr_aplicaciones\\Interfaces\\IContratosApp.cs",
-              "RelativeToolTip": "..\\libr_aplicaciones\\Interfaces\\IContratosApp.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAjAAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "TokenController.cs",
+              "DocumentMoniker": "C:\\Users\\Alvaro\\Desktop\\ProyectosProgSoft\\ProyectoparqueaderoPS2025\\Repos\\asp_servicios\\Controllers\\TokenController.cs",
+              "RelativeDocumentMoniker": "..\\asp_servicios\\Controllers\\TokenController.cs",
+              "ToolTip": "C:\\Users\\Alvaro\\Desktop\\ProyectosProgSoft\\ProyectoparqueaderoPS2025\\Repos\\asp_servicios\\Controllers\\TokenController.cs",
+              "RelativeToolTip": "..\\asp_servicios\\Controllers\\TokenController.cs",
+              "ViewState": "AgIAAFsAAAAAAAAAAAAUwGUAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-14T21:26:28.438Z",
-              "IsPinned": true,
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "ICargosApp.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\ProyectosProgSoft\\ProyectoparqueaderoPS2025\\Repos\\libr_aplicaciones\\Interfaces\\ICargosApp.cs",
-              "RelativeDocumentMoniker": "..\\libr_aplicaciones\\Interfaces\\ICargosApp.cs",
-              "ToolTip": "C:\\Users\\User\\Desktop\\ProyectosProgSoft\\ProyectoparqueaderoPS2025\\Repos\\libr_aplicaciones\\Interfaces\\ICargosApp.cs",
-              "RelativeToolTip": "..\\libr_aplicaciones\\Interfaces\\ICargosApp.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAdAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-14T21:49:10.733Z",
-              "IsPinned": true,
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "ITurnosApp.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\ProyectosProgSoft\\ProyectoparqueaderoPS2025\\Repos\\libr_aplicaciones\\Interfaces\\ITurnosApp.cs",
-              "RelativeDocumentMoniker": "..\\libr_aplicaciones\\Interfaces\\ITurnosApp.cs",
-              "ToolTip": "C:\\Users\\User\\Desktop\\ProyectosProgSoft\\ProyectoparqueaderoPS2025\\Repos\\libr_aplicaciones\\Interfaces\\ITurnosApp.cs",
-              "RelativeToolTip": "..\\libr_aplicaciones\\Interfaces\\ITurnosApp.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAdAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-14T21:50:27.589Z",
-              "IsPinned": true,
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "IEmpleadosApp.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\ProyectosProgSoft\\ProyectoparqueaderoPS2025\\Repos\\libr_aplicaciones\\Interfaces\\IEmpleadosApp.cs",
-              "RelativeDocumentMoniker": "..\\libr_aplicaciones\\Interfaces\\IEmpleadosApp.cs",
-              "ToolTip": "C:\\Users\\User\\Desktop\\ProyectosProgSoft\\ProyectoparqueaderoPS2025\\Repos\\libr_aplicaciones\\Interfaces\\IEmpleadosApp.cs",
-              "RelativeToolTip": "..\\libr_aplicaciones\\Interfaces\\IEmpleadosApp.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAhAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-14T21:52:19.045Z",
-              "IsPinned": true,
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "CargosApp.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\ProyectosProgSoft\\ProyectoparqueaderoPS2025\\Repos\\libr_aplicaciones\\Implementaciones\\CargosApp.cs",
-              "RelativeDocumentMoniker": "..\\libr_aplicaciones\\Implementaciones\\CargosApp.cs",
-              "ToolTip": "C:\\Users\\User\\Desktop\\ProyectosProgSoft\\ProyectoparqueaderoPS2025\\Repos\\libr_aplicaciones\\Implementaciones\\CargosApp.cs",
-              "RelativeToolTip": "..\\libr_aplicaciones\\Implementaciones\\CargosApp.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAjAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-14T21:56:49.877Z",
-              "IsPinned": true,
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "ContratosApp.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\ProyectosProgSoft\\ProyectoparqueaderoPS2025\\Repos\\libr_aplicaciones\\Implementaciones\\ContratosApp.cs",
-              "RelativeDocumentMoniker": "..\\libr_aplicaciones\\Implementaciones\\ContratosApp.cs",
-              "ToolTip": "C:\\Users\\User\\Desktop\\ProyectosProgSoft\\ProyectoparqueaderoPS2025\\Repos\\libr_aplicaciones\\Implementaciones\\ContratosApp.cs",
-              "RelativeToolTip": "..\\libr_aplicaciones\\Implementaciones\\ContratosApp.cs",
-              "ViewState": "AgIAACQAAAAAAAAAAAAAADYAAABGAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-14T22:02:03.828Z",
-              "IsPinned": true,
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "TurnosApp.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\ProyectosProgSoft\\ProyectoparqueaderoPS2025\\Repos\\libr_aplicaciones\\Implementaciones\\TurnosApp.cs",
-              "RelativeDocumentMoniker": "..\\libr_aplicaciones\\Implementaciones\\TurnosApp.cs",
-              "ToolTip": "C:\\Users\\User\\Desktop\\ProyectosProgSoft\\ProyectoparqueaderoPS2025\\Repos\\libr_aplicaciones\\Implementaciones\\TurnosApp.cs",
-              "RelativeToolTip": "..\\libr_aplicaciones\\Implementaciones\\TurnosApp.cs",
-              "ViewState": "AgIAACUAAAAAAAAAAAAAADYAAAA8AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-14T22:03:39.776Z",
-              "IsPinned": true,
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "EmpleadosApp.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\ProyectosProgSoft\\ProyectoparqueaderoPS2025\\Repos\\libr_aplicaciones\\Implementaciones\\EmpleadosApp.cs",
-              "RelativeDocumentMoniker": "..\\libr_aplicaciones\\Implementaciones\\EmpleadosApp.cs",
-              "ToolTip": "C:\\Users\\User\\Desktop\\ProyectosProgSoft\\ProyectoparqueaderoPS2025\\Repos\\libr_aplicaciones\\Implementaciones\\EmpleadosApp.cs",
-              "RelativeToolTip": "..\\libr_aplicaciones\\Implementaciones\\EmpleadosApp.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAADYAAAA+AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-14T22:04:42.88Z",
-              "IsPinned": true,
+              "WhenOpened": "2025-05-18T08:06:07.524Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "Startup.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\ProyectosProgSoft\\ProyectoparqueaderoPS2025\\Repos\\asp_servicios\\Startup.cs",
-              "RelativeDocumentMoniker": "..\\asp_servicios\\Startup.cs",
-              "ToolTip": "C:\\Users\\User\\Desktop\\ProyectosProgSoft\\ProyectoparqueaderoPS2025\\Repos\\asp_servicios\\Startup.cs",
-              "RelativeToolTip": "..\\asp_servicios\\Startup.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAqAAAAAAAAAA==",
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Alvaro\\Desktop\\ProyectosProgSoft\\ProyectoparqueaderoPS2025\\Repos\\asp_servicios\\Program.cs",
+              "RelativeDocumentMoniker": "..\\asp_servicios\\Program.cs",
+              "ToolTip": "C:\\Users\\Alvaro\\Desktop\\ProyectosProgSoft\\ProyectoparqueaderoPS2025\\Repos\\asp_servicios\\Program.cs",
+              "RelativeToolTip": "..\\asp_servicios\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-14T22:10:25.913Z",
-              "IsPinned": true,
+              "WhenOpened": "2025-05-18T07:56:22.602Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "TarifasApp.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\ProyectosProgSoft\\ProyectoparqueaderoPS2025\\Repos\\libr_aplicaciones\\Implementaciones\\TarifasApp.cs",
-              "RelativeDocumentMoniker": "..\\libr_aplicaciones\\Implementaciones\\TarifasApp.cs",
-              "ToolTip": "C:\\Users\\User\\Desktop\\ProyectosProgSoft\\ProyectoparqueaderoPS2025\\Repos\\libr_aplicaciones\\Implementaciones\\TarifasApp.cs",
-              "RelativeToolTip": "..\\libr_aplicaciones\\Implementaciones\\TarifasApp.cs",
-              "ViewState": "AgIAABkAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Title": "ClientesController.cs",
+              "DocumentMoniker": "C:\\Users\\Alvaro\\Desktop\\ProyectosProgSoft\\ProyectoparqueaderoPS2025\\Repos\\asp_servicios\\Controllers\\ClientesController.cs",
+              "RelativeDocumentMoniker": "..\\asp_servicios\\Controllers\\ClientesController.cs",
+              "ToolTip": "C:\\Users\\Alvaro\\Desktop\\ProyectosProgSoft\\ProyectoparqueaderoPS2025\\Repos\\asp_servicios\\Controllers\\ClientesController.cs",
+              "RelativeToolTip": "..\\asp_servicios\\Controllers\\ClientesController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEYAAABDAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-14T22:42:33.682Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "ParqueaderosClientesApp.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\ProyectosProgSoft\\ProyectoparqueaderoPS2025\\Repos\\libr_aplicaciones\\Implementaciones\\ParqueaderosClientesApp.cs",
-              "RelativeDocumentMoniker": "..\\libr_aplicaciones\\Implementaciones\\ParqueaderosClientesApp.cs",
-              "ToolTip": "C:\\Users\\User\\Desktop\\ProyectosProgSoft\\ProyectoparqueaderoPS2025\\Repos\\libr_aplicaciones\\Implementaciones\\ParqueaderosClientesApp.cs",
-              "RelativeToolTip": "..\\libr_aplicaciones\\Implementaciones\\ParqueaderosClientesApp.cs",
-              "ViewState": "AgIAABkAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-14T22:42:16.644Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\ProyectosProgSoft\\ProyectoparqueaderoPS2025\\Repos\\asp_servicios\\Program.cs",
-              "RelativeDocumentMoniker": "..\\asp_servicios\\Program.cs",
-              "ToolTip": "C:\\Users\\User\\Desktop\\ProyectosProgSoft\\ProyectoparqueaderoPS2025\\Repos\\asp_servicios\\Program.cs",
-              "RelativeToolTip": "..\\asp_servicios\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-14T22:30:02.513Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Configuracion.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\ProyectosProgSoft\\ProyectoparqueaderoPS2025\\Repos\\asp_servicios\\Nucleo\\Configuracion.cs",
-              "RelativeDocumentMoniker": "..\\asp_servicios\\Nucleo\\Configuracion.cs",
-              "ToolTip": "C:\\Users\\User\\Desktop\\ProyectosProgSoft\\ProyectoparqueaderoPS2025\\Repos\\asp_servicios\\Nucleo\\Configuracion.cs",
-              "RelativeToolTip": "..\\asp_servicios\\Nucleo\\Configuracion.cs",
-              "ViewState": "AgIAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-14T22:10:17.71Z",
+              "WhenOpened": "2025-05-18T07:52:21.717Z",
               "EditorCaption": ""
             }
           ]
