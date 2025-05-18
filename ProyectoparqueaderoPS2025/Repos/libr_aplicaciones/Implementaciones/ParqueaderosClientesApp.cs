@@ -30,7 +30,7 @@ namespace libr_aplicaciones.Implementaciones
         {
             if (entidad == null) throw new Exception("lbFaltaInformacion");
             if (entidad.Id != 0) throw new Exception("lbYaSeGuardo");
-            //entidad!.Total = (entidad!._Tarifa!.Valor * entidad!.Tiempo ); //calcular total
+            entidad!.Total = (entidad!._Tarifa!.Valor * entidad!.Tiempo ); //calcular total
             this.IConexion!.ParqueaderosClientes!.Add(entidad); this.IConexion.SaveChanges(); 
             return entidad;
         }
@@ -39,7 +39,7 @@ namespace libr_aplicaciones.Implementaciones
         {
             if (entidad == null) throw new Exception("lbFaltaInformacion");
             if (entidad!.Id == 0) throw new Exception("lbNoSeGuardo");
-            //entidad!.Total = (entidad!._Tarifa!.Valor * entidad!.Tiempo); //calcular total
+            entidad!.Total = (entidad!._Tarifa!.Valor * entidad!.Tiempo); //calcular total
             var entry = this.IConexion!.Entry<ParqueaderosClientes>(entidad); entry.State = EntityState.Modified; this.IConexion.SaveChanges(); 
             return entidad;
         }

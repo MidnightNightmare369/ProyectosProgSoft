@@ -8,12 +8,12 @@ namespace asp_servicios.Controllers
 {
     [ApiController]
     [Route("[controller]/[action]")]
-    public class ClientesController : ControllerBase
+    public class ParqueaderosClientesController : ControllerBase
     {
         private IParqueaderosClientesApp? iAplicacion = null;
         private TokenController? tokenController = null;
 
-        public ClientesController(IParqueaderosClientesApp? iAplicacion, TokenController tokenController)
+        public ParqueaderosClientesController(IParqueaderosClientesApp? iAplicacion, TokenController tokenController)
         {
             this.iAplicacion = iAplicacion;
             this.tokenController = tokenController;
@@ -54,7 +54,7 @@ namespace asp_servicios.Controllers
         }
 
         [HttpPost]
-        public string PorEstudiante()
+        public string PorPosicion()
         {
             var respuesta = new Dictionary<string, object>();
             try

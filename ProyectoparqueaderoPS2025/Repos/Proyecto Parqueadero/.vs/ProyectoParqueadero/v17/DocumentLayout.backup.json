@@ -1,18 +1,12 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Alvaro\\Desktop\\ProyectosProgSoft\\ProyectoparqueaderoPS2025\\Repos\\Proyecto Parqueadero\\",
+  "WorkspaceRootPath": "C:\\Users\\User\\Desktop\\ProyectosProgSoft\\ProyectoparqueaderoPS2025\\Repos\\Proyecto Parqueadero\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{65322133-41D9-4361-81A8-0E89B3D7AB0B}|..\\libr_dominio\\libr_dominio.csproj|c:\\users\\alvaro\\desktop\\proyectosprogsoft\\proyectoparqueaderops2025\\repos\\libr_dominio\\entidades\\contratos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{8A3E4A13-5012-4F8F-9F1B-DD93B567B6CC}|..\\libr_aplicaciones\\libr_aplicaciones.csproj|c:\\users\\user\\desktop\\proyectosprogsoft\\proyectoparqueaderops2025\\repos\\libr_aplicaciones\\implementaciones\\clientesapp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{65322133-41D9-4361-81A8-0E89B3D7AB0B}|..\\libr_dominio\\libr_dominio.csproj|c:\\users\\alvaro\\desktop\\proyectosprogsoft\\proyectoparqueaderops2025\\repos\\libr_dominio\\entidades\\parqueaderosclientes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{65322133-41D9-4361-81A8-0E89B3D7AB0B}|..\\libr_dominio\\libr_dominio.csproj|c:\\users\\alvaro\\desktop\\proyectosprogsoft\\proyectoparqueaderops2025\\repos\\libr_dominio\\entidades\\clientes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C7002DEF-7F25-4E6B-954A-77C46516378F}|..\\libr_repositorios\\libr_repositorios.csproj|c:\\users\\alvaro\\desktop\\proyectosprogsoft\\proyectoparqueaderops2025\\repos\\libr_repositorios\\implementaciones\\conexion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C7002DEF-7F25-4E6B-954A-77C46516378F}|..\\libr_repositorios\\libr_repositorios.csproj|c:\\users\\user\\desktop\\proyectosprogsoft\\proyectoparqueaderops2025\\repos\\libr_repositorios\\interfaces\\iconexion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,59 +16,32 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Conexion.cs",
-              "DocumentMoniker": "C:\\Users\\Alvaro\\Desktop\\ProyectosProgSoft\\ProyectoparqueaderoPS2025\\Repos\\libr_repositorios\\Implementaciones\\Conexion.cs",
-              "RelativeDocumentMoniker": "..\\libr_repositorios\\Implementaciones\\Conexion.cs",
-              "ToolTip": "C:\\Users\\Alvaro\\Desktop\\ProyectosProgSoft\\ProyectoparqueaderoPS2025\\Repos\\libr_repositorios\\Implementaciones\\Conexion.cs",
-              "RelativeToolTip": "..\\libr_repositorios\\Implementaciones\\Conexion.cs",
-              "ViewState": "AgIAAA0AAAAAAAAAAAAQwAAAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "ClientesApp.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\ProyectosProgSoft\\ProyectoparqueaderoPS2025\\Repos\\libr_aplicaciones\\Implementaciones\\ClientesApp.cs",
+              "RelativeDocumentMoniker": "..\\libr_aplicaciones\\Implementaciones\\ClientesApp.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\ProyectosProgSoft\\ProyectoparqueaderoPS2025\\Repos\\libr_aplicaciones\\Implementaciones\\ClientesApp.cs",
+              "RelativeToolTip": "..\\libr_aplicaciones\\Implementaciones\\ClientesApp.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-14T06:03:46.67Z",
-              "IsPinned": true,
+              "WhenOpened": "2025-05-14T17:05:28.96Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "ParqueaderosClientes.cs",
-              "DocumentMoniker": "C:\\Users\\Alvaro\\Desktop\\ProyectosProgSoft\\ProyectoparqueaderoPS2025\\Repos\\libr_dominio\\Entidades\\ParqueaderosClientes.cs",
-              "RelativeDocumentMoniker": "..\\libr_dominio\\Entidades\\ParqueaderosClientes.cs",
-              "ToolTip": "C:\\Users\\Alvaro\\Desktop\\ProyectosProgSoft\\ProyectoparqueaderoPS2025\\Repos\\libr_dominio\\Entidades\\ParqueaderosClientes.cs",
-              "RelativeToolTip": "..\\libr_dominio\\Entidades\\ParqueaderosClientes.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Title": "IConexion.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\ProyectosProgSoft\\ProyectoparqueaderoPS2025\\Repos\\libr_repositorios\\Interfaces\\IConexion.cs",
+              "RelativeDocumentMoniker": "..\\libr_repositorios\\Interfaces\\IConexion.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\ProyectosProgSoft\\ProyectoparqueaderoPS2025\\Repos\\libr_repositorios\\Interfaces\\IConexion.cs",
+              "RelativeToolTip": "..\\libr_repositorios\\Interfaces\\IConexion.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAAAAYAAAAUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-14T06:05:40.951Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Clientes.cs",
-              "DocumentMoniker": "C:\\Users\\Alvaro\\Desktop\\ProyectosProgSoft\\ProyectoparqueaderoPS2025\\Repos\\libr_dominio\\Entidades\\Clientes.cs",
-              "RelativeDocumentMoniker": "..\\libr_dominio\\Entidades\\Clientes.cs",
-              "ToolTip": "C:\\Users\\Alvaro\\Desktop\\ProyectosProgSoft\\ProyectoparqueaderoPS2025\\Repos\\libr_dominio\\Entidades\\Clientes.cs",
-              "RelativeToolTip": "..\\libr_dominio\\Entidades\\Clientes.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-14T06:04:03.436Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Contratos.cs",
-              "DocumentMoniker": "C:\\Users\\Alvaro\\Desktop\\ProyectosProgSoft\\ProyectoparqueaderoPS2025\\Repos\\libr_dominio\\Entidades\\Contratos.cs",
-              "RelativeDocumentMoniker": "..\\libr_dominio\\Entidades\\Contratos.cs",
-              "ToolTip": "C:\\Users\\Alvaro\\Desktop\\ProyectosProgSoft\\ProyectoparqueaderoPS2025\\Repos\\libr_dominio\\Entidades\\Contratos.cs",
-              "RelativeToolTip": "..\\libr_dominio\\Entidades\\Contratos.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAvAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-14T06:04:36.31Z",
+              "WhenOpened": "2025-05-14T17:00:25.721Z",
               "EditorCaption": ""
             }
           ]

@@ -37,6 +37,10 @@ namespace asp_servicios
             // Aplicaciones
             services.AddScoped<IParqueaderosClientesApp, ParqueaderosClientesApp>();
             services.AddScoped<IClientesApp, ClientesApp>();
+            services.AddScoped<IContratosApp, ContratosApp>();
+            services.AddScoped<ICargosApp, CargosApp>();
+            services.AddScoped<ITurnosApp, TurnosApp>();
+            services.AddScoped<IEmpleadosApp, EmpleadosApp>();
             services.AddScoped<IParqueaderosApp, ParqueaderosApp>();
             services.AddScoped<ITarifasApp, TarifasApp>();
             services.AddScoped<ITipoClientesApp, TipoClientesApp>();
@@ -46,6 +50,7 @@ namespace asp_servicios
 
             // Controladores
             services.AddScoped<TokenController, TokenController>();
+            //Intentar añador controlador TestController: services.AddScoped<TestController, TestController>();
 
             services.AddCors(o => o.AddDefaultPolicy(b => b.AllowAnyOrigin()));
         }
