@@ -176,6 +176,12 @@ namespace asp_servicios.Controllers
                 respuesta["Error"] = ex.Message.ToString();
                 return JsonConversor.ConvertirAString(respuesta);
             }
+            /*JSON DE EJEMPLO:  
+                {"Usuario": "SBWq+oLWYfEUF42esqPTIw==",
+                "Bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6IlNCV3Erb0xXWWZFVUY0MmVzcVBUSXc9PSIsIm5iZiI6MTc0NzYzMzM0MywiZXhwIjoxNzQ3NjM2OTQzLCJpYXQiOjE3NDc2MzMzNDN9.N9tUdL4WUUelLHEgQpVrm8UbCs7KiYL0dvg-vA4kO_Q"
+                , "Entidad":  {"Id": "1"} 
+                }          
+           */
         }
     }
 }

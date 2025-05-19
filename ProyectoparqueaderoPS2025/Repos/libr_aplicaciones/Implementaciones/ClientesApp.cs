@@ -23,14 +23,34 @@ namespace libr_aplicaciones.Implementaciones
         {
             if (entidad == null) throw new Exception("lbFaltaInformacion");
             if (entidad!.Id == 0) throw new Exception("lbNoSeGuardo");
-            this.IConexion!.Clientes!.Remove(entidad); this.IConexion.SaveChanges(); return entidad;
+
+            var objAuditoria = new Auditorias()
+            {
+                Clase = "Clientes",
+                IdModificado = entidad.Id,
+                TipoModificacion = "Eliminación",
+                Fecha = DateTime.Now
+            };
+
+            this.IConexion!.Auditorias!.Add(objAuditoria);
+            this.IConexion!.Clientes!.Remove(entidad); this.IConexion.SaveChanges(); 
+            return entidad;
         }
 
         public Clientes? Guardar(Clientes? entidad)
         {
             if (entidad == null) throw new Exception("lbFaltaInformacion");
             if (entidad.Id != 0) throw new Exception("lbYaSeGuardo");
-            //entidad!.Total = (entidad!._Tarifa!.Valor * entidad!.Tiempo ); //calcular total
+
+            var objAuditoria = new Auditorias()
+            {
+                Clase = "Clientes",
+                IdModificado = entidad.Id,
+                TipoModificacion = "Creación",
+                Fecha = DateTime.Now
+            };
+
+            this.IConexion!.Auditorias!.Add(objAuditoria);
             this.IConexion!.Clientes!.Add(entidad); this.IConexion.SaveChanges();
             return entidad;
         }
@@ -39,7 +59,16 @@ namespace libr_aplicaciones.Implementaciones
         {
             if (entidad == null) throw new Exception("lbFaltaInformacion");
             if (entidad!.Id == 0) throw new Exception("lbNoSeGuardo");
-            //entidad!.Total = (entidad!._Tarifa!.Valor * entidad!.Tiempo); //calcular total
+
+            var objAuditoria = new Auditorias()
+            {
+                Clase = "Clientes",
+                IdModificado = entidad.Id,
+                TipoModificacion = "Modificación",
+                Fecha = DateTime.Now
+            };
+
+            this.IConexion!.Auditorias!.Add(objAuditoria);
             var entry = this.IConexion!.Entry<Clientes>(entidad); entry.State = EntityState.Modified; this.IConexion.SaveChanges();
             return entidad;
         }

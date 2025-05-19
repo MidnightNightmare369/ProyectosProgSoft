@@ -111,5 +111,16 @@ namespace utt_presentacion.Nucleo
             return entidad;
         }
 
+        public static Auditorias? Auditorias()
+        {
+            var entidad = new Auditorias();
+            entidad.Clase = "TEST-" + DateTime.Now.ToString("yyyyMMddHHmmss");
+            entidad.Usuario = "TEST-" + DateTime.Now.ToString("yyyyMMddHHmmss");
+            entidad.IdModificado = 1;
+            entidad.TipoModificacion = "TEST-" + DateTime.Now.ToString("yyyyMMddHHmmss");
+            entidad.Fecha = DateTime.Now;
+            return entidad;
+        }
+
     }
 }

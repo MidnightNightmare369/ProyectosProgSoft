@@ -83,6 +83,14 @@ CREATE TABLE ParqueaderosClientes (
     Empleado INT NOT NULL REFERENCES Empleados(Id),
 );
 
+CREATE TABLE Auditorias (
+    Id INT PRIMARY KEY IDENTITY(1,1),
+    Clase NVARCHAR(50) NOT NULL,
+    IdModificado INT NOT NULL,
+	TipoModificacion NVARCHAR(50) NOT NULL,
+	Fecha DateTime NOT NULL
+);
+
 -- Insertar datos en TipoVehiculos
 INSERT INTO TipoVehiculos (TipoVehiculo) VALUES ('moto');
 INSERT INTO TipoVehiculos (TipoVehiculo) VALUES ('automovil');

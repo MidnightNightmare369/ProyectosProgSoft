@@ -23,14 +23,35 @@ namespace libr_aplicaciones.Implementaciones
         {
             if (entidad == null) throw new Exception("lbFaltaInformacion");
             if (entidad!.Id == 0) throw new Exception("lbNoSeGuardo");
-            this.IConexion!.ParqueaderosClientes!.Remove(entidad); this.IConexion.SaveChanges(); return entidad;
+
+            var objAuditoria = new Auditorias()
+            {
+                Clase = "ParqueaderosClientes",
+                IdModificado = entidad.Id,
+                TipoModificacion = "Eliminación",
+                Fecha = DateTime.Now
+            };
+
+            this.IConexion!.Auditorias!.Add(objAuditoria);
+            this.IConexion!.ParqueaderosClientes!.Remove(entidad); this.IConexion.SaveChanges();
+            return entidad;
         }
 
         public ParqueaderosClientes? Guardar(ParqueaderosClientes? entidad)
         {
             if (entidad == null) throw new Exception("lbFaltaInformacion");
             if (entidad.Id != 0) throw new Exception("lbYaSeGuardo");
+
             entidad!.Total = (entidad!._Tarifa!.Valor * entidad!.Tiempo ); //calcular total
+            var objAuditoria = new Auditorias()
+            {
+                Clase = "Parqueaderos",
+                IdModificado = entidad.Id,
+                TipoModificacion = "Creación",
+                Fecha = DateTime.Now
+            };
+
+            this.IConexion!.Auditorias!.Add(objAuditoria);
             this.IConexion!.ParqueaderosClientes!.Add(entidad); this.IConexion.SaveChanges(); 
             return entidad;
         }
@@ -39,7 +60,17 @@ namespace libr_aplicaciones.Implementaciones
         {
             if (entidad == null) throw new Exception("lbFaltaInformacion");
             if (entidad!.Id == 0) throw new Exception("lbNoSeGuardo");
+
             entidad!.Total = (entidad!._Tarifa!.Valor * entidad!.Tiempo); //calcular total
+            var objAuditoria = new Auditorias()
+            {
+                Clase = "Parqueaderos",
+                IdModificado = entidad.Id,
+                TipoModificacion = "Creación",
+                Fecha = DateTime.Now
+            };
+
+            this.IConexion!.Auditorias!.Add(objAuditoria);
             var entry = this.IConexion!.Entry<ParqueaderosClientes>(entidad); entry.State = EntityState.Modified; this.IConexion.SaveChanges(); 
             return entidad;
         }

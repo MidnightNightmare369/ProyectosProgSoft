@@ -17,7 +17,8 @@ namespace libr_repositorios.Interfaces
         DbSet<Cargos>? Cargos { get; set; }
         DbSet<Turnos>? Turnos { get; set; }
         DbSet<Contratos>? Contratos { get; set; }
-        DbSet<Empleados>? Empleados { get; set; }//--
+        DbSet<Empleados>? Empleados { get; set; }
+        DbSet<Auditorias>? Auditorias { get; set; }//--
         DbSet<ParqueaderosClientes>? ParqueaderosClientes { get; set; }
         DbSet<Clientes>? Clientes { get; set; }
 

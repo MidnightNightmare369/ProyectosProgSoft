@@ -25,6 +25,7 @@ namespace libr_repositorios.Implementaciones
         public DbSet<Turnos>? Turnos { get; set; }
         public DbSet<Contratos>? Contratos { get; set; }
         public DbSet<Empleados>? Empleados { get; set; }
+        public DbSet<Auditorias>? Auditorias { get; set; }
         public DbSet<ParqueaderosClientes>? ParqueaderosClientes { get; set; }
 
     }
