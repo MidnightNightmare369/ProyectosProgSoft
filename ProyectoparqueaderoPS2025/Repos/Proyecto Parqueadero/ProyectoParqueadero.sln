@@ -19,7 +19,14 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "utt_presentacion", "utt_pre
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "libr_aplicaciones", "..\libr_aplicaciones\libr_aplicaciones.csproj", "{8A3E4A13-5012-4F8F-9F1B-DD93B567B6CC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "asp_servicios", "..\asp_servicios\asp_servicios.csproj", "{FD0BC892-77C0-438E-9276-E35ED8B7BA7A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "asp_servicios", "..\asp_servicios\asp_servicios.csproj", "{FD0BC892-77C0-438E-9276-E35ED8B7BA7A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Archivos externos", "Archivos externos", "{8A625C48-1F88-43CB-AE4D-0E031791A65D}"
+	ProjectSection(SolutionItems) = preProject
+		secretos.json = secretos.json
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "libr_presentaciones", "..\libr_presentaciones\libr_presentaciones.csproj", "{CF1E7CA5-1820-4272-8506-2EE0AB7A53D3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -47,6 +54,10 @@ Global
 		{FD0BC892-77C0-438E-9276-E35ED8B7BA7A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FD0BC892-77C0-438E-9276-E35ED8B7BA7A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FD0BC892-77C0-438E-9276-E35ED8B7BA7A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CF1E7CA5-1820-4272-8506-2EE0AB7A53D3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CF1E7CA5-1820-4272-8506-2EE0AB7A53D3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CF1E7CA5-1820-4272-8506-2EE0AB7A53D3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CF1E7CA5-1820-4272-8506-2EE0AB7A53D3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -57,6 +68,7 @@ Global
 		{98B1F6CC-A0A8-4301-917C-F38BE931A617} = {BDEF0B8A-563B-4002-935B-177A6933C892}
 		{8A3E4A13-5012-4F8F-9F1B-DD93B567B6CC} = {699DBD0E-85E0-40F2-A5CD-823C278F88DE}
 		{FD0BC892-77C0-438E-9276-E35ED8B7BA7A} = {699DBD0E-85E0-40F2-A5CD-823C278F88DE}
+		{CF1E7CA5-1820-4272-8506-2EE0AB7A53D3} = {621EAD19-B972-4BAD-A450-FEC3A2C8B4C6}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {18CE7369-688A-478E-9611-13D2FB84695B}
