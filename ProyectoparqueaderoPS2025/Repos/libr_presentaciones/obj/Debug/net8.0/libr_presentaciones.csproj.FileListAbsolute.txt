@@ -1,0 +1,15 @@
+C:\Users\Alvaro\Desktop\ProyectosProgSoft\ProyectoparqueaderoPS2025\Repos\libr_presentaciones\bin\Debug\net8.0\libr_presentaciones.deps.json
+C:\Users\Alvaro\Desktop\ProyectosProgSoft\ProyectoparqueaderoPS2025\Repos\libr_presentaciones\bin\Debug\net8.0\libr_presentaciones.dll
+C:\Users\Alvaro\Desktop\ProyectosProgSoft\ProyectoparqueaderoPS2025\Repos\libr_presentaciones\bin\Debug\net8.0\libr_presentaciones.pdb
+C:\Users\Alvaro\Desktop\ProyectosProgSoft\ProyectoparqueaderoPS2025\Repos\libr_presentaciones\bin\Debug\net8.0\libr_dominio.dll
+C:\Users\Alvaro\Desktop\ProyectosProgSoft\ProyectoparqueaderoPS2025\Repos\libr_presentaciones\bin\Debug\net8.0\libr_dominio.pdb
+C:\Users\Alvaro\Desktop\ProyectosProgSoft\ProyectoparqueaderoPS2025\Repos\libr_presentaciones\obj\Debug\net8.0\libr_presentaciones.csproj.AssemblyReference.cache
+C:\Users\Alvaro\Desktop\ProyectosProgSoft\ProyectoparqueaderoPS2025\Repos\libr_presentaciones\obj\Debug\net8.0\libr_presentaciones.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Alvaro\Desktop\ProyectosProgSoft\ProyectoparqueaderoPS2025\Repos\libr_presentaciones\obj\Debug\net8.0\libr_presentaciones.AssemblyInfoInputs.cache
+C:\Users\Alvaro\Desktop\ProyectosProgSoft\ProyectoparqueaderoPS2025\Repos\libr_presentaciones\obj\Debug\net8.0\libr_presentaciones.AssemblyInfo.cs
+C:\Users\Alvaro\Desktop\ProyectosProgSoft\ProyectoparqueaderoPS2025\Repos\libr_presentaciones\obj\Debug\net8.0\libr_presentaciones.csproj.CoreCompileInputs.cache
+C:\Users\Alvaro\Desktop\ProyectosProgSoft\ProyectoparqueaderoPS2025\Repos\libr_presentaciones\obj\Debug\net8.0\libr_pre.8DAF9732.Up2Date
+C:\Users\Alvaro\Desktop\ProyectosProgSoft\ProyectoparqueaderoPS2025\Repos\libr_presentaciones\obj\Debug\net8.0\libr_presentaciones.dll
+C:\Users\Alvaro\Desktop\ProyectosProgSoft\ProyectoparqueaderoPS2025\Repos\libr_presentaciones\obj\Debug\net8.0\refint\libr_presentaciones.dll
+C:\Users\Alvaro\Desktop\ProyectosProgSoft\ProyectoparqueaderoPS2025\Repos\libr_presentaciones\obj\Debug\net8.0\libr_presentaciones.pdb
+C:\Users\Alvaro\Desktop\ProyectosProgSoft\ProyectoparqueaderoPS2025\Repos\libr_presentaciones\obj\Debug\net8.0\ref\libr_presentaciones.dll

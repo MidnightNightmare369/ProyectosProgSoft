@@ -1,9 +1,9 @@
 ﻿using libr_dominio.Entidades;
 using libr_dominio.Nucleo;
-using lib_presentaciones.Interfaces;
+using libr_presentaciones.Interfaces;
 using libr_presentaciones;
 
-namespace lib_presentaciones.Implementaciones
+namespace libr_presentaciones.Implementaciones
 {
     public class TipoClientesPresentacion : ITipoClientesPresentacion
     {

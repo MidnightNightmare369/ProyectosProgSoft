@@ -3,16 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\Alvaro\\Desktop\\ProyectosProgSoft\\ProyectoparqueaderoPS2025\\Repos\\Proyecto Parqueadero\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{FD0BC892-77C0-438E-9276-E35ED8B7BA7A}|..\\asp_servicios\\asp_servicios.csproj|c:\\users\\alvaro\\desktop\\proyectosprogsoft\\proyectoparqueaderops2025\\repos\\asp_servicios\\controllers\\parqueaderosclientescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{489F03A0-E816-42AB-9B74-F6791F80414A}|asp_presentacion\\asp_presentacion.csproj|c:\\users\\alvaro\\desktop\\proyectosprogsoft\\proyectoparqueaderops2025\\repos\\proyecto parqueadero\\asp_presentacion\\pages\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{489F03A0-E816-42AB-9B74-F6791F80414A}|asp_presentacion\\asp_presentacion.csproj|solutionrelative:asp_presentacion\\pages\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FD0BC892-77C0-438E-9276-E35ED8B7BA7A}|..\\asp_servicios\\asp_servicios.csproj|c:\\users\\alvaro\\desktop\\proyectosprogsoft\\proyectoparqueaderops2025\\repos\\asp_servicios\\controllers\\auditoriascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{489F03A0-E816-42AB-9B74-F6791F80414A}|asp_presentacion\\asp_presentacion.csproj|c:\\users\\alvaro\\desktop\\proyectosprogsoft\\proyectoparqueaderops2025\\repos\\proyecto parqueadero\\asp_presentacion\\pages\\ventanas\\turnos.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{489F03A0-E816-42AB-9B74-F6791F80414A}|asp_presentacion\\asp_presentacion.csproj|solutionrelative:asp_presentacion\\pages\\ventanas\\turnos.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FD0BC892-77C0-438E-9276-E35ED8B7BA7A}|..\\asp_servicios\\asp_servicios.csproj|c:\\users\\alvaro\\desktop\\proyectosprogsoft\\proyectoparqueaderops2025\\repos\\asp_servicios\\nucleo\\configuracion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{489F03A0-E816-42AB-9B74-F6791F80414A}|asp_presentacion\\asp_presentacion.csproj|c:\\users\\alvaro\\desktop\\proyectosprogsoft\\proyectoparqueaderops2025\\repos\\proyecto parqueadero\\asp_presentacion\\pages\\ventanas\\tipopagos.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{489F03A0-E816-42AB-9B74-F6791F80414A}|asp_presentacion\\asp_presentacion.csproj|solutionrelative:asp_presentacion\\pages\\ventanas\\tipopagos.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FD0BC892-77C0-438E-9276-E35ED8B7BA7A}|..\\asp_servicios\\asp_servicios.csproj|c:\\users\\alvaro\\desktop\\proyectosprogsoft\\proyectoparqueaderops2025\\repos\\asp_servicios\\startup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{489F03A0-E816-42AB-9B74-F6791F80414A}|asp_presentacion\\asp_presentacion.csproj|c:\\users\\alvaro\\desktop\\proyectosprogsoft\\proyectoparqueaderops2025\\repos\\proyecto parqueadero\\asp_presentacion\\pages\\ventanas\\tipopagos.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{489F03A0-E816-42AB-9B74-F6791F80414A}|asp_presentacion\\asp_presentacion.csproj|solutionrelative:asp_presentacion\\pages\\ventanas\\tipopagos.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -27,53 +31,53 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "ParqueaderosClientesController.cs",
-              "DocumentMoniker": "C:\\Users\\Alvaro\\Desktop\\ProyectosProgSoft\\ProyectoparqueaderoPS2025\\Repos\\asp_servicios\\Controllers\\ParqueaderosClientesController.cs",
-              "RelativeDocumentMoniker": "..\\asp_servicios\\Controllers\\ParqueaderosClientesController.cs",
-              "ToolTip": "C:\\Users\\Alvaro\\Desktop\\ProyectosProgSoft\\ProyectoparqueaderoPS2025\\Repos\\asp_servicios\\Controllers\\ParqueaderosClientesController.cs",
-              "RelativeToolTip": "..\\asp_servicios\\Controllers\\ParqueaderosClientesController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAATAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-19T05:52:24.273Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Startup.cs",
-              "DocumentMoniker": "C:\\Users\\Alvaro\\Desktop\\ProyectosProgSoft\\ProyectoparqueaderoPS2025\\Repos\\asp_servicios\\Startup.cs",
-              "RelativeDocumentMoniker": "..\\asp_servicios\\Startup.cs",
-              "ToolTip": "C:\\Users\\Alvaro\\Desktop\\ProyectosProgSoft\\ProyectoparqueaderoPS2025\\Repos\\asp_servicios\\Startup.cs",
-              "RelativeToolTip": "..\\asp_servicios\\Startup.cs",
-              "ViewState": "AgIAAAsAAAAAAAAAAAAgwEEAAABNAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-19T05:28:13.63Z",
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\Alvaro\\Desktop\\ProyectosProgSoft\\ProyectoparqueaderoPS2025\\Repos\\Proyecto Parqueadero\\asp_presentacion\\Pages\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "asp_presentacion\\Pages\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\Alvaro\\Desktop\\ProyectosProgSoft\\ProyectoparqueaderoPS2025\\Repos\\Proyecto Parqueadero\\asp_presentacion\\Pages\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "asp_presentacion\\Pages\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAACgAAAAAAAAAAAAcwFsAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-25T10:03:38.221Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "Configuracion.cs",
-              "DocumentMoniker": "C:\\Users\\Alvaro\\Desktop\\ProyectosProgSoft\\ProyectoparqueaderoPS2025\\Repos\\asp_servicios\\Nucleo\\Configuracion.cs",
-              "RelativeDocumentMoniker": "..\\asp_servicios\\Nucleo\\Configuracion.cs",
-              "ToolTip": "C:\\Users\\Alvaro\\Desktop\\ProyectosProgSoft\\ProyectoparqueaderoPS2025\\Repos\\asp_servicios\\Nucleo\\Configuracion.cs",
-              "RelativeToolTip": "..\\asp_servicios\\Nucleo\\Configuracion.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Title": "TipoPagos.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\Alvaro\\Desktop\\ProyectosProgSoft\\ProyectoparqueaderoPS2025\\Repos\\Proyecto Parqueadero\\asp_presentacion\\Pages\\Ventanas\\TipoPagos.cshtml.cs",
+              "RelativeDocumentMoniker": "asp_presentacion\\Pages\\Ventanas\\TipoPagos.cshtml.cs",
+              "ToolTip": "C:\\Users\\Alvaro\\Desktop\\ProyectosProgSoft\\ProyectoparqueaderoPS2025\\Repos\\Proyecto Parqueadero\\asp_presentacion\\Pages\\Ventanas\\TipoPagos.cshtml.cs",
+              "RelativeToolTip": "asp_presentacion\\Pages\\Ventanas\\TipoPagos.cshtml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-19T05:28:07.191Z",
+              "WhenOpened": "2025-05-25T09:53:00.016Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "TipoPagos.cshtml",
+              "DocumentMoniker": "C:\\Users\\Alvaro\\Desktop\\ProyectosProgSoft\\ProyectoparqueaderoPS2025\\Repos\\Proyecto Parqueadero\\asp_presentacion\\Pages\\Ventanas\\TipoPagos.cshtml",
+              "RelativeDocumentMoniker": "asp_presentacion\\Pages\\Ventanas\\TipoPagos.cshtml",
+              "ToolTip": "C:\\Users\\Alvaro\\Desktop\\ProyectosProgSoft\\ProyectoparqueaderoPS2025\\Repos\\Proyecto Parqueadero\\asp_presentacion\\Pages\\Ventanas\\TipoPagos.cshtml",
+              "RelativeToolTip": "asp_presentacion\\Pages\\Ventanas\\TipoPagos.cshtml",
+              "ViewState": "AgIAAIMAAAAAAAAAAAAxwJoAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-25T09:52:59.24Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "AuditoriasController.cs",
-              "DocumentMoniker": "C:\\Users\\Alvaro\\Desktop\\ProyectosProgSoft\\ProyectoparqueaderoPS2025\\Repos\\asp_servicios\\Controllers\\AuditoriasController.cs",
-              "RelativeDocumentMoniker": "..\\asp_servicios\\Controllers\\AuditoriasController.cs",
-              "ToolTip": "C:\\Users\\Alvaro\\Desktop\\ProyectosProgSoft\\ProyectoparqueaderoPS2025\\Repos\\asp_servicios\\Controllers\\AuditoriasController.cs",
-              "RelativeToolTip": "..\\asp_servicios\\Controllers\\AuditoriasController.cs",
-              "ViewState": "AgIAAGEAAAAAAAAAAAAwwKYAAAAyAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-19T05:25:00.657Z",
+              "Title": "Turnos.cshtml",
+              "DocumentMoniker": "C:\\Users\\Alvaro\\Desktop\\ProyectosProgSoft\\ProyectoparqueaderoPS2025\\Repos\\Proyecto Parqueadero\\asp_presentacion\\Pages\\Ventanas\\Turnos.cshtml",
+              "RelativeDocumentMoniker": "asp_presentacion\\Pages\\Ventanas\\Turnos.cshtml",
+              "ToolTip": "C:\\Users\\Alvaro\\Desktop\\ProyectosProgSoft\\ProyectoparqueaderoPS2025\\Repos\\Proyecto Parqueadero\\asp_presentacion\\Pages\\Ventanas\\Turnos.cshtml",
+              "RelativeToolTip": "asp_presentacion\\Pages\\Ventanas\\Turnos.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAIwAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-25T09:52:33.358Z",
               "EditorCaption": ""
             }
           ]

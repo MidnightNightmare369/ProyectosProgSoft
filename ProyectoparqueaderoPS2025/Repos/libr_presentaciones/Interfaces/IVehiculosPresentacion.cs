@@ -1,6 +1,6 @@
 ﻿using libr_dominio.Entidades;
 
-namespace lib_presentaciones.Interfaces
+namespace libr_presentaciones.Interfaces
 {
     public interface IVehiculosPresentacion
     {

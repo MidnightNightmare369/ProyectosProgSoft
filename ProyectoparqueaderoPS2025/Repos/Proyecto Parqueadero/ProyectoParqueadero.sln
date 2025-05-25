@@ -26,7 +26,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Archivos externos", "Archiv
 		secretos.json = secretos.json
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "libr_presentaciones", "..\libr_presentaciones\libr_presentaciones.csproj", "{CF1E7CA5-1820-4272-8506-2EE0AB7A53D3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "libr_presentaciones", "..\libr_presentaciones\libr_presentaciones.csproj", "{CF1E7CA5-1820-4272-8506-2EE0AB7A53D3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "asp_presentacion", "asp_presentacion\asp_presentacion.csproj", "{489F03A0-E816-42AB-9B74-F6791F80414A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -58,6 +60,10 @@ Global
 		{CF1E7CA5-1820-4272-8506-2EE0AB7A53D3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CF1E7CA5-1820-4272-8506-2EE0AB7A53D3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CF1E7CA5-1820-4272-8506-2EE0AB7A53D3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{489F03A0-E816-42AB-9B74-F6791F80414A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{489F03A0-E816-42AB-9B74-F6791F80414A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{489F03A0-E816-42AB-9B74-F6791F80414A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{489F03A0-E816-42AB-9B74-F6791F80414A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -69,6 +75,7 @@ Global
 		{8A3E4A13-5012-4F8F-9F1B-DD93B567B6CC} = {699DBD0E-85E0-40F2-A5CD-823C278F88DE}
 		{FD0BC892-77C0-438E-9276-E35ED8B7BA7A} = {699DBD0E-85E0-40F2-A5CD-823C278F88DE}
 		{CF1E7CA5-1820-4272-8506-2EE0AB7A53D3} = {621EAD19-B972-4BAD-A450-FEC3A2C8B4C6}
+		{489F03A0-E816-42AB-9B74-F6791F80414A} = {621EAD19-B972-4BAD-A450-FEC3A2C8B4C6}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {18CE7369-688A-478E-9611-13D2FB84695B}

@@ -174,3 +174,6 @@ C:\Users\Alvaro\Desktop\ProyectosProgSoft\ProyectoparqueaderoPS2025\Repos\asp_se
 C:\Users\Alvaro\Desktop\ProyectosProgSoft\ProyectoparqueaderoPS2025\Repos\asp_servicios\obj\Debug\net8.0\asp_servicios.pdb
 C:\Users\Alvaro\Desktop\ProyectosProgSoft\ProyectoparqueaderoPS2025\Repos\asp_servicios\obj\Debug\net8.0\asp_servicios.genruntimeconfig.cache
 C:\Users\Alvaro\Desktop\ProyectosProgSoft\ProyectoparqueaderoPS2025\Repos\asp_servicios\obj\Debug\net8.0\ref\asp_servicios.dll
+C:\Users\Alvaro\Desktop\ProyectosProgSoft\ProyectoparqueaderoPS2025\Repos\asp_servicios\bin\Debug\net8.0\asp_servicios.staticwebassets.endpoints.json
+C:\Users\Alvaro\Desktop\ProyectosProgSoft\ProyectoparqueaderoPS2025\Repos\asp_servicios\obj\Debug\net8.0\staticwebassets.build.endpoints.json
+C:\Users\Alvaro\Desktop\ProyectosProgSoft\ProyectoparqueaderoPS2025\Repos\asp_servicios\obj\Debug\net8.0\staticwebassets\msbuild.asp_servicios.Microsoft.AspNetCore.StaticWebAssetEndpoints.props
