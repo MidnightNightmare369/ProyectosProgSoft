@@ -75,13 +75,19 @@ namespace libr_aplicaciones.Implementaciones
 
         public List<Clientes> Listar()
         {
-            return this.IConexion!.Clientes!.Take(20).ToList();
+            return this.IConexion!.Clientes!
+                .Take(20)
+                .Include(x => x._TipoCliente)
+                .Include(x => x._Vehiculo)
+                .ToList();
         }
 
         public List<Clientes> PorCedula(Clientes? entidad)
         {
             return this.IConexion!.Clientes!
                 .Where(x => x.Cedula!.Contains(entidad!.Cedula!))
+                .Include(x => x._TipoCliente)
+                .Include(x => x._Vehiculo)
                 .ToList();//lo puse string para poder hacer este metodo [preguntar al profe si esta bien]
         }
 

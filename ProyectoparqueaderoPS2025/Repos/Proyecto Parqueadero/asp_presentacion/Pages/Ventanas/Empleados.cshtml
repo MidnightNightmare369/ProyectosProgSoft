@@ -1,17 +1,16 @@
 ﻿@page
-@model asp_presentacion.Pages.Ventanas.ContratosModel
+@model asp_presentacion.Pages.Ventanas.EmpleadosModel
 @{
-    ViewData["Titulo"] = "Contratos";
+    ViewData["Titulo"] = "Empleados";
 }
 <center>
     <div>
         <form method="POST"
-
               enctype="multipart/form-data">
             @Html.AntiForgeryToken()
 
             <div align="left">
-                <h3>Contratos</h3>
+                <h3>Empleados</h3>
             </div>
             <div align="left"
                  class="bt_panel_buttons">
@@ -19,22 +18,22 @@
                        value="Refrescar"
                        asp-page-handler="BtRefrescar"
                        class="btn btn-secondary"
-                       disabled="@(Model.Accion != libr_dominio.Nucleo.Enumerables.Ventanas.Listas)" />
+                       disabled="@(Model.Accion !=libr_dominio.Nucleo.Enumerables.Ventanas.Listas)" />
                 <input type="submit"
                        value="Nuevo"
                        asp-page-handler="BtNuevo"
                        class="btn btn-secondary"
-                       disabled="@(Model.Accion != libr_dominio.Nucleo.Enumerables.Ventanas.Listas)" />
+                       disabled="@(Model.Accion !=libr_dominio.Nucleo.Enumerables.Ventanas.Listas)" />
                 <input type="submit"
                        value="Guardar"
                        asp-page-handler="BtGuardar"
                        class="btn btn-secondary"
-                       disabled="@(Model.Accion == libr_dominio.Nucleo.Enumerables.Ventanas.Listas)" />
+                       disabled="@(Model.Accion ==libr_dominio.Nucleo.Enumerables.Ventanas.Listas)" />
                 <input type="submit"
                        value="Cancelar"
                        asp-page-handler="BtCancelar"
                        class="btn btn-secondary"
-                       disabled="@(Model.Accion == libr_dominio.Nucleo.Enumerables.Ventanas.Listas)" />
+                       disabled="@(Model.Accion ==libr_dominio.Nucleo.Enumerables.Ventanas.Listas)" />
             </div>
 
             @if (Model.Accion != libr_dominio.Nucleo.Enumerables.Ventanas.Listas ||
@@ -46,50 +45,83 @@
             @if (Model.Accion == libr_dominio.Nucleo.Enumerables.Ventanas.Borrar)
             {
                 <input type="hidden"
-                       asp-for="@Model.Actual!.Referencia" />
+                       asp-for="@Model.Actual!.Cedula" />
                 <input type="hidden"
-                       asp-for="@Model.Actual!.FechaInicio" />
+                       asp-for="@Model.Actual!.Nombre" />
                 <input type="hidden"
-                       asp-for="@Model.Actual!.FechaTerminacion" />
+                       asp-for="@Model.Actual!.Cargo" />
+                <input type="hidden"
+                       asp-for="@Model.Actual!.Turno" />
+                <input type="hidden"
+                       asp-for="@Model.Actual!.Contrato" />
             }
 
             @if (Model.Accion == libr_dominio.Nucleo.Enumerables.Ventanas.Editar)
             {
                 <div class="containers_vn panel panel-default">
-                    <h3>Contrato</h3>
+                    <h3>Empleado</h3>
 
                     <div>
 
                         <div class="form-group">
-
                             <label class="col-lg-4 control-label">
-                                Referencia
+                                Cedula
                             </label>
                             <div class="col-lg-6">
-                                <input id="Referencia"
+                                <input id="nmCedula"
                                        class="cts_forms form-control"
-                                       asp-for="@Model.Actual!.Referencia" />
+                                       asp-for="@Model.Actual!.Cedula" />
                             </div>
+                        </div>
 
+                        <div class="form-group">
                             <label class="col-lg-4 control-label">
-                                Fecha de inicio
+                                Nombre
                             </label>
                             <div class="col-lg-6">
-                                <input id="FechaInicio"
+                                <input id="nmNombre"
                                        class="cts_forms form-control"
-                                       asp-for="@Model.Actual!.FechaInicio" />
+                                       asp-for="@Model.Actual!.Nombre" />
                             </div>
-                            
+                        </div>
 
+                        <div class="form-group">
                             <label class="col-lg-4 control-label">
-                                Fecha de terminacion
+                                Cargo
                             </label>
                             <div class="col-lg-6">
-                                <input id="FechaInicio"
-                                       class="cts_forms form-control"
-                                       asp-for="@Model.Actual!.FechaInicio" />
+                                <select id="nmCargo"
+                                        class="form-control"
+                                        asp-for="@Model.Actual!.Cargo"
+                                        asp-items="@(new SelectList(Model.Cargos, "Id", "Cargo"))">
+                                </select>
                             </div>
+                        </div>
 
+                        <div class="form-group">
+                            <label class="col-lg-4 control-label">
+                                Turno
+                            </label>
+                            <div class="col-lg-6">
+                                <select id="nmTurno"
+                                        class="form-control"
+                                        asp-for="@Model.Actual!.Turno"
+                                        asp-items="@(new SelectList(Model.Turnos, "Id", "Turno"))">
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="col-lg-4 control-label">
+                                Contrato
+                            </label>
+                            <div class="col-lg-6">
+                                <select id="nmContrato"
+                                        class="form-control"
+                                        asp-for="@Model.Actual!.Contrato"
+                                        asp-items="@(new SelectList(Model.Contratos, "Id", "Referencia"))">
+                                </select>
+                            </div>
                         </div>
 
                     </div>
@@ -117,7 +149,7 @@
                                 Desea borrar la entidad?
                             </h4>
                             <h6 align="left">
-                                @Model.Actual!.Referencia
+                                @Model.Actual!.Cedula, @Model.Actual!.Nombre  ,@Model.Actual!._Contrato!.Referencia
                             </h6>
                             <br />
                             <br />
@@ -137,24 +169,32 @@
             @if (Model.Accion == libr_dominio.Nucleo.Enumerables.Ventanas.Listas ||
             Model.Accion == libr_dominio.Nucleo.Enumerables.Ventanas.Borrar)
             {
-                <input id="flReferencia"
+                <input id="flPlaca"
                        class="cts_forms form-control"
-                       asp-for="@Model.Filtro!.Referencia"
-                       placeholder="Filtrar por referencia" />
+                       asp-for="@Model.Filtro!.Cedula"
+                       placeholder="Filtrar por cedula" />
                 <br />
 
                 <div class="containers_vn panel panel-default">
-
                     <table class="tb_data table table-striped table-bordered table-hover">
                         <tr>
                             <th>
-                                Referencia
+                                Cedula
                             </th>
                             <th>
-                                Fecha de inicio
+                                Nombre
+                            </th>
+                            <th class="cl_actions">
+                                Cargo
+                            </th>
+                            <th class="cl_actions">
+                                Turno
                             </th>
                             <th>
-                                Fecha de terminacion
+                                Contrato
+                            </th>
+                            <th>
+                                Modificar
                             </th>
                         </tr>
                         @if (Model != null && Model.Lista != null)
@@ -163,13 +203,19 @@
                             {
                                 <tr>
                                     <td>
-                                        @elemento.Referencia
+                                        @elemento.Cedula
                                     </td>
                                     <td>
-                                        @elemento.FechaInicio
+                                        @elemento.Nombre
+                                    </td>
+                                    <td class="cl_hidden">
+                                        @elemento._Cargo!.Cargo
+                                    </td>
+                                    <td class="cl_hidden">
+                                        @elemento._Turno!.Turno
                                     </td>
                                     <td>
-                                        @elemento.FechaTerminacion
+                                        @elemento._Contrato!.Referencia
                                     </td>
                                     <td>
                                         <input type="submit"
@@ -187,7 +233,6 @@
                             }
                         }
                     </table>
-
                 </div>
             }
         </form>

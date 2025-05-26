@@ -77,13 +77,29 @@ namespace libr_aplicaciones.Implementaciones
 
         public List<ParqueaderosClientes> Listar()
         {
-            return this.IConexion!.ParqueaderosClientes!.Take(20).ToList();
+            return this.IConexion!.ParqueaderosClientes!
+                .Take(20)
+                .Include(x => x._Tarifa)
+                .Include(x => x._TipoPago)
+                .Include(x => x._Cliente)
+                .Include(x => x._Cliente!._Vehiculo)
+                .Include(x => x._Cliente!._Vehiculo!._TipoVehiculo)
+                .Include(x => x._Parqueadero)
+                .Include(x => x._Empleado)
+                .ToList();
         }
 
         public List<ParqueaderosClientes> PorPosicion(ParqueaderosClientes? entidad)
         {
             return this.IConexion!.ParqueaderosClientes!
-                .Where(x => x.Posicion!.Contains(entidad!.Posicion!)) 
+                .Where(x => x.Posicion!.Contains(entidad!.Posicion!))
+                .Include(x => x._Tarifa)
+                .Include(x => x._TipoPago)
+                .Include(x => x._Cliente)
+                .Include(x => x._Cliente!._Vehiculo)
+                .Include(x => x._Cliente!._Vehiculo!._TipoVehiculo)
+                .Include(x => x._Parqueadero)
+                .Include(x => x._Empleado)
                 .ToList();//lo puse string para poder hacer este metodo [preguntar al profe si esta bien]
         }
 

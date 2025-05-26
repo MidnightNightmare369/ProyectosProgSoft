@@ -42,12 +42,24 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVmVudGFuYXNcQ2FyZ29zLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/Alvaro/Desktop/ProyectosProgSoft/ProyectoparqueaderoPS2025/Repos/Proyecto Parqueadero/asp_presentacion/Pages/Ventanas/Clientes.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVmVudGFuYXNcQ2xpZW50ZXMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/Alvaro/Desktop/ProyectosProgSoft/ProyectoparqueaderoPS2025/Repos/Proyecto Parqueadero/asp_presentacion/Pages/Ventanas/Contratos.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVmVudGFuYXNcQ29udHJhdG9zLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/Alvaro/Desktop/ProyectosProgSoft/ProyectoparqueaderoPS2025/Repos/Proyecto Parqueadero/asp_presentacion/Pages/Ventanas/Empleados.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVmVudGFuYXNcRW1wbGVhZG9zLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/Alvaro/Desktop/ProyectosProgSoft/ProyectoparqueaderoPS2025/Repos/Proyecto Parqueadero/asp_presentacion/Pages/Ventanas/Parqueaderos.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVmVudGFuYXNcUGFycXVlYWRlcm9zLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Alvaro/Desktop/ProyectosProgSoft/ProyectoparqueaderoPS2025/Repos/Proyecto Parqueadero/asp_presentacion/Pages/Ventanas/ParqueaderosClientes.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVmVudGFuYXNcUGFycXVlYWRlcm9zQ2xpZW50ZXMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Alvaro/Desktop/ProyectosProgSoft/ProyectoparqueaderoPS2025/Repos/Proyecto Parqueadero/asp_presentacion/Pages/Ventanas/Tarifas.cshtml]
@@ -68,6 +80,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/Alvaro/Desktop/ProyectosProgSoft/ProyectoparqueaderoPS2025/Repos/Proyecto Parqueadero/asp_presentacion/Pages/Ventanas/Turnos.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVmVudGFuYXNcVHVybm9zLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Alvaro/Desktop/ProyectosProgSoft/ProyectoparqueaderoPS2025/Repos/Proyecto Parqueadero/asp_presentacion/Pages/Ventanas/Vehiculos.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVmVudGFuYXNcVmVoaWN1bG9zLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Alvaro/Desktop/ProyectosProgSoft/ProyectoparqueaderoPS2025/Repos/Proyecto Parqueadero/asp_presentacion/Pages/_ViewImports.cshtml]

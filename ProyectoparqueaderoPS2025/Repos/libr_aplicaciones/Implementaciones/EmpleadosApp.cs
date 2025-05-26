@@ -75,13 +75,21 @@ namespace libr_aplicaciones.Implementaciones
 
         public List<Empleados> Listar()
         {
-            return this.IConexion!.Empleados!.Take(20).ToList();
+            return this.IConexion!.Empleados!
+                .Take(20)
+                .Include(x => x._Cargo)
+                .Include(x => x._Turno)
+                .Include(x => x._Contrato)
+                .ToList();
         }
 
         public List<Empleados> PorCedula(Empleados? entidad)
         {
             return this.IConexion!.Empleados!
                 .Where(x => x.Cedula!.Contains(entidad!.Cedula!))
+                .Include(x => x._Cargo)
+                .Include(x => x._Turno)
+                .Include(x => x._Contrato)
                 .ToList();//lo puse string para poder hacer este metodo [preguntar al profe si esta bien]
         }
 

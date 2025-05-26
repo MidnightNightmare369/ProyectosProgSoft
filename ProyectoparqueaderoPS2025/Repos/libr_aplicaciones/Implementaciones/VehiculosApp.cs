@@ -75,13 +75,17 @@ namespace libr_aplicaciones.Implementaciones
 
         public List<Vehiculos> Listar()
         {
-            return this.IConexion!.Vehiculos!.Take(20).ToList();
+            return this.IConexion!.Vehiculos!
+                .Take(20)
+                .Include(x => x._TipoVehiculo)
+                .ToList();
         }
 
         public List<Vehiculos> PorPlaca(Vehiculos? entidad)
         {
             return this.IConexion!.Vehiculos!
                 .Where(x => x.Placa!.Contains(entidad!.Placa!))
+                .Include(x => x._TipoVehiculo)
                 .ToList();//lo puse string para poder hacer este metodo [preguntar al profe si esta bien]
         }
 

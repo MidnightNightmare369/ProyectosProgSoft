@@ -1,0 +1,315 @@
+﻿@page
+@model asp_presentacion.Pages.Ventanas.ParqueaderosClientesModel
+@{
+    ViewData["Titulo"] = "ParqueaderosClientes";
+}
+<center>
+    <div>
+        <form method="POST"
+              enctype="multipart/form-data">
+            @Html.AntiForgeryToken()
+
+            <div align="left">
+                <h3>Parqueaderos y clientes</h3>
+            </div>
+            <div align="left"
+                 class="bt_panel_buttons">
+                <input type="submit"
+                       value="Refrescar"
+                       asp-page-handler="BtRefrescar"
+                       class="btn btn-secondary"
+                       disabled="@(Model.Accion !=libr_dominio.Nucleo.Enumerables.Ventanas.Listas)" />
+                <input type="submit"
+                       value="Nuevo"
+                       asp-page-handler="BtNuevo"
+                       class="btn btn-secondary"
+                       disabled="@(Model.Accion !=libr_dominio.Nucleo.Enumerables.Ventanas.Listas)" />
+                <input type="submit"
+                       value="Guardar"
+                       asp-page-handler="BtGuardar"
+                       class="btn btn-secondary"
+                       disabled="@(Model.Accion ==libr_dominio.Nucleo.Enumerables.Ventanas.Listas)" />
+                <input type="submit"
+                       value="Cancelar"
+                       asp-page-handler="BtCancelar"
+                       class="btn btn-secondary"
+                       disabled="@(Model.Accion ==libr_dominio.Nucleo.Enumerables.Ventanas.Listas)" />
+            </div>
+
+            @if (Model.Accion != libr_dominio.Nucleo.Enumerables.Ventanas.Listas ||
+            Model.Accion == libr_dominio.Nucleo.Enumerables.Ventanas.Borrar)
+            {
+                <input type="hidden"
+                       asp-for="@Model.Actual!.Id" />
+            }
+            @if (Model.Accion == libr_dominio.Nucleo.Enumerables.Ventanas.Borrar)
+            {
+                <input type="hidden"
+                       asp-for="@Model.Actual!.Tiempo" />
+                <input type="hidden"
+                       asp-for="@Model.Actual!.Posicion" />
+                <input type="hidden"
+                       asp-for="@Model.Actual!.Total" />
+                <input type="hidden"
+                       asp-for="@Model.Actual!.Tarifa" />
+                <input type="hidden"
+                       asp-for="@Model.Actual!.TipoPago" />
+                       <input type="hidden"
+                       asp-for="@Model.Actual!.Cliente" />
+                       <input type="hidden"
+                       asp-for="@Model.Actual!.Parqueadero" />
+                <input type="hidden"
+                       asp-for="@Model.Actual!.Empleado" />
+            }
+
+            @if (Model.Accion == libr_dominio.Nucleo.Enumerables.Ventanas.Editar)
+            {
+                <div class="containers_vn panel panel-default">
+                    <h3>Parqueaderos y clientes</h3>
+
+                    <div>
+
+                        <div class="form-group">
+                            <label class="col-lg-4 control-label">
+                                Tiempo
+                            </label>
+                            <div class="col-lg-6">
+                                <input id="nmTiempo"
+                                       class="cts_forms form-control"
+                                       asp-for="@Model.Actual!.Tiempo" />
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="col-lg-4 control-label">
+                                Posicion
+                            </label>
+                            <div class="col-lg-6">
+                                <input id="nmPosicion"
+                                       class="cts_forms form-control"
+                                       asp-for="@Model.Actual!.Posicion" />
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="col-lg-4 control-label">
+                                Total
+                            </label>
+                            <div class="col-lg-6">
+                                <input id="nmTotal"
+                                       class="cts_forms form-control"
+                                       asp-for="@Model.Actual!.Total"
+                                       />
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="col-lg-4 control-label">
+                                Metodo de pago
+                            </label>
+                            <div class="col-lg-6">
+                                <select id="nmTipoPago"
+                                        class="form-control"
+                                        asp-for="@Model.Actual!.TipoPago"
+                                        asp-items="@(new SelectList(Model.TipoPagos, "Id", "TipoPago"))">
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="col-lg-4 control-label">
+                                Tarifa aplicada
+                            </label>
+                            <div class="col-lg-6">
+                                <select id="nmTarifa"
+                                        class="form-control"
+                                        asp-for="@Model.Actual!.Tarifa"
+                                        asp-items="@(new SelectList(Model.Tarifas, "Id", "Tarifa"))">
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="col-lg-4 control-label">
+                                Cliente
+                            </label>
+                            <div class="col-lg-6">
+                                <select id="nmCliente"
+                                        class="form-control"
+                                        asp-for="@Model.Actual!.Cliente"
+                                        asp-items="@(new SelectList(Model.Clientes, "Id","Cedula"))">
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="col-lg-4 control-label">
+                                Parqueadero
+                            </label>
+                            <div class="col-lg-6">
+                                <select id="nmParqueadero"
+                                        class="form-control"
+                                        asp-for="@Model.Actual!.Parqueadero"
+                                        asp-items="@(new SelectList(Model.Parqueaderos, "Id", "Nombre"))">
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="col-lg-4 control-label">
+                                Empleado
+                            </label>
+                            <div class="col-lg-6">
+                                <select id="nmEmpleado"
+                                        class="form-control"
+                                        asp-for="@Model.Actual!.Empleado"
+                                        asp-items="@(new SelectList(Model.Empleados, "Id", "Nombre"))">
+                                </select>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            }
+
+            @if (ViewData.ContainsKey("Mensaje"))
+            {
+                <input type="hidden"
+                       asp-for="@Model.Accion" />
+                @await Html.PartialAsync("../Emergentes/Mensajes.cshtml")
+                ;
+            }
+
+            @if (Model.Accion == libr_dominio.Nucleo.Enumerables.Ventanas.Borrar)
+            {
+                <div class='popup'>
+                    <div class='pp_del_inner'>
+                        <div style='width:95%'>
+                            <h2 align="left">
+                                Mensaje
+                            </h2>
+
+                            <h4 align="left">
+                                Desea borrar la entidad?
+                            </h4>
+                            <h6 align="left">
+                                @Model.Actual!.Posicion, 
+                                @Model.Actual!._Cliente!.Nombre,
+                                @Model.Actual!._Cliente!.Cedula,
+                                @Model.Actual!._Parqueadero!.Nombre, 
+                                @Model.Actual!._Empleado!.Nombre,
+                                @Model.Actual!._Tarifa!.Tipo,
+                                @Model.Actual!._TipoPago!.TipoPago,
+                                @Model.Actual!.Total
+                            </h6>
+                            <br />
+                            <br />
+                            <input type="submit"
+                                   value="Borrar"
+                                   asp-page-handler="BtBorrar"
+                                   class="btn btn-secondary" />
+                            <input type="submit"
+                                   value="Cerrar"
+                                   asp-page-handler="BtCancelar"
+                                   class="btn btn-secondary" />
+                        </div>
+                    </div>
+                </div>
+            }
+
+            @if (Model.Accion == libr_dominio.Nucleo.Enumerables.Ventanas.Listas ||
+            Model.Accion == libr_dominio.Nucleo.Enumerables.Ventanas.Borrar)
+            {
+                <input id="flPosicion"
+                       class="cts_forms form-control"
+                       asp-for="@Model.Filtro!.Posicion"
+                       placeholder="Filtrar por posicion" />
+                <br />
+
+                <div class="containers_vn panel panel-default">
+                    <table class="tb_data table table-striped table-bordered table-hover">
+                        <tr>
+                            <th>
+                                Tiempo (horas)
+                            </th>
+                            <th>
+                                Posicion
+                            </th>
+                            <th>
+                                Total(COP)
+                            </th>
+                            <th>
+                                Tarifa/hora
+                            </th>
+                            <th>
+                                Metodo de pago
+                            </th>
+                            <th>
+                                Cliente
+                            </th>
+                            <th>
+                                Vehiculo
+                            </th>
+                            <th>
+                                Parqueadero
+                            </th>
+                            <th>
+                                Empleado
+                            </th>
+                            <th>
+                                Modificar
+                            </th>
+                        </tr>
+                        @if (Model != null && Model.Lista != null)
+                        {
+                            @foreach (var elemento in Model.Lista)
+                            {
+                                <tr>
+                                    <td>
+                                        @elemento.Tiempo
+                                    </td>
+                                    <td>
+                                        @elemento.Posicion
+                                    </td>
+                                    <td>
+                                        $@elemento.Total
+                                    </td>
+                                    <td class="cl_hidden">
+                                        @elemento._Tarifa!.Valor
+                                    </td>
+                                    <td class="cl_hidden">
+                                        @elemento._TipoPago!.TipoPago
+                                    </td>
+                                    <td>
+                                        @elemento._Cliente!.Nombre
+                                    </td>
+                                    <td>
+                                        @elemento._Cliente!._Vehiculo!.Placa/@elemento._Cliente!._Vehiculo!._TipoVehiculo!.TipoVehiculo
+                                    </td>
+                                    <td>
+                                        @elemento._Parqueadero!.Nombre
+                                    </td>
+                                    <td>
+                                        @elemento._Empleado!.Nombre
+                                    </td>
+                                    <td>
+                                        <input type="submit"
+                                               value="Modificar"
+                                               asp-page-handler="BtModificar"
+                                               class="btn btn-secondary"
+                                               asp-route-data="@elemento.Id" />
+                                        <input type="submit"
+                                               value="Borrar"
+                                               asp-page-handler="BtBorrarVal"
+                                               class="btn btn-secondary"
+                                               asp-route-data="@elemento.Id" />
+                                    </td>
+                                </tr>
+                            }
+                        }
+                    </table>
+                </div>
+            }
+        </form>
+    </div>
+</center>

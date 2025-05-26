@@ -1,17 +1,16 @@
 ﻿@page
-@model asp_presentacion.Pages.Ventanas.ContratosModel
+@model asp_presentacion.Pages.Ventanas.VehiculosModel
 @{
-    ViewData["Titulo"] = "Contratos";
+    ViewData["Titulo"] = "Vehiculos";
 }
 <center>
     <div>
         <form method="POST"
-
               enctype="multipart/form-data">
             @Html.AntiForgeryToken()
 
             <div align="left">
-                <h3>Contratos</h3>
+                <h3>Vehiculos</h3>
             </div>
             <div align="left"
                  class="bt_panel_buttons">
@@ -19,77 +18,67 @@
                        value="Refrescar"
                        asp-page-handler="BtRefrescar"
                        class="btn btn-secondary"
-                       disabled="@(Model.Accion != libr_dominio.Nucleo.Enumerables.Ventanas.Listas)" />
+                       disabled="@(Model.Accion !=libr_dominio.Nucleo.Enumerables.Ventanas.Listas)" />
                 <input type="submit"
                        value="Nuevo"
                        asp-page-handler="BtNuevo"
                        class="btn btn-secondary"
-                       disabled="@(Model.Accion != libr_dominio.Nucleo.Enumerables.Ventanas.Listas)" />
+                       disabled="@(Model.Accion !=libr_dominio.Nucleo.Enumerables.Ventanas.Listas)" />
                 <input type="submit"
                        value="Guardar"
                        asp-page-handler="BtGuardar"
                        class="btn btn-secondary"
-                       disabled="@(Model.Accion == libr_dominio.Nucleo.Enumerables.Ventanas.Listas)" />
+                       disabled="@(Model.Accion ==libr_dominio.Nucleo.Enumerables.Ventanas.Listas)" />
                 <input type="submit"
                        value="Cancelar"
                        asp-page-handler="BtCancelar"
                        class="btn btn-secondary"
-                       disabled="@(Model.Accion == libr_dominio.Nucleo.Enumerables.Ventanas.Listas)" />
+                       disabled="@(Model.Accion ==libr_dominio.Nucleo.Enumerables.Ventanas.Listas)" />
             </div>
 
-            @if (Model.Accion != libr_dominio.Nucleo.Enumerables.Ventanas.Listas ||
-            Model.Accion == libr_dominio.Nucleo.Enumerables.Ventanas.Borrar)
+            @if (Model.Accion !=libr_dominio.Nucleo.Enumerables.Ventanas.Listas ||
+                 Model.Accion ==libr_dominio.Nucleo.Enumerables.Ventanas.Borrar)
             {
                 <input type="hidden"
                        asp-for="@Model.Actual!.Id" />
             }
-            @if (Model.Accion == libr_dominio.Nucleo.Enumerables.Ventanas.Borrar)
+            @if (Model.Accion ==libr_dominio.Nucleo.Enumerables.Ventanas.Borrar)
             {
                 <input type="hidden"
-                       asp-for="@Model.Actual!.Referencia" />
+                       asp-for="@Model.Actual!.Placa" />
                 <input type="hidden"
-                       asp-for="@Model.Actual!.FechaInicio" />
-                <input type="hidden"
-                       asp-for="@Model.Actual!.FechaTerminacion" />
+                       asp-for="@Model.Actual!.TipoVehiculo" />
             }
 
-            @if (Model.Accion == libr_dominio.Nucleo.Enumerables.Ventanas.Editar)
+            @if (Model.Accion ==libr_dominio.Nucleo.Enumerables.Ventanas.Editar)
             {
                 <div class="containers_vn panel panel-default">
-                    <h3>Contrato</h3>
+                    <h3>Vehiculo</h3>
 
                     <div>
 
                         <div class="form-group">
-
                             <label class="col-lg-4 control-label">
-                                Referencia
+                                Placa
                             </label>
                             <div class="col-lg-6">
-                                <input id="Referencia"
+                                <input id="nmPlaca"
                                        class="cts_forms form-control"
-                                       asp-for="@Model.Actual!.Referencia" />
+                                       asp-for="@Model.Actual!.Placa" />
                             </div>
+                        </div>                        
 
+                        <div class="form-group">
                             <label class="col-lg-4 control-label">
-                                Fecha de inicio
+                                Tipo de vehiculo
                             </label>
                             <div class="col-lg-6">
-                                <input id="FechaInicio"
-                                       class="cts_forms form-control"
-                                       asp-for="@Model.Actual!.FechaInicio" />
+                                <select id="nmTipoVehiculo"
+                                    class="form-control"
+                                        asp-for="@Model.Actual!.TipoVehiculo"
+                                    asp-items="@(new SelectList(Model.TipoVehiculos, "Id", "TipoVehiculo"))">
+                                </select>
                             </div>
-                            
-
-                            <label class="col-lg-4 control-label">
-                                Fecha de terminacion
-                            </label>
-                            <div class="col-lg-6">
-                                <input id="FechaInicio"
-                                       class="cts_forms form-control"
-                                       asp-for="@Model.Actual!.FechaInicio" />
-                            </div>
-
                         </div>
 
                     </div>
@@ -104,7 +93,7 @@
                 ;
             }
 
-            @if (Model.Accion == libr_dominio.Nucleo.Enumerables.Ventanas.Borrar)
+            @if (Model.Accion ==libr_dominio.Nucleo.Enumerables.Ventanas.Borrar)
             {
                 <div class='popup'>
                     <div class='pp_del_inner'>
@@ -117,7 +106,7 @@
                                 Desea borrar la entidad?
                             </h4>
                             <h6 align="left">
-                                @Model.Actual!.Referencia
+                                @Model.Actual!.Placa
                             </h6>
                             <br />
                             <br />
@@ -134,27 +123,23 @@
                 </div>
             }
 
-            @if (Model.Accion == libr_dominio.Nucleo.Enumerables.Ventanas.Listas ||
-            Model.Accion == libr_dominio.Nucleo.Enumerables.Ventanas.Borrar)
+            @if (Model.Accion ==libr_dominio.Nucleo.Enumerables.Ventanas.Listas ||
+                 Model.Accion ==libr_dominio.Nucleo.Enumerables.Ventanas.Borrar)
             {
-                <input id="flReferencia"
+                <input id="flPlaca"
                        class="cts_forms form-control"
-                       asp-for="@Model.Filtro!.Referencia"
-                       placeholder="Filtrar por referencia" />
+                       asp-for="@Model.Filtro!.Placa"
+                       placeholder="Filtrar por placa" />
                 <br />
 
                 <div class="containers_vn panel panel-default">
-
                     <table class="tb_data table table-striped table-bordered table-hover">
                         <tr>
                             <th>
-                                Referencia
+                                Placa
                             </th>
-                            <th>
-                                Fecha de inicio
-                            </th>
-                            <th>
-                                Fecha de terminacion
+                            <th class="cl_actions">
+                                Tipo de vehiculo
                             </th>
                         </tr>
                         @if (Model != null && Model.Lista != null)
@@ -163,13 +148,10 @@
                             {
                                 <tr>
                                     <td>
-                                        @elemento.Referencia
+                                        @elemento.Placa
                                     </td>
-                                    <td>
-                                        @elemento.FechaInicio
-                                    </td>
-                                    <td>
-                                        @elemento.FechaTerminacion
+                                    <td class="cl_hidden">
+                                        @elemento._TipoVehiculo!.TipoVehiculo
                                     </td>
                                     <td>
                                         <input type="submit"
@@ -187,7 +169,6 @@
                             }
                         }
                     </table>
-
                 </div>
             }
         </form>
