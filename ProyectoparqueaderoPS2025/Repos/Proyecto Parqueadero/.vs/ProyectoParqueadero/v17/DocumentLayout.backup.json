@@ -1,14 +1,57 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Alvaro\\Desktop\\ProyectosProgSoft\\ProyectoparqueaderoPS2025\\Repos\\Proyecto Parqueadero\\",
+  "WorkspaceRootPath": "C:\\Users\\salak401\\Downloads\\ProyectosProgSoft-main\\ProyectosProgSoft-main\\ProyectoparqueaderoPS2025\\Repos\\Proyecto Parqueadero\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{489F03A0-E816-42AB-9B74-F6791F80414A}|asp_presentacion\\asp_presentacion.csproj|c:\\users\\alvaro\\desktop\\proyectosprogsoft\\proyectoparqueaderops2025\\repos\\proyecto parqueadero\\asp_presentacion\\pages\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{489F03A0-E816-42AB-9B74-F6791F80414A}|asp_presentacion\\asp_presentacion.csproj|c:\\users\\salak401\\downloads\\proyectosprogsoft-main\\proyectosprogsoft-main\\proyectoparqueaderops2025\\repos\\proyecto parqueadero\\asp_presentacion\\pages\\ventanas\\parqueaderosclientes.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{489F03A0-E816-42AB-9B74-F6791F80414A}|asp_presentacion\\asp_presentacion.csproj|solutionrelative:asp_presentacion\\pages\\ventanas\\parqueaderosclientes.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{489F03A0-E816-42AB-9B74-F6791F80414A}|asp_presentacion\\asp_presentacion.csproj|c:\\users\\salak401\\downloads\\proyectosprogsoft-main\\proyectosprogsoft-main\\proyectoparqueaderops2025\\repos\\proyecto parqueadero\\asp_presentacion\\pages\\ventanas\\auditorias.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{489F03A0-E816-42AB-9B74-F6791F80414A}|asp_presentacion\\asp_presentacion.csproj|solutionrelative:asp_presentacion\\pages\\ventanas\\auditorias.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8A3E4A13-5012-4F8F-9F1B-DD93B567B6CC}|..\\libr_aplicaciones\\libr_aplicaciones.csproj|c:\\users\\salak401\\downloads\\proyectosprogsoft-main\\proyectosprogsoft-main\\proyectoparqueaderops2025\\repos\\libr_aplicaciones\\implementaciones\\parqueaderosclientesapp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8A3E4A13-5012-4F8F-9F1B-DD93B567B6CC}|..\\libr_aplicaciones\\libr_aplicaciones.csproj|c:\\users\\salak401\\downloads\\proyectosprogsoft-main\\proyectosprogsoft-main\\proyectoparqueaderops2025\\repos\\libr_aplicaciones\\implementaciones\\parqueaderosapp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8A3E4A13-5012-4F8F-9F1B-DD93B567B6CC}|..\\libr_aplicaciones\\libr_aplicaciones.csproj|c:\\users\\salak401\\downloads\\proyectosprogsoft-main\\proyectosprogsoft-main\\proyectoparqueaderops2025\\repos\\libr_aplicaciones\\implementaciones\\cargosapp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C7002DEF-7F25-4E6B-954A-77C46516378F}|..\\libr_repositorios\\libr_repositorios.csproj|c:\\users\\salak401\\downloads\\proyectosprogsoft-main\\proyectosprogsoft-main\\proyectoparqueaderops2025\\repos\\libr_repositorios\\script.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8A625C48-1F88-43CB-AE4D-0E031791A65D}|Archivos externos{8A625C48-1F88-43CB-AE4D-0E031791A65D}|C:\\Users\\salak401\\Downloads\\ProyectosProgSoft-main\\ProyectosProgSoft-main\\ProyectoparqueaderoPS2025\\Repos\\Proyecto Parqueadero\\secretos.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{8A625C48-1F88-43CB-AE4D-0E031791A65D}|Archivos externos{8A625C48-1F88-43CB-AE4D-0E031791A65D}|solutionrelative:secretos.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{65322133-41D9-4361-81A8-0E89B3D7AB0B}|..\\libr_dominio\\libr_dominio.csproj|c:\\users\\salak401\\downloads\\proyectosprogsoft-main\\proyectosprogsoft-main\\proyectoparqueaderops2025\\repos\\libr_dominio\\nucleo\\datosgenerales.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CF1E7CA5-1820-4272-8506-2EE0AB7A53D3}|..\\libr_presentaciones\\libr_presentaciones.csproj|c:\\users\\salak401\\downloads\\proyectosprogsoft-main\\proyectosprogsoft-main\\proyectoparqueaderops2025\\repos\\libr_presentaciones\\comunicaciones.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{489F03A0-E816-42AB-9B74-F6791F80414A}|asp_presentacion\\asp_presentacion.csproj|c:\\users\\salak401\\downloads\\proyectosprogsoft-main\\proyectosprogsoft-main\\proyectoparqueaderops2025\\repos\\proyecto parqueadero\\asp_presentacion\\pages\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{489F03A0-E816-42AB-9B74-F6791F80414A}|asp_presentacion\\asp_presentacion.csproj|solutionrelative:asp_presentacion\\pages\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CF1E7CA5-1820-4272-8506-2EE0AB7A53D3}|..\\libr_presentaciones\\libr_presentaciones.csproj|c:\\users\\salak401\\downloads\\proyectosprogsoft-main\\proyectosprogsoft-main\\proyectoparqueaderops2025\\repos\\libr_presentaciones\\implementaciones\\cargospresentacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8A3E4A13-5012-4F8F-9F1B-DD93B567B6CC}|..\\libr_aplicaciones\\libr_aplicaciones.csproj|c:\\users\\salak401\\downloads\\proyectosprogsoft-main\\proyectosprogsoft-main\\proyectoparqueaderops2025\\repos\\libr_aplicaciones\\implementaciones\\clientesapp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{489F03A0-E816-42AB-9B74-F6791F80414A}|asp_presentacion\\asp_presentacion.csproj|c:\\users\\salak401\\downloads\\proyectosprogsoft-main\\proyectosprogsoft-main\\proyectoparqueaderops2025\\repos\\proyecto parqueadero\\asp_presentacion\\pages\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{489F03A0-E816-42AB-9B74-F6791F80414A}|asp_presentacion\\asp_presentacion.csproj|solutionrelative:asp_presentacion\\pages\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{489F03A0-E816-42AB-9B74-F6791F80414A}|asp_presentacion\\asp_presentacion.csproj|c:\\users\\alvaro\\desktop\\proyectosprogsoft\\proyectoparqueaderops2025\\repos\\proyecto parqueadero\\asp_presentacion\\pages\\ventanas\\parqueaderosclientes.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{489F03A0-E816-42AB-9B74-F6791F80414A}|asp_presentacion\\asp_presentacion.csproj|c:\\users\\salak401\\downloads\\proyectosprogsoft-main\\proyectosprogsoft-main\\proyectoparqueaderops2025\\repos\\proyecto parqueadero\\asp_presentacion\\pages\\ventanas\\parqueaderosclientes.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{489F03A0-E816-42AB-9B74-F6791F80414A}|asp_presentacion\\asp_presentacion.csproj|solutionrelative:asp_presentacion\\pages\\ventanas\\parqueaderosclientes.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C7002DEF-7F25-4E6B-954A-77C46516378F}|..\\libr_repositorios\\libr_repositorios.csproj|c:\\users\\salak401\\downloads\\proyectosprogsoft-main\\proyectosprogsoft-main\\proyectoparqueaderops2025\\repos\\libr_repositorios\\script.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}|CodeFrame"
     }
   ],
   "DocumentGroupContainers": [
@@ -23,28 +66,182 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "ParqueaderosClientes.cshtml",
+              "DocumentMoniker": "C:\\Users\\salak401\\Downloads\\ProyectosProgSoft-main\\ProyectosProgSoft-main\\ProyectoparqueaderoPS2025\\Repos\\Proyecto Parqueadero\\asp_presentacion\\Pages\\Ventanas\\ParqueaderosClientes.cshtml",
+              "RelativeDocumentMoniker": "asp_presentacion\\Pages\\Ventanas\\ParqueaderosClientes.cshtml",
+              "ToolTip": "C:\\Users\\salak401\\Downloads\\ProyectosProgSoft-main\\ProyectosProgSoft-main\\ProyectoparqueaderoPS2025\\Repos\\Proyecto Parqueadero\\asp_presentacion\\Pages\\Ventanas\\ParqueaderosClientes.cshtml",
+              "RelativeToolTip": "asp_presentacion\\Pages\\Ventanas\\ParqueaderosClientes.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-28T11:58:46.478Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Auditorias.cshtml",
+              "DocumentMoniker": "C:\\Users\\salak401\\Downloads\\ProyectosProgSoft-main\\ProyectosProgSoft-main\\ProyectoparqueaderoPS2025\\Repos\\Proyecto Parqueadero\\asp_presentacion\\Pages\\Ventanas\\Auditorias.cshtml",
+              "RelativeDocumentMoniker": "asp_presentacion\\Pages\\Ventanas\\Auditorias.cshtml",
+              "ToolTip": "C:\\Users\\salak401\\Downloads\\ProyectosProgSoft-main\\ProyectosProgSoft-main\\ProyectoparqueaderoPS2025\\Repos\\Proyecto Parqueadero\\asp_presentacion\\Pages\\Ventanas\\Auditorias.cshtml",
+              "RelativeToolTip": "asp_presentacion\\Pages\\Ventanas\\Auditorias.cshtml",
+              "ViewState": "AgIAAGkAAAAAAAAAAADwv38AAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-28T11:57:32.335Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ParqueaderosClientesApp.cs",
+              "DocumentMoniker": "C:\\Users\\salak401\\Downloads\\ProyectosProgSoft-main\\ProyectosProgSoft-main\\ProyectoparqueaderoPS2025\\Repos\\libr_aplicaciones\\Implementaciones\\ParqueaderosClientesApp.cs",
+              "RelativeDocumentMoniker": "..\\libr_aplicaciones\\Implementaciones\\ParqueaderosClientesApp.cs",
+              "ToolTip": "C:\\Users\\salak401\\Downloads\\ProyectosProgSoft-main\\ProyectosProgSoft-main\\ProyectoparqueaderoPS2025\\Repos\\libr_aplicaciones\\Implementaciones\\ParqueaderosClientesApp.cs",
+              "RelativeToolTip": "..\\libr_aplicaciones\\Implementaciones\\ParqueaderosClientesApp.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-28T11:53:45.788Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ParqueaderosApp.cs",
+              "DocumentMoniker": "C:\\Users\\salak401\\Downloads\\ProyectosProgSoft-main\\ProyectosProgSoft-main\\ProyectoparqueaderoPS2025\\Repos\\libr_aplicaciones\\Implementaciones\\ParqueaderosApp.cs",
+              "RelativeDocumentMoniker": "..\\libr_aplicaciones\\Implementaciones\\ParqueaderosApp.cs",
+              "ToolTip": "C:\\Users\\salak401\\Downloads\\ProyectosProgSoft-main\\ProyectosProgSoft-main\\ProyectoparqueaderoPS2025\\Repos\\libr_aplicaciones\\Implementaciones\\ParqueaderosApp.cs",
+              "RelativeToolTip": "..\\libr_aplicaciones\\Implementaciones\\ParqueaderosApp.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAADwvwAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-28T11:53:44.546Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "CargosApp.cs",
+              "DocumentMoniker": "C:\\Users\\salak401\\Downloads\\ProyectosProgSoft-main\\ProyectosProgSoft-main\\ProyectoparqueaderoPS2025\\Repos\\libr_aplicaciones\\Implementaciones\\CargosApp.cs",
+              "RelativeDocumentMoniker": "..\\libr_aplicaciones\\Implementaciones\\CargosApp.cs",
+              "ToolTip": "C:\\Users\\salak401\\Downloads\\ProyectosProgSoft-main\\ProyectosProgSoft-main\\ProyectoparqueaderoPS2025\\Repos\\libr_aplicaciones\\Implementaciones\\CargosApp.cs",
+              "RelativeToolTip": "..\\libr_aplicaciones\\Implementaciones\\CargosApp.cs",
+              "ViewState": "AgIAACoAAAAAAAAAAAAswAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-28T11:53:27.451Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Script.sql ",
+              "DocumentMoniker": "C:\\Users\\salak401\\Downloads\\ProyectosProgSoft-main\\ProyectosProgSoft-main\\ProyectoparqueaderoPS2025\\Repos\\libr_repositorios\\Script.sql",
+              "RelativeDocumentMoniker": "..\\libr_repositorios\\Script.sql",
+              "ToolTip": "C:\\Users\\salak401\\Downloads\\ProyectosProgSoft-main\\ProyectosProgSoft-main\\ProyectoparqueaderoPS2025\\Repos\\libr_repositorios\\Script.sql",
+              "RelativeToolTip": "..\\libr_repositorios\\Script.sql",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2025-05-28T11:44:13.452Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "DatosGenerales.cs",
+              "DocumentMoniker": "C:\\Users\\salak401\\Downloads\\ProyectosProgSoft-main\\ProyectosProgSoft-main\\ProyectoparqueaderoPS2025\\Repos\\libr_dominio\\Nucleo\\DatosGenerales.cs",
+              "RelativeDocumentMoniker": "..\\libr_dominio\\Nucleo\\DatosGenerales.cs",
+              "ToolTip": "C:\\Users\\salak401\\Downloads\\ProyectosProgSoft-main\\ProyectosProgSoft-main\\ProyectoparqueaderoPS2025\\Repos\\libr_dominio\\Nucleo\\DatosGenerales.cs",
+              "RelativeToolTip": "..\\libr_dominio\\Nucleo\\DatosGenerales.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAA9AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-28T11:34:43.424Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\salak401\\Downloads\\ProyectosProgSoft-main\\ProyectosProgSoft-main\\ProyectoparqueaderoPS2025\\Repos\\Proyecto Parqueadero\\asp_presentacion\\Pages\\Index.cshtml",
+              "RelativeDocumentMoniker": "asp_presentacion\\Pages\\Index.cshtml",
+              "ToolTip": "C:\\Users\\salak401\\Downloads\\ProyectosProgSoft-main\\ProyectosProgSoft-main\\ProyectoparqueaderoPS2025\\Repos\\Proyecto Parqueadero\\asp_presentacion\\Pages\\Index.cshtml",
+              "RelativeToolTip": "asp_presentacion\\Pages\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAADwvwAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-28T11:33:40.631Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "CargosPresentacion.cs",
+              "DocumentMoniker": "C:\\Users\\salak401\\Downloads\\ProyectosProgSoft-main\\ProyectosProgSoft-main\\ProyectoparqueaderoPS2025\\Repos\\libr_presentaciones\\Implementaciones\\CargosPresentacion.cs",
+              "RelativeDocumentMoniker": "..\\libr_presentaciones\\Implementaciones\\CargosPresentacion.cs",
+              "ToolTip": "C:\\Users\\salak401\\Downloads\\ProyectosProgSoft-main\\ProyectosProgSoft-main\\ProyectoparqueaderoPS2025\\Repos\\libr_presentaciones\\Implementaciones\\CargosPresentacion.cs",
+              "RelativeToolTip": "..\\libr_presentaciones\\Implementaciones\\CargosPresentacion.cs",
+              "ViewState": "AgIAACIAAAAAAAAAAAAswAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-28T11:33:22.221Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "ClientesApp.cs",
+              "DocumentMoniker": "C:\\Users\\salak401\\Downloads\\ProyectosProgSoft-main\\ProyectosProgSoft-main\\ProyectoparqueaderoPS2025\\Repos\\libr_aplicaciones\\Implementaciones\\ClientesApp.cs",
+              "RelativeDocumentMoniker": "..\\libr_aplicaciones\\Implementaciones\\ClientesApp.cs",
+              "ToolTip": "C:\\Users\\salak401\\Downloads\\ProyectosProgSoft-main\\ProyectosProgSoft-main\\ProyectoparqueaderoPS2025\\Repos\\libr_aplicaciones\\Implementaciones\\ClientesApp.cs",
+              "RelativeToolTip": "..\\libr_aplicaciones\\Implementaciones\\ClientesApp.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-28T11:27:45.604Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "secretos.json",
+              "DocumentMoniker": "C:\\Users\\salak401\\Downloads\\ProyectosProgSoft-main\\ProyectosProgSoft-main\\ProyectoparqueaderoPS2025\\Repos\\Proyecto Parqueadero\\secretos.json",
+              "RelativeDocumentMoniker": "secretos.json",
+              "ToolTip": "C:\\Users\\salak401\\Downloads\\ProyectosProgSoft-main\\ProyectosProgSoft-main\\ProyectoparqueaderoPS2025\\Repos\\Proyecto Parqueadero\\secretos.json",
+              "RelativeToolTip": "secretos.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-05-28T11:26:35.176Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Comunicaciones.cs",
+              "DocumentMoniker": "C:\\Users\\salak401\\Downloads\\ProyectosProgSoft-main\\ProyectosProgSoft-main\\ProyectoparqueaderoPS2025\\Repos\\libr_presentaciones\\Comunicaciones.cs",
+              "RelativeDocumentMoniker": "..\\libr_presentaciones\\Comunicaciones.cs",
+              "ToolTip": "C:\\Users\\salak401\\Downloads\\ProyectosProgSoft-main\\ProyectosProgSoft-main\\ProyectoparqueaderoPS2025\\Repos\\libr_presentaciones\\Comunicaciones.cs",
+              "RelativeToolTip": "..\\libr_presentaciones\\Comunicaciones.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-28T11:25:49.13Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
               "Title": "_Layout.cshtml",
-              "DocumentMoniker": "C:\\Users\\Alvaro\\Desktop\\ProyectosProgSoft\\ProyectoparqueaderoPS2025\\Repos\\Proyecto Parqueadero\\asp_presentacion\\Pages\\Shared\\_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\salak401\\Downloads\\ProyectosProgSoft-main\\ProyectosProgSoft-main\\ProyectoparqueaderoPS2025\\Repos\\Proyecto Parqueadero\\asp_presentacion\\Pages\\Shared\\_Layout.cshtml",
               "RelativeDocumentMoniker": "asp_presentacion\\Pages\\Shared\\_Layout.cshtml",
-              "ToolTip": "C:\\Users\\Alvaro\\Desktop\\ProyectosProgSoft\\ProyectoparqueaderoPS2025\\Repos\\Proyecto Parqueadero\\asp_presentacion\\Pages\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\salak401\\Downloads\\ProyectosProgSoft-main\\ProyectosProgSoft-main\\ProyectoparqueaderoPS2025\\Repos\\Proyecto Parqueadero\\asp_presentacion\\Pages\\Shared\\_Layout.cshtml",
               "RelativeToolTip": "asp_presentacion\\Pages\\Shared\\_Layout.cshtml",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAzwBgAAAAdAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-05-28T05:35:41.626Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 13,
               "Title": "ParqueaderosClientes.cshtml.cs",
-              "DocumentMoniker": "C:\\Users\\Alvaro\\Desktop\\ProyectosProgSoft\\ProyectoparqueaderoPS2025\\Repos\\Proyecto Parqueadero\\asp_presentacion\\Pages\\Ventanas\\ParqueaderosClientes.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\salak401\\Downloads\\ProyectosProgSoft-main\\ProyectosProgSoft-main\\ProyectoparqueaderoPS2025\\Repos\\Proyecto Parqueadero\\asp_presentacion\\Pages\\Ventanas\\ParqueaderosClientes.cshtml.cs",
               "RelativeDocumentMoniker": "asp_presentacion\\Pages\\Ventanas\\ParqueaderosClientes.cshtml.cs",
-              "ToolTip": "C:\\Users\\Alvaro\\Desktop\\ProyectosProgSoft\\ProyectoparqueaderoPS2025\\Repos\\Proyecto Parqueadero\\asp_presentacion\\Pages\\Ventanas\\ParqueaderosClientes.cshtml.cs",
+              "ToolTip": "C:\\Users\\salak401\\Downloads\\ProyectosProgSoft-main\\ProyectosProgSoft-main\\ProyectoparqueaderoPS2025\\Repos\\Proyecto Parqueadero\\asp_presentacion\\Pages\\Ventanas\\ParqueaderosClientes.cshtml.cs",
               "RelativeToolTip": "asp_presentacion\\Pages\\Ventanas\\ParqueaderosClientes.cshtml.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAGQAAABCAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-26T04:11:43.089Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-26T04:11:43.089Z"
             }
           ]
         }
