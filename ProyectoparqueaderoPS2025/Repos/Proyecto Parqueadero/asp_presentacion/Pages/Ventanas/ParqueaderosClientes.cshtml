@@ -99,7 +99,7 @@
                                 <input id="nmTotal"
                                        class="cts_forms form-control"
                                        asp-for="@Model.Actual!.Total"
-                                       />
+                                       disabled="disabled" />
                             </div>
                         </div>
 
@@ -118,13 +118,16 @@
 
                         <div class="form-group">
                             <label class="col-lg-4 control-label">
-                                Tarifa aplicada
+                                Tarifa aplicada/hora
                             </label>
                             <div class="col-lg-6">
                                 <select id="nmTarifa"
                                         class="form-control"
                                         asp-for="@Model.Actual!.Tarifa"
-                                        asp-items="@(new SelectList(Model.Tarifas, "Id", "Tarifa"))">
+                                        asp-items="@(new SelectList(Model.Tarifas!.Select(t => new {
+                                     Id = t.Id,
+                                     DisplayText = $"{t.Valor}--{t.Tipo}"
+                                 }), "Id", "DisplayText"))">
                                 </select>
                             </div>
                         </div>
