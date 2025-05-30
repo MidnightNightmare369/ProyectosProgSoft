@@ -7,19 +7,23 @@ namespace asp_presentacion.Pages
     public class IndexModel : PageModel
     {
         public bool EstaLogueado = false;
+        public string? TipoUsuario { get; set; } // Nuevo campo para el tipo de usuario
+
         [BindProperty] public string? Email { get; set; }
         [BindProperty] public string? Contrasena { get; set; }
 
         public void OnGet()
         {
             var variable_session = HttpContext.Session.GetString("Usuario");
+            var tipo_usuario_session = HttpContext.Session.GetString("TipoUsuario");
+
             if (!String.IsNullOrEmpty(variable_session))
             {
                 EstaLogueado = true;
+                TipoUsuario = tipo_usuario_session;
                 return;
             }
         }
-
         public void OnPostBtClean()
         {
             try
@@ -37,23 +41,42 @@ namespace asp_presentacion.Pages
         {
             try
             {
-                if (string.IsNullOrEmpty(Email) &&
-                    string.IsNullOrEmpty(Contrasena))
+                if (string.IsNullOrEmpty(Email) || string.IsNullOrEmpty(Contrasena))
                 {
                     OnPostBtClean();
                     return;
                 }
 
-                if ( "admin.123" != Email + "." + Contrasena /*|| "root001.6663" != Email + "." + Contrasena
-                    || "root002.9639" != Email + "." + Contrasena || "cj001.3693" != Email + "." + Contrasena
-                    || "cj002.9999" != Email + "." + Contrasena || "cj003.1266" != Email + "." + Contrasena*/)
+                string credencialCompleta = Email + "." + Contrasena;
+                string tipoUsuario = "";
+
+                // Definir roles según credenciales
+                switch (credencialCompleta)
                 {
-                    OnPostBtClean();
-                    return;
+                    case "admin.123":
+                        tipoUsuario = "Administrador";
+                        break;
+                    case "root001.6663":
+                    case "root002.9639":
+                        tipoUsuario = "Root";
+                        break;
+                    case "cj001.3693":
+                    case "cj002.9999":
+                    case "cj003.1266":
+                        tipoUsuario = "Cajero";
+                        break;
+                    default:
+                        OnPostBtClean();
+                        return;
                 }
-                ViewData["Logged"] = true;
+
+                // Guardar en sesión
                 HttpContext.Session.SetString("Usuario", Email!);
+                HttpContext.Session.SetString("TipoUsuario", tipoUsuario);
+
+                ViewData["Logged"] = true;
                 EstaLogueado = true;
+                TipoUsuario = tipoUsuario;
                 OnPostBtClean();
             }
             catch (Exception ex)
@@ -69,6 +92,7 @@ namespace asp_presentacion.Pages
                 HttpContext.Session.Clear();
                 HttpContext.Response.Redirect("/");
                 EstaLogueado = false;
+                TipoUsuario = null;
             }
             catch (Exception ex)
             {
@@ -76,4 +100,6 @@ namespace asp_presentacion.Pages
             }
         }
     }
+
+
 }

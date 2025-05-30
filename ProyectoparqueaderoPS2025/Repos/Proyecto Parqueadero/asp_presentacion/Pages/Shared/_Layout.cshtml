@@ -17,58 +17,90 @@
                         aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
 
+                @using asp_presentacion.Helpers
+                @{
+                    var tipoUsuario = Context.Session.GetString("TipoUsuario");
+                    var estaLogueado = !string.IsNullOrEmpty(Context.Session.GetString("Usuario"));
+                }
+
+                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
                     <ul class="navbar-nav flex-grow-1">
                         <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-page="/Index">Home</a>
                         </li>
 
-                        <!-- Dropdown para Gestión de caja -->
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle text-dark" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                Gestion de caja
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" asp-area="" asp-page="/Ventanas/ParqueaderosClientes">Parqueaderos y clientes</a></li>
-                                <li><a class="dropdown-item" asp-area="" asp-page="/Ventanas/Clientes">Clientes</a></li>
-                                <li><a class="dropdown-item" asp-area="" asp-page="/Ventanas/Vehiculos">Vehículos</a></li>                                
-                            </ul>
-                        </li>
+                        @if (estaLogueado)
+                        {
+                            <!-- Dropdown para Gestión de caja -->
+                            @if (PermisosHelper.TienePermisoGestionCaja(tipoUsuario))
+                            {
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle text-dark" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        Gestión de caja
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" asp-area="" asp-page="/Ventanas/ParqueaderosClientes">Parqueaderos y clientes</a></li>
+                                        <li><a class="dropdown-item" asp-area="" asp-page="/Ventanas/Clientes">Clientes</a></li>
+                                        <li><a class="dropdown-item" asp-area="" asp-page="/Ventanas/Vehiculos">Vehículos</a></li>
+                                    </ul>
+                                </li>
+                            }
 
-                        <!-- Dropdown para Configuracion -->
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle text-dark" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                Configuración
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" asp-area="" asp-page="/Ventanas/TipoClientes">Tipos de clientes</a></li>
-                                <li><a class="dropdown-item" asp-area="" asp-page="/Ventanas/TipoPagos">Tipos de pagos</a></li>
-                                <li><a class="dropdown-item" asp-area="" asp-page="/Ventanas/TipoVehiculos">Tipos de vehículos</a></li>
-                                <li><a class="dropdown-item" asp-area="" asp-page="/Ventanas/Parqueaderos">Parqueaderos</a></li>
-                                <li><a class="dropdown-item" asp-area="" asp-page="/Ventanas/Tarifas">Tarifas</a></li>
-                            </ul>
-                        </li>
+                            <!-- Dropdown para Configuración -->
+                            @if (PermisosHelper.TienePermisoConfiguracion(tipoUsuario))
+                            {
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle text-dark" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        Configuración
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" asp-area="" asp-page="/Ventanas/TipoClientes">Tipos de clientes</a></li>
+                                        <li><a class="dropdown-item" asp-area="" asp-page="/Ventanas/TipoPagos">Tipos de pagos</a></li>
+                                        <li><a class="dropdown-item" asp-area="" asp-page="/Ventanas/TipoVehiculos">Tipos de vehículos</a></li>
+                                        <li><a class="dropdown-item" asp-area="" asp-page="/Ventanas/Parqueaderos">Parqueaderos</a></li>
+                                        <li><a class="dropdown-item" asp-area="" asp-page="/Ventanas/Tarifas">Tarifas</a></li>
+                                    </ul>
+                                </li>
+                            }
 
-                        <!-- Dropdown para Gestion de empleados -->
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle text-dark" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                Gestion de empleados
-                            </a>
-                            <ul class="dropdown-menu">                                
-                                <li><a class="dropdown-item" asp-area="" asp-page="/Ventanas/Empleados">Empleados</a></li>
-                                <li><a class="dropdown-item" asp-area="" asp-page="/Ventanas/Contratos">Contratos</a></li>
-                                <li><a class="dropdown-item" asp-area="" asp-page="/Ventanas/Turnos">Turnos</a></li>
-                                <li><a class="dropdown-item" asp-area="" asp-page="/Ventanas/Cargos">Cargos</a></li>   
-                            </ul>
-                        </li>
+                            <!-- Dropdown para Gestión de empleados -->
+                            @if (PermisosHelper.TienePermisoGestionEmpleados(tipoUsuario))
+                            {
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle text-dark" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        Gestión de empleados
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" asp-area="" asp-page="/Ventanas/Empleados">Empleados</a></li>
+                                        <li><a class="dropdown-item" asp-area="" asp-page="/Ventanas/Contratos">Contratos</a></li>
+                                        <li><a class="dropdown-item" asp-area="" asp-page="/Ventanas/Turnos">Turnos</a></li>
+                                        <li><a class="dropdown-item" asp-area="" asp-page="/Ventanas/Cargos">Cargos</a></li>
+                                    </ul>
+                                </li>
+                            }
 
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-page="/Ventanas/Auditorias">Auditorías</a>
-                        </li>
+                            <!-- Auditorías -->
+                            @if (PermisosHelper.TienePermisoAuditorias(tipoUsuario))
+                            {
+                                <li class="nav-item">
+                                    <a class="nav-link text-dark" asp-area="" asp-page="/Ventanas/Auditorias">Auditorías</a>
+                                </li>
+                            }
+
+                            <!-- Mostrar tipo de usuario y opción de cerrar sesión -->
+                            <li class="nav-item dropdown ms-auto">
+                                <a class="nav-link dropdown-toggle text-dark" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    @tipoUsuario
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" asp-area="" asp-page="/Index" asp-page-handler="BtClose">Cerrar Sesión</a></li>
+                                </ul>
+                            </li>
+                        }
                     </ul>
-
                 </div>
+
             </div>
         </nav>
     </header>
