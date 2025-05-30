@@ -268,3 +268,4 @@ C:\Users\salak401\Downloads\ProyectosProgSoft-main\ProyectosProgSoft-main\Proyec
 C:\Users\salak401\Downloads\ProyectosProgSoft-main\ProyectosProgSoft-main\ProyectoparqueaderoPS2025\Repos\asp_servicios\obj\Debug\net8.0\asp_servicios.pdb
 C:\Users\salak401\Downloads\ProyectosProgSoft-main\ProyectosProgSoft-main\ProyectoparqueaderoPS2025\Repos\asp_servicios\obj\Debug\net8.0\asp_servicios.genruntimeconfig.cache
 C:\Users\salak401\Downloads\ProyectosProgSoft-main\ProyectosProgSoft-main\ProyectoparqueaderoPS2025\Repos\asp_servicios\obj\Debug\net8.0\ref\asp_servicios.dll
+C:\Users\Alvaro\Desktop\ProyectosProgSoft\ProyectoparqueaderoPS2025\Repos\asp_servicios\obj\Debug\net8.0\asp_servicios.sourcelink.json

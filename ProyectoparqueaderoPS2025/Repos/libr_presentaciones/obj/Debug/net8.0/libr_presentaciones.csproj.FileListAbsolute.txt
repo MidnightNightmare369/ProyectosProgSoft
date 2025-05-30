@@ -28,3 +28,4 @@ C:\Users\salak401\Downloads\ProyectosProgSoft-main\ProyectosProgSoft-main\Proyec
 C:\Users\salak401\Downloads\ProyectosProgSoft-main\ProyectosProgSoft-main\ProyectoparqueaderoPS2025\Repos\libr_presentaciones\obj\Debug\net8.0\refint\libr_presentaciones.dll
 C:\Users\salak401\Downloads\ProyectosProgSoft-main\ProyectosProgSoft-main\ProyectoparqueaderoPS2025\Repos\libr_presentaciones\obj\Debug\net8.0\libr_presentaciones.pdb
 C:\Users\salak401\Downloads\ProyectosProgSoft-main\ProyectosProgSoft-main\ProyectoparqueaderoPS2025\Repos\libr_presentaciones\obj\Debug\net8.0\ref\libr_presentaciones.dll
+C:\Users\Alvaro\Desktop\ProyectosProgSoft\ProyectoparqueaderoPS2025\Repos\libr_presentaciones\obj\Debug\net8.0\libr_presentaciones.sourcelink.json

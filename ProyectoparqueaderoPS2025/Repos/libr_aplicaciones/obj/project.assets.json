@@ -2891,24 +2891,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\salak401\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\Alvaro\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\salak401\\Downloads\\ProyectosProgSoft-main\\ProyectosProgSoft-main\\ProyectoparqueaderoPS2025\\Repos\\libr_aplicaciones\\libr_aplicaciones.csproj",
+      "projectUniqueName": "C:\\Users\\Alvaro\\Desktop\\ProyectosProgSoft\\ProyectoparqueaderoPS2025\\Repos\\libr_aplicaciones\\libr_aplicaciones.csproj",
       "projectName": "libr_aplicaciones",
-      "projectPath": "C:\\Users\\salak401\\Downloads\\ProyectosProgSoft-main\\ProyectosProgSoft-main\\ProyectoparqueaderoPS2025\\Repos\\libr_aplicaciones\\libr_aplicaciones.csproj",
-      "packagesPath": "C:\\Users\\salak401\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\salak401\\Downloads\\ProyectosProgSoft-main\\ProyectosProgSoft-main\\ProyectoparqueaderoPS2025\\Repos\\libr_aplicaciones\\obj\\",
+      "projectPath": "C:\\Users\\Alvaro\\Desktop\\ProyectosProgSoft\\ProyectoparqueaderoPS2025\\Repos\\libr_aplicaciones\\libr_aplicaciones.csproj",
+      "packagesPath": "C:\\Users\\Alvaro\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Alvaro\\Desktop\\ProyectosProgSoft\\ProyectoparqueaderoPS2025\\Repos\\libr_aplicaciones\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-      ],
       "configFilePaths": [
-        "C:\\Users\\salak401\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Users\\Alvaro\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -2923,11 +2918,11 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\Users\\salak401\\Downloads\\ProyectosProgSoft-main\\ProyectosProgSoft-main\\ProyectoparqueaderoPS2025\\Repos\\libr_dominio\\libr_dominio.csproj": {
-              "projectPath": "C:\\Users\\salak401\\Downloads\\ProyectosProgSoft-main\\ProyectosProgSoft-main\\ProyectoparqueaderoPS2025\\Repos\\libr_dominio\\libr_dominio.csproj"
+            "C:\\Users\\Alvaro\\Desktop\\ProyectosProgSoft\\ProyectoparqueaderoPS2025\\Repos\\libr_dominio\\libr_dominio.csproj": {
+              "projectPath": "C:\\Users\\Alvaro\\Desktop\\ProyectosProgSoft\\ProyectoparqueaderoPS2025\\Repos\\libr_dominio\\libr_dominio.csproj"
             },
-            "C:\\Users\\salak401\\Downloads\\ProyectosProgSoft-main\\ProyectosProgSoft-main\\ProyectoparqueaderoPS2025\\Repos\\libr_repositorios\\libr_repositorios.csproj": {
-              "projectPath": "C:\\Users\\salak401\\Downloads\\ProyectosProgSoft-main\\ProyectosProgSoft-main\\ProyectoparqueaderoPS2025\\Repos\\libr_repositorios\\libr_repositorios.csproj"
+            "C:\\Users\\Alvaro\\Desktop\\ProyectosProgSoft\\ProyectoparqueaderoPS2025\\Repos\\libr_repositorios\\libr_repositorios.csproj": {
+              "projectPath": "C:\\Users\\Alvaro\\Desktop\\ProyectosProgSoft\\ProyectoparqueaderoPS2025\\Repos\\libr_repositorios\\libr_repositorios.csproj"
             }
           }
         }
@@ -2941,8 +2936,7 @@
         "enableAudit": "true",
         "auditLevel": "low",
         "auditMode": "direct"
-      },
-      "SdkAnalysisLevel": "9.0.200"
+      }
     },
     "frameworks": {
       "net8.0": {
@@ -2963,7 +2957,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.201/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

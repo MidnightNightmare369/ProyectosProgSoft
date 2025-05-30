@@ -49,3 +49,4 @@ C:\Users\salak401\Downloads\ProyectosProgSoft-main\ProyectosProgSoft-main\Proyec
 C:\Users\salak401\Downloads\ProyectosProgSoft-main\ProyectosProgSoft-main\ProyectoparqueaderoPS2025\Repos\libr_aplicaciones\obj\Debug\net8.0\refint\libr_aplicaciones.dll
 C:\Users\salak401\Downloads\ProyectosProgSoft-main\ProyectosProgSoft-main\ProyectoparqueaderoPS2025\Repos\libr_aplicaciones\obj\Debug\net8.0\libr_aplicaciones.pdb
 C:\Users\salak401\Downloads\ProyectosProgSoft-main\ProyectosProgSoft-main\ProyectoparqueaderoPS2025\Repos\libr_aplicaciones\obj\Debug\net8.0\ref\libr_aplicaciones.dll
+C:\Users\Alvaro\Desktop\ProyectosProgSoft\ProyectoparqueaderoPS2025\Repos\libr_aplicaciones\obj\Debug\net8.0\libr_aplicaciones.sourcelink.json

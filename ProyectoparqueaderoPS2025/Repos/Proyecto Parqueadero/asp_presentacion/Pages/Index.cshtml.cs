@@ -44,7 +44,9 @@ namespace asp_presentacion.Pages
                     return;
                 }
 
-                if ("admin.123" != Email + "." + Contrasena)
+                if ( "admin.123" != Email + "." + Contrasena /*|| "root001.6663" != Email + "." + Contrasena
+                    || "root002.9639" != Email + "." + Contrasena || "cj001.3693" != Email + "." + Contrasena
+                    || "cj002.9999" != Email + "." + Contrasena || "cj003.1266" != Email + "." + Contrasena*/)
                 {
                     OnPostBtClean();
                     return;
