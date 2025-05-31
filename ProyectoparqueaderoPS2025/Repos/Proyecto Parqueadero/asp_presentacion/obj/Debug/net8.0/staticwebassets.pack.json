@@ -13,6 +13,14 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "C:\\Users\\Alvaro\\Desktop\\ProyectosProgSoft\\ProyectoparqueaderoPS2025\\Repos\\Proyecto Parqueadero\\asp_presentacion\\wwwroot\\images\\ParqueaderooBody.png",
+      "PackagePath": "staticwebassets\\images\\ParqueaderooBody.png"
+    },
+    {
+      "Id": "C:\\Users\\Alvaro\\Desktop\\ProyectosProgSoft\\ProyectoparqueaderoPS2025\\Repos\\Proyecto Parqueadero\\asp_presentacion\\wwwroot\\images\\logo-parqueaderoo.png",
+      "PackagePath": "staticwebassets\\images\\logo-parqueaderoo.png"
+    },
+    {
       "Id": "C:\\Users\\Alvaro\\Desktop\\ProyectosProgSoft\\ProyectoparqueaderoPS2025\\Repos\\Proyecto Parqueadero\\asp_presentacion\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },

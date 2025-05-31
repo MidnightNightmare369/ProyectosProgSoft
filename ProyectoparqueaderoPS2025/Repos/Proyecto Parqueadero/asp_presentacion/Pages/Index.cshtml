@@ -2,6 +2,7 @@
 @model IndexModel
 @{
     ViewData["Title"] = "Index";
+    ViewData["ContainerClass"] = "container-login-bg";
 }
 @if (!Model.EstaLogueado)
 {
@@ -46,7 +47,8 @@
 }
 else
 {
-    <div class="text-center">
+    <div class="container"
+         align="center">
         <h1 class="display-4">
             Bienvenido
         </h1>

@@ -1,5 +1,5 @@
 ﻿<!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -7,12 +7,22 @@
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/asp_presentacion.styles.css" asp-append-version="true" />
+    <link rel="shortcut icon" href="~/images/logo-parqueaderoo.png" type="image/x-icon">
 </head>
 <body>
     <header>
         <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+
             <div class="container">
-                <a class="navbar-brand" asp-area="" asp-page="/Index">Parqueaderoo</a>
+
+                <a class="navbar-brand d-flex align-items-center" asp-area="" asp-page="/Index">
+                    <img src="~/images/logo-parqueaderoo.png"
+                         alt="Logo Parqueaderoo"
+                         class="navbar-logo"
+                         style="height: 40px !important; width: auto !important; max-width: 50px !important; margin-right: 8px !important;" />
+                    <span>Parqueaderoo</span>
+                </a>
+
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -94,7 +104,14 @@
                                     @tipoUsuario
                                 </a>
                                 <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" asp-area="" asp-page="/Index" asp-page-handler="BtClose">Cerrar Sesión</a></li>
+                                    <li>
+                                        <form method="POST">
+                                            <input type="submit"
+                                                   value="Cerrar"
+                                                   asp-page-handler="BtClose"
+                                                   class="btn btn-default" />
+                                        </form>
+                                    </li>
                                 </ul>
                             </li>
                         }
@@ -104,7 +121,8 @@
             </div>
         </nav>
     </header>
-    <div class="container">
+
+    <div class="container @ViewData["ContainerClass"]">
         <main role="main" class="pb-3">
             @RenderBody()
         </main>
@@ -112,7 +130,7 @@
 
     <footer class="border-top footer text-muted">
         <div class="container">
-            &copy; 2025 - asp_presentacion - <a asp-area="" asp-page="/Privacy">Privacy</a>
+            Free Software - 2025 - Juan Barrera - <a asp-area="" asp-page="/Privacy">Privacy</a>
         </div>
     </footer>
 
